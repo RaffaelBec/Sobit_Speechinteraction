@@ -1,4 +1,4 @@
-﻿tokens;tags
+﻿tokens;ner_tags
 Starte den aktuellen Einsatz;[B-Action, O, B-Task, I-Task]
 Rufe einen Angehörigen von Frau Müller an;[B-Action, O, B-Person, O, B-Person, I-Person, O]
 Wie lange dauert der aktuelle Einsatz noch;[B-Time, I-Time, O, O, B-Task, I-Task, O]

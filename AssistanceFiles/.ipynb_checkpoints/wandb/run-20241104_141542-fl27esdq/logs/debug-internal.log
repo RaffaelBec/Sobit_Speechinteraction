@@ -1,0 +1,23 @@
+{"time":"2024-11-04T14:15:42.7198668+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-04T14:15:42.7199333+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241104_141542-fl27esdq\\logs\\debug-core.log"}
+{"time":"2024-11-04T14:15:42.8520907+01:00","level":"INFO","msg":"created new stream","id":"fl27esdq"}
+{"time":"2024-11-04T14:15:42.8520907+01:00","level":"INFO","msg":"stream: started","id":"fl27esdq"}
+{"time":"2024-11-04T14:15:42.852607+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fl27esdq"}}
+{"time":"2024-11-04T14:15:42.852607+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"fl27esdq"}}
+{"time":"2024-11-04T14:15:42.8526873+01:00","level":"INFO","msg":"sender: started","stream_id":"fl27esdq"}
+{"time":"2024-11-04T14:15:43.2683469+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-04T14:26:42.9036209+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-04T14:28:01.1000013+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-04T14:28:02.0797631+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-04T14:28:03.3835552+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-04T14:28:06.3536645+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-04T14:28:15.770676+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-04T14:28:15.787178+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-04T14:28:15.7931723+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-04T14:28:16.7940037+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.6137283}],"total_operations":1}}
+{"time":"2024-11-04T14:28:17.0620897+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-04T14:28:18.3847278+01:00","level":"INFO","msg":"stream: closing","id":"fl27esdq"}
+{"time":"2024-11-04T14:28:18.3847278+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"fl27esdq"}}
+{"time":"2024-11-04T14:28:18.3853699+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"fl27esdq"}}
+{"time":"2024-11-04T14:28:18.3853699+01:00","level":"INFO","msg":"sender: closed","stream_id":"fl27esdq"}
+{"time":"2024-11-04T14:28:18.386387+01:00","level":"INFO","msg":"stream: closed","id":"fl27esdq"}

@@ -52,3 +52,4 @@ config: {}
 2024-11-05 12:01:34,441 INFO    MainThread:27312 [wandb_init.py:_resume_backend():450] resuming backend
 2024-11-05 12:01:34,470 INFO    MainThread:27312 [jupyter.py:save_ipynb():387] not saving jupyter notebook
 2024-11-05 12:01:34,470 INFO    MainThread:27312 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-05 15:04:47,492 WARNING MsgRouterThr:27312 [router.py:message_loop():77] message_loop has been closed

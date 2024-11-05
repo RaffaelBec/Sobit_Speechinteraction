@@ -1,0 +1,23 @@
+{"time":"2024-11-05T12:44:59.4353307+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-05T12:44:59.4353307+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241105_124459-eie73ll2\\logs\\debug-core.log"}
+{"time":"2024-11-05T12:44:59.5763962+01:00","level":"INFO","msg":"created new stream","id":"eie73ll2"}
+{"time":"2024-11-05T12:44:59.5763962+01:00","level":"INFO","msg":"stream: started","id":"eie73ll2"}
+{"time":"2024-11-05T12:44:59.5770255+01:00","level":"INFO","msg":"sender: started","stream_id":"eie73ll2"}
+{"time":"2024-11-05T12:44:59.5769257+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"eie73ll2"}}
+{"time":"2024-11-05T12:44:59.5769257+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"eie73ll2"}}
+{"time":"2024-11-05T12:44:59.9887893+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-05T12:51:25.0220632+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T12:51:25.0352975+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T12:51:25.5150311+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T12:51:25.52835+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T12:51:26.3901909+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T12:51:26.403274+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T12:51:26.4093461+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-05T12:51:26.4138974+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-05T12:51:27.1745936+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-05T12:51:27.4257974+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading console logs","runtime_seconds":0.053954}],"total_operations":1}}
+{"time":"2024-11-05T12:51:28.9200286+01:00","level":"INFO","msg":"stream: closing","id":"eie73ll2"}
+{"time":"2024-11-05T12:51:28.9200286+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"eie73ll2"}}
+{"time":"2024-11-05T12:51:28.9200286+01:00","level":"INFO","msg":"sender: closed","stream_id":"eie73ll2"}
+{"time":"2024-11-05T12:51:28.9200286+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"eie73ll2"}}
+{"time":"2024-11-05T12:51:28.9206518+01:00","level":"INFO","msg":"stream: closed","id":"eie73ll2"}

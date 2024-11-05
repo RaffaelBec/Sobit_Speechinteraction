@@ -1,0 +1,31 @@
+{
+  "os": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.4",
+  "startedAt": "2024-11-05T11:44:59.432519Z",
+  "program": "c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\SpeechInteraction_BERT_Training_test1.ipynb",
+  "git": {
+    "remote": "https://github.com/aeluna/Sobit_Speechinteraction.git",
+    "commit": "6719a9631fe19dae40865c67ee92b1672a064bc4"
+  },
+  "email": "raffaelbecirevic@gmail.com",
+  "root": "c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints",
+  "host": "Raffael",
+  "username": "raffa",
+  "executable": "c:\\Python312\\python.exe",
+  "codePathLocal": "SpeechInteraction_BERT_Training_test1.ipynb",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "511263043584",
+      "used": "503215411200"
+    }
+  },
+  "memory": {
+    "total": "14966337536"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}

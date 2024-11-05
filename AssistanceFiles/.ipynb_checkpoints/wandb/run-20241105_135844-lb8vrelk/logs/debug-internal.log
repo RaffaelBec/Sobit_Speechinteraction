@@ -1,0 +1,11 @@
+{"time":"2024-11-05T13:58:44.386017+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-05T13:58:44.386017+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241105_135844-lb8vrelk\\logs\\debug-core.log"}
+{"time":"2024-11-05T13:58:44.5212405+01:00","level":"INFO","msg":"created new stream","id":"lb8vrelk"}
+{"time":"2024-11-05T13:58:44.5212405+01:00","level":"INFO","msg":"stream: started","id":"lb8vrelk"}
+{"time":"2024-11-05T13:58:44.5212405+01:00","level":"INFO","msg":"sender: started","stream_id":"lb8vrelk"}
+{"time":"2024-11-05T13:58:44.5212405+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"lb8vrelk"}}
+{"time":"2024-11-05T13:58:44.5212405+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"lb8vrelk"}}
+{"time":"2024-11-05T13:58:44.946096+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-05T13:58:48.3457559+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T13:59:12.3030325+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T13:59:15.7988812+01:00","level":"INFO","msg":"Pausing system monitor"}

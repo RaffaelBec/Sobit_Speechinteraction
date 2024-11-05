@@ -1,0 +1,4 @@
+100%|██████████| 21/21 [01:53<00:00,  5.41s/it]
+{'loss': 2.1368, 'grad_norm': 4.523717880249023, 'learning_rate': 1.0476190476190477e-05, 'epoch': 1.43}
+{'loss': 1.6758, 'grad_norm': 4.540310382843018, 'learning_rate': 9.523809523809525e-07, 'epoch': 2.86}
+{'train_runtime': 114.5386, 'train_samples_per_second': 2.829, 'train_steps_per_second': 0.183, 'train_loss': 1.8927571603230067, 'epoch': 3.0}

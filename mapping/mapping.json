@@ -1,0 +1,119 @@
+{
+  "B-Person": {
+    "table": "Person",
+    "fields": {
+      "FirstName": "FirstName",
+      "LastName": "LastName",
+      "Title": "Title",
+      "SSN": "SSN",
+      "DateOfBirth": "DateOfBirth",
+      "Sex": "Sex",
+      "Citizenship": "Citizenship",
+      "Profession": "Profession",
+      "BirthName": "BirthName",
+      "BirthPlace": "BirthPlace",
+      "BirthCountry": "BirthCountry",
+      "PhoneNr": "PhoneNr"
+    }
+  },
+  "B-Client": {
+    "table": "Client",
+    "fields": {
+      "ClientId": "ClientId",
+      "FirstName": "FirstName",
+      "LastName": "LastName",
+      "Title": "Title",
+      "SSN": "SSN",
+      "DateOfBirth": "DateOfBirth",
+      "Citizenship": "Citizenship",
+      "Profession": "Profession",
+      "BirthPlace": "BirthPlace",
+      "BirthCountry": "BirthCountry"
+    }
+  },
+  "B-Employee": {
+    "table": "Employee",
+    "fields": {
+      "EmployeeId": "EmployeeId",
+      "FirstName": "FirstName",
+      "LastName": "LastName",
+      "Title": "Title",
+      "SSN": "SSN",
+      "DateOfBirth": "DateOfBirth",
+      "Citizenship": "Citizenship",
+      "Profession": "Profession",
+      "BirthPlace": "BirthPlace",
+      "BirthCountry": "BirthCountry"
+    }
+  },
+  "B-Action": {
+    "table": "Assignment",
+    "fields": {
+      "AssignmentId": "AssignmentId",
+      "AssignmentTypeId": "AssignmentTypeId",
+      "Note": "Note",
+      "CancelationInfo": "CancelationInfo"
+    }
+  },
+  "B-Time": {
+    "tables": {
+      "Assignment": {
+        "fields": {
+          "Date": "Date",
+          "TargetTimeStart": "TargetTimeStart",
+          "TargetTimeEnd": "TargetTimeEnd",
+          "ActualTimeStart": "ActualTimeStart",
+          "ActualTimeEnd": "ActualTimeEnd"
+        }
+      },
+      "DriversLog": {
+        "fields": {
+          "DepartureTime": "DepartureTime",
+          "ArrivalTime": "ArrivalTime"
+        }
+      },
+      "Car": {
+        "fields": {
+          "DateStart": "DateStart",
+          "DateEnd": "DateEnd"
+        }
+      }
+    }
+  },
+  "B-Entity": {
+    "tables": {
+      "Car": {
+        "fields": {
+          "CarId": "CarId",
+          "LicensePlate": "LicensePlate",
+          "LastCheck": "LastCheck"
+        }
+      },
+      "Client": {
+        "fields": {
+          "ClientId": "ClientId"
+        }
+      },
+      "Employee": {
+        "fields": {
+          "EmployeeId": "EmployeeId"
+        }
+      }
+    }
+  },
+  "B-Distance": {
+    "table": "DriversLog",
+    "fields": {
+      "MileageStart": "MileageStart",
+      "MileageEnd": "MileageEnd"
+    }
+  },
+  "B-Task": {
+    "table": "Assignment",
+    "fields": {
+      "AssignmentId": "AssignmentId",
+      "AssignmentTypeId": "AssignmentTypeId",
+      "Note": "Note"
+    }
+  }
+}

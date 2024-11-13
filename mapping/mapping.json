@@ -1,0 +1,66 @@
+{
+  "mapping": {
+      "create": {
+          "keywords": [
+              "schreibe", 
+              "notiere", 
+              "erstelle", 
+              "füge hinzu", 
+              "speichere", 
+              "trage ein", 
+              "vermerke", 
+              "lege an", 
+              "setze fest", 
+              "notiz hinzufügen", 
+              "neue notiz", 
+              "erstellen", 
+              "hinzufügen"
+          ]
+      },
+      "read": {
+          "keywords": [
+              "wann", 
+              "zeige", 
+              "finde",
+              "endet",
+              "gib mir", 
+              "suche", 
+              "wann beginnt", 
+              "wann endet", 
+              "wie lange", 
+              "wie viel zeit", 
+              "wann ist mein einsatz", 
+              "wann ist der einsatz", 
+              "wann soll ich", 
+              "wo", 
+              "wieviel zeit", 
+              "zeitplan", 
+              "einsatz", 
+              "beginn", 
+              "endzeit",
+              "notiz lesen",
+              "wie viel"
+          ]
+      },
+      "update": {
+          "keywords": [
+              "ändere", 
+              "aktualisiere", 
+              "bearbeite", 
+              "update", 
+              "erneuere", 
+              "anpassen", 
+              "korrektur", 
+              "aktualisieren", 
+              "updaten", 
+              "neue zeit", 
+              "zeit ändern", 
+              "termin ändern", 
+              "einsatz ändern", 
+              "notiz ändern", 
+              "verschieben", 
+              "erinnerung ändern"
+          ]
+      }
+  }
+}

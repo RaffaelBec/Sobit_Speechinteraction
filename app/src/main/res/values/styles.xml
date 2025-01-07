@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        -->
+    <style name="Theme.SplashScreen" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_logo</item>
+    </style>
+    <!-- Custom style for ProgressBar -->
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <!-- Customize the size, color, etc. -->
+        <item name="android:indeterminateTint">@color/white</item> <!-- Set color -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/classicBlueButtonBackground</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+</resources>

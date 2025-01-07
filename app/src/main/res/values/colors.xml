@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_background">#121212</color>
+
+    <!-- Classic Blue Button -->
+    <color name="classicBlueButtonBackground">#2196F3</color> <!-- Classic Blue -->
+    <color name="whiteTextColor">#FFFFFF</color> <!-- White Text -->
+
+    <!-- Navy Blue Button with Light Sky Blue Text -->
+    <color name="navyBlueButtonBackground">#003366</color> <!-- Navy Blue -->
+    <color name="lightSkyBlueTextColor">#81D4FA</color> <!-- Light Sky Blue Text -->
+
+    <!-- Electric Blue Button with Light Gray Text -->
+    <color name="electricBlueButtonBackground">#03A9F4</color> <!-- Electric Blue -->
+    <color name="lightGrayTextColor">#B0BEC5</color> <!-- Light Gray Text -->
+
+    <!-- Teal Button with White Text -->
+    <color name="tealButtonBackground">#009688</color> <!-- Teal -->
+    <color name="tealTextColor">#FFFFFF</color> <!-- White Text -->
+
+    <!-- Slate Blue Button with Light Yellow Text -->
+    <color name="slateBlueButtonBackground">#5F6368</color> <!-- Slate Blue -->
+    <color name="lightYellowTextColor">#FFEB3B</color> <!-- Light Yellow Text -->
+
+    <!-- Royal Blue Button with Light Green Text -->
+    <color name="royalBlueButtonBackground">#3F51B5</color> <!-- Royal Blue -->
+    <color name="lightGreenTextColor">#A5D6A7</color> <!-- Light Green Text -->
+
+    <!-- Muted Blue Button with Bright White Text -->
+    <color name="mutedBlueButtonBackground">#1976D2</color> <!-- Muted Blue -->
+    <color name="brightWhiteTextColor">#FFFFFF</color> <!-- White Text -->
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+    -->
+
+    <style name="SplashTheme" parent="Theme.SplashScreen">
+
+        <!-- Background color of the splash screen -->
+        <item name="windowSplashScreenBackground">@color/dark_background</item>
+
+        <!-- Icon shown in the splash screen -->
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo2</item>
+
+        <!-- Duration of the splash screen fade-out animation -->
+        <!--
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+        -->
+    </style>
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/classicBlueButtonBackground</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+
+
+</resources>

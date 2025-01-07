@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JavaSpeechRecognizer" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Set the default background color -->
+        <item name="android:windowBackground">@color/dark_background</item>
+        <!-- Apply the custom button style globally -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="Theme.JavaSpeechRecognizer" parent="Base.Theme.JavaSpeechRecognizer" />
+</resources>

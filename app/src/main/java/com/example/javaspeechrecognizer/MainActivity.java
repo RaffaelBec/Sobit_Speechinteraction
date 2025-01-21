@@ -1,5 +1,7 @@
 package com.example.javaspeechrecognizer;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -89,6 +91,9 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0; i < labelNames.length; i++) {
             id2label.put(i, labelNames[i]);
         }
+
+
+
         super.onCreate(savedInstanceState);
 
         //removes action bar color
@@ -280,9 +285,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void processInputText(String inputText){
+    public void processInputText(String inputText){
 
-        //what raffael and maxim wrote on 25.11.2024 (didnt work - wrong)
+        /* what raffael and maxim wrote on 25.11.2024 (didnt work - wrong)
        // BertTokenizer tokenizer;
 //        HuggingFaceTokenizer tokenizer;
 //        try {
@@ -296,9 +301,9 @@ public class MainActivity extends AppCompatActivity {
 //        Encoding tokenizedInput = tokenizer.encode(inputText.toLowerCase());
 //        long[] inputIds1DArray = tokenizedInput.getIds();
 
+*/
 
-
-        //what maxim used for the old model before 25.11.2024 (but some parts have been deleted)
+        /* what maxim used for the old model before 25.11.2024 (but some parts have been deleted)
 //        List<Integer> tokenizedInput = tokenizer.decode(inputText.toLowerCase());
 //
 //        Log.d("ONNX input test",tokenizedInput.toString());
@@ -308,8 +313,7 @@ public class MainActivity extends AppCompatActivity {
 //        long[] inputIds1DArray = new long[tokensWithSpecial.size()];
 //        for (int i = 0; i < tokensWithSpecial.size(); i++) {
 //            inputIds1DArray[i] = tokensWithSpecial.get(i); // Convert Integer to long
-//        }
-
+//        } */
 
         //new and should work (but does not)
         BertTokenizer tokenizer;
@@ -403,10 +407,30 @@ public class MainActivity extends AppCompatActivity {
             textViewTokenizedInput.setVisibility(View.VISIBLE);
             textViewLabeledResult.setVisibility(View.VISIBLE);
 
+
+            //NEW
+            SQLiteHelper dbHelper = new SQLiteHelper(this);
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            Cursor cursor = db.rawQuery(
+                    "SELECT ActualTimeStart FROM Assignment " +
+                            "JOIN Client ON Assignment.ClientId = Client.ClientId " +
+                            "WHERE Client.FirstName = ? AND Client.LastName = ? " +
+                            "ORDER BY ActualTimeStart DESC LIMIT 1",
+                    new String[]{"John", "Doe"}
+            );
+            String lastAppointment = "Nothing to show";
+            if (cursor.moveToFirst()) {
+                lastAppointment = cursor.getString(0);
+                System.out.println("Last Appointment: " + lastAppointment);
+                Log.d("SQL", "Last Appointment: " + lastAppointment);
+            }
+            cursor.close();
+            db.close();
             // Display to the user
             textViewTokenizedInput.setText(logMessage_textViewTokenizedInput2);
             //this was used before modifiedLabeledResult was added to code but it still works now (but it used to be logMessage_textViewLabeledResult)
             textViewLabeledResult.setText(logMessage_textViewLabeledResult2);
+            textViewLabeledResult.setText(lastAppointment);
 
             //i though i needed this line after creating the modified labeled result
             //this probably only outputs the two labels that were removed
@@ -415,7 +439,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Method to perform ONNX model inference
-    private List<int[]> performOnnxInference(long[][] inputIdsArray, long[][] attentionMaskArray) {
+    List<int[]> performOnnxInference(long[][] inputIdsArray, long[][] attentionMaskArray) {
         try {
             // Create ONNX tensors for input_ids and attention_mask
             OnnxTensor inputIdsTensor = OnnxTensor.createTensor(env, inputIdsArray);

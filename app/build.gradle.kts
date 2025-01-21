@@ -41,6 +41,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    testImplementation("org.robolectric:robolectric:4.10.3")
+    testImplementation("org.mockito:mockito-core:5.5.0")
+    testImplementation("org.mockito:mockito-inline:5.5.0")
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.20.0")
     implementation("ai.djl.huggingface:tokenizers:0.21.0")
 }

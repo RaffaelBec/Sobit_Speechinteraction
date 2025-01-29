@@ -1,0 +1,23 @@
+{"time":"2024-11-05T15:52:35.2538077+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-05T15:52:35.2538077+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241105_155235-okjm8mae\\logs\\debug-core.log"}
+{"time":"2024-11-05T15:52:35.3896653+01:00","level":"INFO","msg":"created new stream","id":"okjm8mae"}
+{"time":"2024-11-05T15:52:35.3902043+01:00","level":"INFO","msg":"stream: started","id":"okjm8mae"}
+{"time":"2024-11-05T15:52:35.3902043+01:00","level":"INFO","msg":"sender: started","stream_id":"okjm8mae"}
+{"time":"2024-11-05T15:52:35.3902043+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"okjm8mae"}}
+{"time":"2024-11-05T15:52:35.3902043+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"okjm8mae"}}
+{"time":"2024-11-05T15:52:35.7496014+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-05T15:55:29.047589+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T15:55:29.0604003+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T15:55:29.3059564+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T15:55:29.3186048+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T15:55:30.1766673+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T15:55:30.1875382+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T15:55:30.1947358+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-05T15:55:30.197502+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-05T15:55:31.202786+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8082256},{"desc":"uploading config.yaml","runtime_seconds":0.6084377,"progress":"10.1KB/10.1KB"}],"total_operations":2}}
+{"time":"2024-11-05T15:55:32.6862674+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-05T15:55:34.2000704+01:00","level":"INFO","msg":"stream: closing","id":"okjm8mae"}
+{"time":"2024-11-05T15:55:34.2000704+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"okjm8mae"}}
+{"time":"2024-11-05T15:55:34.2000704+01:00","level":"INFO","msg":"sender: closed","stream_id":"okjm8mae"}
+{"time":"2024-11-05T15:55:34.2000704+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"okjm8mae"}}
+{"time":"2024-11-05T15:55:34.2006515+01:00","level":"INFO","msg":"stream: closed","id":"okjm8mae"}

@@ -1,0 +1,28 @@
+{"time":"2024-11-21T14:16:52.7291531+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-21T14:16:52.7291531+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241121_141652-wiy970qr\\logs\\debug-core.log"}
+{"time":"2024-11-21T14:16:52.8488584+01:00","level":"INFO","msg":"created new stream","id":"wiy970qr"}
+{"time":"2024-11-21T14:16:52.849396+01:00","level":"INFO","msg":"stream: started","id":"wiy970qr"}
+{"time":"2024-11-21T14:16:52.8495706+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"wiy970qr"}}
+{"time":"2024-11-21T14:16:52.8500858+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"wiy970qr"}}
+{"time":"2024-11-21T14:16:52.8508647+01:00","level":"INFO","msg":"sender: started","stream_id":"wiy970qr"}
+{"time":"2024-11-21T14:16:53.2276269+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-21T14:17:03.2288694+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-21T14:23:28.6374843+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T14:23:28.6594222+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T14:23:28.9572908+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T14:23:28.9715148+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T14:23:30.2621654+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T14:23:30.2754281+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T14:23:30.4706643+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T14:23:30.4899879+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T14:23:30.669939+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T14:23:30.694128+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T14:23:30.7039163+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-21T14:23:30.707761+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-21T14:23:31.7147383+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8009553}],"total_operations":1}}
+{"time":"2024-11-21T14:23:34.4016672+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-21T14:23:35.9014649+01:00","level":"INFO","msg":"stream: closing","id":"wiy970qr"}
+{"time":"2024-11-21T14:23:35.9014649+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"wiy970qr"}}
+{"time":"2024-11-21T14:23:35.9014649+01:00","level":"INFO","msg":"sender: closed","stream_id":"wiy970qr"}
+{"time":"2024-11-21T14:23:35.9014649+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"wiy970qr"}}
+{"time":"2024-11-21T14:23:35.9019805+01:00","level":"INFO","msg":"stream: closed","id":"wiy970qr"}

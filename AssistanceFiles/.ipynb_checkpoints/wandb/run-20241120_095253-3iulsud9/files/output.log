@@ -1,0 +1,38 @@
+100%|██████████| 145/145 [06:14<00:00,  2.58s/it]
+{'loss': 1.9449, 'grad_norm': 5.088522911071777, 'learning_rate': 3.724137931034483e-05, 'epoch': 0.34}
+{'loss': 1.1673, 'grad_norm': 4.371243000030518, 'learning_rate': 3.4482758620689657e-05, 'epoch': 0.69}
+100%|██████████| 4/4 [00:01<00:00,  3.41it/s]
+{'eval_loss': 0.5231273174285889, 'eval_precision': 0.6403508771929824, 'eval_recall': 0.776595744680851, 'eval_f1': 0.7019230769230769, 'eval_accuracy': 0.812206572769953, 'eval_runtime': 1.8458, 'eval_samples_per_second': 14.086, 'eval_steps_per_second': 2.167, 'epoch': 1.0}
+{'loss': 0.7517, 'grad_norm': 3.4638874530792236, 'learning_rate': 3.172413793103448e-05, 'epoch': 1.03}
+{'loss': 0.4506, 'grad_norm': 2.9119741916656494, 'learning_rate': 2.8965517241379313e-05, 'epoch': 1.38}
+{'loss': 0.4809, 'grad_norm': 4.360971927642822, 'learning_rate': 2.620689655172414e-05, 'epoch': 1.72}
+{'eval_loss': 0.23234698176383972, 'eval_precision': 0.8, 'eval_recall': 0.8936170212765957, 'eval_f1': 0.8442211055276382, 'eval_accuracy': 0.92018779342723, 'eval_runtime': 1.5589, 'eval_samples_per_second': 16.678, 'eval_steps_per_second': 2.566, 'epoch': 2.0}
+{'loss': 0.2814, 'grad_norm': 1.5930789709091187, 'learning_rate': 2.3448275862068967e-05, 'epoch': 2.07}
+{'loss': 0.2729, 'grad_norm': 3.230976104736328, 'learning_rate': 2.0689655172413797e-05, 'epoch': 2.41}
+{'loss': 0.245, 'grad_norm': 1.1933424472808838, 'learning_rate': 1.7931034482758623e-05, 'epoch': 2.76}
+{'eval_loss': 0.1519131362438202, 'eval_precision': 0.8775510204081632, 'eval_recall': 0.9148936170212766, 'eval_f1': 0.8958333333333333, 'eval_accuracy': 0.9530516431924883, 'eval_runtime': 2.003, 'eval_samples_per_second': 12.98, 'eval_steps_per_second': 1.997, 'epoch': 3.0}
+{'loss': 0.1802, 'grad_norm': 1.8247753381729126, 'learning_rate': 1.5172413793103448e-05, 'epoch': 3.1}
+{'loss': 0.1452, 'grad_norm': 2.50825572013855, 'learning_rate': 1.2413793103448277e-05, 'epoch': 3.45}
+{'loss': 0.1559, 'grad_norm': 2.516340494155884, 'learning_rate': 9.655172413793105e-06, 'epoch': 3.79}
+{'eval_loss': 0.1435638964176178, 'eval_precision': 0.86, 'eval_recall': 0.9148936170212766, 'eval_f1': 0.8865979381443299, 'eval_accuracy': 0.9530516431924883, 'eval_runtime': 1.823, 'eval_samples_per_second': 14.263, 'eval_steps_per_second': 2.194, 'epoch': 4.0}
+{'loss': 0.1905, 'grad_norm': 1.4207754135131836, 'learning_rate': 6.896551724137932e-06, 'epoch': 4.14}
+{'loss': 0.1011, 'grad_norm': 1.618506908416748, 'learning_rate': 4.137931034482759e-06, 'epoch': 4.48}
+{'loss': 0.1064, 'grad_norm': 2.759568929672241, 'learning_rate': 1.3793103448275862e-06, 'epoch': 4.83}
+{'eval_loss': 0.12871839106082916, 'eval_precision': 0.8877551020408163, 'eval_recall': 0.925531914893617, 'eval_f1': 0.90625, 'eval_accuracy': 0.9624413145539906, 'eval_runtime': 1.414, 'eval_samples_per_second': 18.387, 'eval_steps_per_second': 2.829, 'epoch': 5.0}
+{'train_runtime': 375.9159, 'train_samples_per_second': 2.993, 'train_steps_per_second': 0.386, 'train_loss': 0.45006508292823, 'epoch': 5.0}
+[('welchen', 'O'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('frau', 'B-Person'), ('fel', 'I-Person'), ('##ber', 'I-Person')]
+[('ruf', 'B-Action'), ('frau', 'B-Person'), ('heller', 'I-Person'), ('an', 'O'), (',', 'O'), ('um', 'O'), ('die', 'O'), ('einsatz', 'B-Task'), ('##det', 'B-Task'), ('##ails', 'B-Task'), ('zu', 'O'), ('besprechen', 'O')]
+[('welchen', 'O'), ('einsatz', 'B-Task'), ('habe', 'O'), ('ich', 'O'), ('um', 'O'), ('18', 'B-Time'), (':', 'B-Time'), ('00', 'B-Time')]
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-german-dbmdz-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+100%|██████████| 35/35 [04:42<00:00,  8.08s/it]
+100%|██████████| 4/4 [00:01<00:00,  3.32it/s]
+{'eval_loss': 1.5459849834442139, 'eval_precision': 0.5490196078431373, 'eval_recall': 0.2978723404255319, 'eval_f1': 0.38620689655172413, 'eval_accuracy': 0.4835680751173709, 'eval_runtime': 1.836, 'eval_samples_per_second': 14.162, 'eval_steps_per_second': 2.179, 'epoch': 0.97}
+{'loss': 1.8471, 'grad_norm': 2.859811782836914, 'learning_rate': 2.8571428571428574e-05, 'epoch': 1.38}
+{'eval_loss': 0.9683548808097839, 'eval_precision': 0.616822429906542, 'eval_recall': 0.7021276595744681, 'eval_f1': 0.6567164179104477, 'eval_accuracy': 0.7699530516431925, 'eval_runtime': 1.7458, 'eval_samples_per_second': 14.893, 'eval_steps_per_second': 2.291, 'epoch': 1.93}
+{'loss': 1.0099, 'grad_norm': 2.272597551345825, 'learning_rate': 1.7142857142857142e-05, 'epoch': 2.76}
+{'eval_loss': 0.6767212748527527, 'eval_precision': 0.7037037037037037, 'eval_recall': 0.8085106382978723, 'eval_f1': 0.7524752475247524, 'eval_accuracy': 0.8356807511737089, 'eval_runtime': 1.62, 'eval_samples_per_second': 16.049, 'eval_steps_per_second': 2.469, 'epoch': 2.9}
+{'eval_loss': 0.5299163460731506, 'eval_precision': 0.7452830188679245, 'eval_recall': 0.8404255319148937, 'eval_f1': 0.79, 'eval_accuracy': 0.8779342723004695, 'eval_runtime': 1.5658, 'eval_samples_per_second': 16.605, 'eval_steps_per_second': 2.555, 'epoch': 4.0}
+{'loss': 0.6495, 'grad_norm': 1.8867442607879639, 'learning_rate': 5.7142857142857145e-06, 'epoch': 4.14}
+{'eval_loss': 0.5016384720802307, 'eval_precision': 0.7452830188679245, 'eval_recall': 0.8404255319148937, 'eval_f1': 0.79, 'eval_accuracy': 0.8779342723004695, 'eval_runtime': 1.6102, 'eval_samples_per_second': 16.147, 'eval_steps_per_second': 2.484, 'epoch': 4.83}
+{'train_runtime': 282.6485, 'train_samples_per_second': 3.98, 'train_steps_per_second': 0.124, 'train_loss': 1.0785419532230922, 'epoch': 4.83}

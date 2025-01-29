@@ -1,0 +1,19 @@
+ 25%|██▌       | 26/104 [00:45<01:58,  1.52s/c:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+{'loss': 1.724, 'grad_norm': 6.49820613861084, 'learning_rate': 3.615384615384616e-05, 'epoch': 0.38}
+{'loss': 1.1589, 'grad_norm': 8.88161849975586, 'learning_rate': 3.230769230769231e-05, 'epoch': 0.77}
+  _warn_prf(average, modifier, msg_start, len(result))
+100%|██████████| 104/104 [02:52<00:00,  1.66s/it]
+                                             
+{'eval_loss': 0.5486257672309875, 'eval_precision': 0.8666666666666667, 'eval_recall': 0.8125, 'eval_f1': 0.8387096774193549, 'eval_accuracy': 0.8571428571428571, 'eval_runtime': 0.637, 'eval_samples_per_second': 9.419, 'eval_steps_per_second': 3.14, 'epoch': 1.0}
+{'loss': 0.5639, 'grad_norm': 6.025137424468994, 'learning_rate': 2.8461538461538464e-05, 'epoch': 1.15}
+{'loss': 0.3602, 'grad_norm': 3.5976667404174805, 'learning_rate': 2.461538461538462e-05, 'epoch': 1.54}
+{'loss': 0.2704, 'grad_norm': 3.443976640701294, 'learning_rate': 2.0769230769230772e-05, 'epoch': 1.92}
+{'eval_loss': 0.403438001871109, 'eval_precision': 0.8125, 'eval_recall': 0.8125, 'eval_f1': 0.8125, 'eval_accuracy': 0.8809523809523809, 'eval_runtime': 0.4734, 'eval_samples_per_second': 12.675, 'eval_steps_per_second': 4.225, 'epoch': 2.0}
+{'loss': 0.1791, 'grad_norm': 3.5760254859924316, 'learning_rate': 1.6923076923076924e-05, 'epoch': 2.31}
+{'loss': 0.1442, 'grad_norm': 2.3956692218780518, 'learning_rate': 1.3076923076923078e-05, 'epoch': 2.69}
+{'eval_loss': 0.39215555787086487, 'eval_precision': 0.8125, 'eval_recall': 0.8125, 'eval_f1': 0.8125, 'eval_accuracy': 0.8809523809523809, 'eval_runtime': 0.6001, 'eval_samples_per_second': 9.998, 'eval_steps_per_second': 3.333, 'epoch': 3.0}
+{'loss': 0.1157, 'grad_norm': 1.1800223588943481, 'learning_rate': 9.230769230769232e-06, 'epoch': 3.08}
+{'loss': 0.083, 'grad_norm': 2.0699334144592285, 'learning_rate': 5.384615384615385e-06, 'epoch': 3.46}
+{'loss': 0.0511, 'grad_norm': 3.559784412384033, 'learning_rate': 1.5384615384615387e-06, 'epoch': 3.85}
+{'eval_loss': 0.42554259300231934, 'eval_precision': 0.75, 'eval_recall': 0.75, 'eval_f1': 0.75, 'eval_accuracy': 0.8571428571428571, 'eval_runtime': 0.4266, 'eval_samples_per_second': 14.063, 'eval_steps_per_second': 4.688, 'epoch': 4.0}
+{'train_runtime': 173.8577, 'train_samples_per_second': 2.393, 'train_steps_per_second': 0.598, 'train_loss': 0.45525716417110884, 'epoch': 4.0}

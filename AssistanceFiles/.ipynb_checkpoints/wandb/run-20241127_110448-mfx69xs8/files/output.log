@@ -1,0 +1,32 @@
+100%|██████████| 215/215 [10:19<00:00,  2.88s/it]
+{'loss': 2.0198, 'grad_norm': 13.658592224121094, 'learning_rate': 3.976470588235294e-05, 'epoch': 0.23}
+{'loss': 1.3569, 'grad_norm': 7.175230026245117, 'learning_rate': 3.952941176470589e-05, 'epoch': 0.47}
+{'loss': 0.9322, 'grad_norm': 4.039580345153809, 'learning_rate': 3.929411764705882e-05, 'epoch': 0.7}
+{'loss': 0.5484, 'grad_norm': 4.021316051483154, 'learning_rate': 3.905882352941177e-05, 'epoch': 0.93}
+100%|██████████| 5/5 [00:02<00:00,  1.90it/s]
+{'eval_loss': 0.2652004361152649, 'eval_precision': 0.8837209302325582, 'eval_recall': 0.9090909090909091, 'eval_f1': 0.8962264150943396, 'eval_accuracy': 0.9338624338624338, 'eval_Action_f1': 0.9487179487179487, 'eval_Entity_f1': 0.9120879120879121, 'eval_Person_f1': 1.0, 'eval_Question_f1': 0.823529411764706, 'eval_Task_f1': 0.7586206896551724, 'eval_Time_f1': 0.7878787878787878, 'eval_overall_precision': 0.8837209302325582, 'eval_overall_recall': 0.9090909090909091, 'eval_overall_f1': 0.8962264150943396, 'eval_overall_accuracy': 0.9338624338624338, 'eval_runtime': 2.8917, 'eval_samples_per_second': 13.141, 'eval_steps_per_second': 1.729, 'epoch': 1.0}
+{'loss': 0.3602, 'grad_norm': 1.9976454973220825, 'learning_rate': 3.882352941176471e-05, 'epoch': 1.16}
+{'loss': 0.1966, 'grad_norm': 2.4194154739379883, 'learning_rate': 3.858823529411765e-05, 'epoch': 1.4}
+{'loss': 0.148, 'grad_norm': 3.3194236755371094, 'learning_rate': 3.8352941176470596e-05, 'epoch': 1.63}
+{'loss': 0.1716, 'grad_norm': 2.553788900375366, 'learning_rate': 3.811764705882353e-05, 'epoch': 1.86}
+{'eval_loss': 0.1591806262731552, 'eval_precision': 0.9245283018867925, 'eval_recall': 0.937799043062201, 'eval_f1': 0.9311163895486936, 'eval_accuracy': 0.9576719576719577, 'eval_Action_f1': 0.9610389610389611, 'eval_Entity_f1': 0.9180327868852458, 'eval_Person_f1': 0.9811320754716981, 'eval_Question_f1': 1.0, 'eval_Task_f1': 0.8148148148148148, 'eval_Time_f1': 0.923076923076923, 'eval_overall_precision': 0.9245283018867925, 'eval_overall_recall': 0.937799043062201, 'eval_overall_f1': 0.9311163895486936, 'eval_overall_accuracy': 0.9576719576719577, 'eval_runtime': 2.7761, 'eval_samples_per_second': 13.688, 'eval_steps_per_second': 1.801, 'epoch': 2.0}
+{'loss': 0.1785, 'grad_norm': 3.143526077270508, 'learning_rate': 3.7882352941176475e-05, 'epoch': 2.09}
+{'loss': 0.0502, 'grad_norm': 0.7886571884155273, 'learning_rate': 3.7647058823529415e-05, 'epoch': 2.33}
+{'loss': 0.0696, 'grad_norm': 1.4146167039871216, 'learning_rate': 3.7411764705882355e-05, 'epoch': 2.56}
+{'loss': 0.0644, 'grad_norm': 0.8427848815917969, 'learning_rate': 3.7176470588235295e-05, 'epoch': 2.79}
+{'eval_loss': 0.1373978853225708, 'eval_precision': 0.9478672985781991, 'eval_recall': 0.9569377990430622, 'eval_f1': 0.9523809523809523, 'eval_accuracy': 0.9735449735449735, 'eval_Action_f1': 0.9610389610389611, 'eval_Entity_f1': 0.9497206703910613, 'eval_Person_f1': 1.0, 'eval_Question_f1': 1.0, 'eval_Task_f1': 0.8275862068965517, 'eval_Time_f1': 0.955223880597015, 'eval_overall_precision': 0.9478672985781991, 'eval_overall_recall': 0.9569377990430622, 'eval_overall_f1': 0.9523809523809523, 'eval_overall_accuracy': 0.9735449735449735, 'eval_runtime': 3.5213, 'eval_samples_per_second': 10.791, 'eval_steps_per_second': 1.42, 'epoch': 3.0}
+{'loss': 0.0731, 'grad_norm': 0.3879362940788269, 'learning_rate': 3.694117647058824e-05, 'epoch': 3.02}
+{'loss': 0.0318, 'grad_norm': 1.8130685091018677, 'learning_rate': 3.6705882352941175e-05, 'epoch': 3.26}
+{'loss': 0.0221, 'grad_norm': 1.193758249282837, 'learning_rate': 3.647058823529412e-05, 'epoch': 3.49}
+{'loss': 0.0169, 'grad_norm': 0.15001198649406433, 'learning_rate': 3.623529411764706e-05, 'epoch': 3.72}
+{'loss': 0.0354, 'grad_norm': 4.420820236206055, 'learning_rate': 3.6e-05, 'epoch': 3.95}
+{'eval_loss': 0.14201690256595612, 'eval_precision': 0.9345794392523364, 'eval_recall': 0.9569377990430622, 'eval_f1': 0.9456264775413711, 'eval_accuracy': 0.9629629629629629, 'eval_Action_f1': 0.9135802469135802, 'eval_Entity_f1': 0.9608938547486033, 'eval_Person_f1': 1.0, 'eval_Question_f1': 1.0, 'eval_Task_f1': 0.896551724137931, 'eval_Time_f1': 0.9090909090909091, 'eval_overall_precision': 0.9345794392523364, 'eval_overall_recall': 0.9569377990430622, 'eval_overall_f1': 0.9456264775413711, 'eval_overall_accuracy': 0.9629629629629629, 'eval_runtime': 2.8752, 'eval_samples_per_second': 13.216, 'eval_steps_per_second': 1.739, 'epoch': 4.0}
+{'loss': 0.0129, 'grad_norm': 0.27207329869270325, 'learning_rate': 3.576470588235295e-05, 'epoch': 4.19}
+{'loss': 0.0144, 'grad_norm': 1.4725544452667236, 'learning_rate': 3.552941176470588e-05, 'epoch': 4.42}
+{'loss': 0.0127, 'grad_norm': 1.2435407638549805, 'learning_rate': 3.529411764705883e-05, 'epoch': 4.65}
+{'loss': 0.0072, 'grad_norm': 0.5045356750488281, 'learning_rate': 3.505882352941177e-05, 'epoch': 4.88}
+{'eval_loss': 0.15337303280830383, 'eval_precision': 0.9481132075471698, 'eval_recall': 0.9617224880382775, 'eval_f1': 0.9548693586698338, 'eval_accuracy': 0.9708994708994709, 'eval_Action_f1': 0.9610389610389611, 'eval_Entity_f1': 0.9555555555555556, 'eval_Person_f1': 1.0, 'eval_Question_f1': 1.0, 'eval_Task_f1': 0.896551724137931, 'eval_Time_f1': 0.9253731343283583, 'eval_overall_precision': 0.9481132075471698, 'eval_overall_recall': 0.9617224880382775, 'eval_overall_f1': 0.9548693586698338, 'eval_overall_accuracy': 0.9708994708994709, 'eval_runtime': 3.5351, 'eval_samples_per_second': 10.749, 'eval_steps_per_second': 1.414, 'epoch': 5.0}
+{'train_runtime': 619.9942, 'train_samples_per_second': 2.742, 'train_steps_per_second': 0.347, 'train_loss': 0.29464712156805883, 'epoch': 5.0}
+[('welchen', 'O'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('frau', 'B-Person'), ('fel', 'I-Person'), ('##ber', 'I-Person')]
+(['starte', 'einen', 'anruf'], ['B-Action', 'O', 'B-Action'])
+(['wie', 'viele', 'patienten', 'hab', 'ich', 'betreut'], ['B-Question', 'I-Question', 'B-Person', 'O', 'O', 'B-Entity'])

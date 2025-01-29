@@ -1,0 +1,27 @@
+ 20%|██        | 29/145 [01:52<07:08,  3.69s/c:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+{'loss': 1.929, 'grad_norm': 4.93643856048584, 'learning_rate': 3.724137931034483e-05, 'epoch': 0.34}
+{'loss': 1.171, 'grad_norm': 4.205031394958496, 'learning_rate': 3.4482758620689657e-05, 'epoch': 0.69}
+  _warn_prf(average, modifier, msg_start, len(result))
+100%|██████████| 145/145 [09:40<00:00,  4.01s/it]
+100%|██████████| 4/4 [00:01<00:00,  2.03it/s]
+{'eval_loss': 0.5688835382461548, 'eval_overall_precision': 0.6779661016949152, 'eval_overall_recall': 0.7547169811320755, 'eval_overall_f1': 0.7142857142857143, 'eval_overall_accuracy': 0.8311688311688312, 'eval_Action_f1': 0.8936170212765957, 'eval_Distance_f1': 0.0, 'eval_Entity_f1': 0.45070422535211263, 'eval_Person_f1': 0.9142857142857143, 'eval_Task_f1': 0.8500000000000001, 'eval_Time_f1': 0.7142857142857143, 'eval_runtime': 2.1029, 'eval_samples_per_second': 12.364, 'eval_steps_per_second': 1.902, 'epoch': 1.0}
+{'loss': 0.6963, 'grad_norm': 3.2157742977142334, 'learning_rate': 3.172413793103448e-05, 'epoch': 1.03}
+{'loss': 0.3946, 'grad_norm': 2.6993041038513184, 'learning_rate': 2.8965517241379313e-05, 'epoch': 1.38}
+{'loss': 0.3234, 'grad_norm': 1.9005229473114014, 'learning_rate': 2.620689655172414e-05, 'epoch': 1.72}
+{'eval_loss': 0.388286292552948, 'eval_overall_precision': 0.8073394495412844, 'eval_overall_recall': 0.8301886792452831, 'eval_overall_f1': 0.8186046511627908, 'eval_overall_accuracy': 0.8831168831168831, 'eval_Action_f1': 0.9130434782608695, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.6000000000000001, 'eval_Person_f1': 1.0, 'eval_Task_f1': 0.8095238095238095, 'eval_Time_f1': 0.888888888888889, 'eval_runtime': 5.5244, 'eval_samples_per_second': 4.706, 'eval_steps_per_second': 0.724, 'epoch': 2.0}
+{'loss': 0.2009, 'grad_norm': 1.956451177597046, 'learning_rate': 2.3448275862068967e-05, 'epoch': 2.07}
+{'loss': 0.1634, 'grad_norm': 3.1975820064544678, 'learning_rate': 2.0689655172413797e-05, 'epoch': 2.41}
+{'loss': 0.1411, 'grad_norm': 2.7170894145965576, 'learning_rate': 1.7931034482758623e-05, 'epoch': 2.76}
+{'eval_loss': 0.35801082849502563, 'eval_overall_precision': 0.8301886792452831, 'eval_overall_recall': 0.8301886792452831, 'eval_overall_f1': 0.8301886792452831, 'eval_overall_accuracy': 0.8787878787878788, 'eval_Action_f1': 0.8636363636363636, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.6333333333333334, 'eval_Person_f1': 1.0, 'eval_Task_f1': 0.8780487804878048, 'eval_Time_f1': 0.888888888888889, 'eval_runtime': 2.3465, 'eval_samples_per_second': 11.08, 'eval_steps_per_second': 1.705, 'epoch': 3.0}
+{'loss': 0.1409, 'grad_norm': 0.7525405287742615, 'learning_rate': 1.5172413793103448e-05, 'epoch': 3.1}
+{'loss': 0.0973, 'grad_norm': 1.9949010610580444, 'learning_rate': 1.2413793103448277e-05, 'epoch': 3.45}
+{'loss': 0.0957, 'grad_norm': 1.3868783712387085, 'learning_rate': 9.655172413793105e-06, 'epoch': 3.79}
+{'eval_loss': 0.3638986349105835, 'eval_overall_precision': 0.8461538461538461, 'eval_overall_recall': 0.8301886792452831, 'eval_overall_f1': 0.8380952380952382, 'eval_overall_accuracy': 0.8874458874458875, 'eval_Action_f1': 0.8636363636363636, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.6551724137931035, 'eval_Person_f1': 1.0, 'eval_Task_f1': 0.8780487804878048, 'eval_Time_f1': 0.888888888888889, 'eval_runtime': 2.2558, 'eval_samples_per_second': 11.526, 'eval_steps_per_second': 1.773, 'epoch': 4.0}
+{'loss': 0.1217, 'grad_norm': 1.6362334489822388, 'learning_rate': 6.896551724137932e-06, 'epoch': 4.14}
+{'loss': 0.0555, 'grad_norm': 1.2587791681289673, 'learning_rate': 4.137931034482759e-06, 'epoch': 4.48}
+{'loss': 0.067, 'grad_norm': 0.38508540391921997, 'learning_rate': 1.3793103448275862e-06, 'epoch': 4.83}
+{'eval_loss': 0.37863990664482117, 'eval_overall_precision': 0.8380952380952381, 'eval_overall_recall': 0.8301886792452831, 'eval_overall_f1': 0.8341232227488152, 'eval_overall_accuracy': 0.8831168831168831, 'eval_Action_f1': 0.8636363636363636, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.6440677966101694, 'eval_Person_f1': 1.0, 'eval_Task_f1': 0.8780487804878048, 'eval_Time_f1': 0.888888888888889, 'eval_runtime': 1.8451, 'eval_samples_per_second': 14.091, 'eval_steps_per_second': 2.168, 'epoch': 5.0}
+{'train_runtime': 583.3533, 'train_samples_per_second': 1.929, 'train_steps_per_second': 0.249, 'train_loss': 0.38775634272345183, 'epoch': 5.0}
+[('welchen', 'O'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('frau', 'B-Person'), ('fel', 'I-Person'), ('##ber', 'I-Person')]
+[('sage', 'B-Action'), ('mir', 'O'), ('den', 'O'), ('letzten', 'B-Entity'), ('aufgezeichnet', 'B-Entity'), ('##en', 'I-Entity'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('von', 'O'), ('zel', 'B-Person'), ('##ena', 'B-Person'), ('mark', 'I-Person'), ('##ano', 'I-Person'), ('##vic', 'I-Person')]
+[('trage', 'B-Action'), ('fur', 'O'), ('den', 'O'), ('patienten', 'B-Person'), ('66', 'B-Entity'), ('/', 'B-Entity'), ('120', 'B-Entity'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('ein', 'O')]

@@ -1,0 +1,34 @@
+ 20%|██        | 43/215 [01:50<06:22,  2.22s/c:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+{'loss': 2.355, 'grad_norm': 13.183304786682129, 'learning_rate': 3.976470588235294e-05, 'epoch': 0.23}
+{'loss': 1.6304, 'grad_norm': 5.041360378265381, 'learning_rate': 3.952941176470589e-05, 'epoch': 0.47}
+{'loss': 1.0929, 'grad_norm': 28.620750427246094, 'learning_rate': 3.929411764705882e-05, 'epoch': 0.7}
+{'loss': 0.5507, 'grad_norm': 3.4088642597198486, 'learning_rate': 3.905882352941177e-05, 'epoch': 0.93}
+  _warn_prf(average, modifier, msg_start, len(result))
+100%|██████████| 215/215 [09:45<00:00,  2.72s/it]
+100%|██████████| 5/5 [00:02<00:00,  1.76it/s]
+{'eval_loss': 0.43157386779785156, 'eval_precision': 0.8349056603773585, 'eval_recall': 0.8634146341463415, 'eval_f1': 0.8489208633093525, 'eval_accuracy': 0.8950437317784257, 'eval_Action_f1': 0.9361702127659574, 'eval_Distance_f1': 0.0, 'eval_Entity_f1': 0.8714285714285713, 'eval_Person_f1': 0.9135802469135802, 'eval_Question_f1': 0.75, 'eval_Task_f1': 0.8666666666666666, 'eval_Time_f1': 0.6666666666666667, 'eval_overall_precision': 0.8349056603773585, 'eval_overall_recall': 0.8634146341463415, 'eval_overall_f1': 0.8489208633093525, 'eval_overall_accuracy': 0.8950437317784257, 'eval_runtime': 2.5793, 'eval_samples_per_second': 14.733, 'eval_steps_per_second': 1.938, 'epoch': 1.0}
+{'loss': 0.3546, 'grad_norm': 3.0511934757232666, 'learning_rate': 3.882352941176471e-05, 'epoch': 1.16}
+{'loss': 0.2336, 'grad_norm': 2.661177635192871, 'learning_rate': 3.858823529411765e-05, 'epoch': 1.4}
+{'loss': 0.2191, 'grad_norm': 3.0417709350585938, 'learning_rate': 3.8352941176470596e-05, 'epoch': 1.63}
+{'loss': 0.1898, 'grad_norm': 2.8168060779571533, 'learning_rate': 3.811764705882353e-05, 'epoch': 1.86}
+{'eval_loss': 0.15083293616771698, 'eval_precision': 0.9362745098039216, 'eval_recall': 0.9317073170731708, 'eval_f1': 0.9339853300733496, 'eval_accuracy': 0.9591836734693877, 'eval_Action_f1': 0.9574468085106383, 'eval_Distance_f1': 0.0, 'eval_Entity_f1': 0.9436619718309859, 'eval_Person_f1': 0.9610389610389611, 'eval_Question_f1': 1.0, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9056603773584906, 'eval_overall_precision': 0.9362745098039216, 'eval_overall_recall': 0.9317073170731708, 'eval_overall_f1': 0.9339853300733496, 'eval_overall_accuracy': 0.9591836734693877, 'eval_runtime': 2.4893, 'eval_samples_per_second': 15.265, 'eval_steps_per_second': 2.009, 'epoch': 2.0}
+{'loss': 0.1702, 'grad_norm': 0.6343058347702026, 'learning_rate': 3.7882352941176475e-05, 'epoch': 2.09}
+{'loss': 0.1009, 'grad_norm': 0.8148692846298218, 'learning_rate': 3.7647058823529415e-05, 'epoch': 2.33}
+{'loss': 0.0797, 'grad_norm': 2.8014702796936035, 'learning_rate': 3.7411764705882355e-05, 'epoch': 2.56}
+{'loss': 0.0897, 'grad_norm': 3.5590407848358154, 'learning_rate': 3.7176470588235295e-05, 'epoch': 2.79}
+{'eval_loss': 0.0740453377366066, 'eval_precision': 0.9615384615384616, 'eval_recall': 0.975609756097561, 'eval_f1': 0.9685230024213075, 'eval_accuracy': 0.9795918367346939, 'eval_Action_f1': 0.967741935483871, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.9852941176470589, 'eval_Person_f1': 0.975, 'eval_Question_f1': 1.0, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.888888888888889, 'eval_overall_precision': 0.9615384615384616, 'eval_overall_recall': 0.975609756097561, 'eval_overall_f1': 0.9685230024213075, 'eval_overall_accuracy': 0.9795918367346939, 'eval_runtime': 2.9559, 'eval_samples_per_second': 12.856, 'eval_steps_per_second': 1.692, 'epoch': 3.0}
+{'loss': 0.0317, 'grad_norm': 1.791301965713501, 'learning_rate': 3.694117647058824e-05, 'epoch': 3.02}
+{'loss': 0.0227, 'grad_norm': 0.6773582696914673, 'learning_rate': 3.6705882352941175e-05, 'epoch': 3.26}
+{'loss': 0.0605, 'grad_norm': 1.5969195365905762, 'learning_rate': 3.647058823529412e-05, 'epoch': 3.49}
+{'loss': 0.0457, 'grad_norm': 0.8653475046157837, 'learning_rate': 3.623529411764706e-05, 'epoch': 3.72}
+{'loss': 0.0565, 'grad_norm': 0.9628217816352844, 'learning_rate': 3.6e-05, 'epoch': 3.95}
+{'eval_loss': 0.06647288799285889, 'eval_precision': 0.9852941176470589, 'eval_recall': 0.9804878048780488, 'eval_f1': 0.9828850855745721, 'eval_accuracy': 0.9854227405247813, 'eval_Action_f1': 0.968421052631579, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.9850746268656716, 'eval_Person_f1': 1.0, 'eval_Question_f1': 1.0, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9615384615384616, 'eval_overall_precision': 0.9852941176470589, 'eval_overall_recall': 0.9804878048780488, 'eval_overall_f1': 0.9828850855745721, 'eval_overall_accuracy': 0.9854227405247813, 'eval_runtime': 2.7361, 'eval_samples_per_second': 13.889, 'eval_steps_per_second': 1.827, 'epoch': 4.0}
+{'loss': 0.0176, 'grad_norm': 0.6973935961723328, 'learning_rate': 3.576470588235295e-05, 'epoch': 4.19}
+{'loss': 0.0191, 'grad_norm': 0.03932633996009827, 'learning_rate': 3.552941176470588e-05, 'epoch': 4.42}
+{'loss': 0.0123, 'grad_norm': 0.10501904785633087, 'learning_rate': 3.529411764705883e-05, 'epoch': 4.65}
+{'loss': 0.0203, 'grad_norm': 1.2181994915008545, 'learning_rate': 3.505882352941177e-05, 'epoch': 4.88}
+{'eval_loss': 0.08403794467449188, 'eval_precision': 0.970873786407767, 'eval_recall': 0.975609756097561, 'eval_f1': 0.97323600973236, 'eval_accuracy': 0.9854227405247813, 'eval_Action_f1': 0.9574468085106383, 'eval_Distance_f1': 1.0, 'eval_Entity_f1': 0.9852941176470589, 'eval_Person_f1': 1.0, 'eval_Question_f1': 1.0, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9056603773584906, 'eval_overall_precision': 0.970873786407767, 'eval_overall_recall': 0.975609756097561, 'eval_overall_f1': 0.97323600973236, 'eval_overall_accuracy': 0.9854227405247813, 'eval_runtime': 2.3864, 'eval_samples_per_second': 15.924, 'eval_steps_per_second': 2.095, 'epoch': 5.0}
+{'train_runtime': 587.4665, 'train_samples_per_second': 2.894, 'train_steps_per_second': 0.366, 'train_loss': 0.3421058640577072, 'epoch': 5.0}
+[('welchen', 'O'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('frau', 'B-Person'), ('fel', 'I-Person'), ('##ber', 'I-Person')]
+(['starte', 'einen', 'anruf'], ['B-Action', 'O', 'B-Action'])
+(['wie', 'viele', 'patienten', 'hab', 'ich', 'betreut'], ['B-Question', 'I-Question', 'B-Person', 'O', 'O', 'B-Entity'])

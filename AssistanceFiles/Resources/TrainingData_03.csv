@@ -1,0 +1,105 @@
+tokens;ner_tags
+Wie hoch ist der Blutdruck?
+Blutdruck bei der letzten Messung?
+Blutdruck bei der letzten Untersuchung war?
+Dokumentiere den Puls des Patienten
+Wie ist die Herzfrequenz
+Hat der Patient Bluthochdruck
+Wurde Bluthochdruck bei der Patientin festgestellt?
+Dokumentiere den Puls des Klienten
+Hat der Klient Bluthochdruck
+Wurde Bluthochdruck beim Klienten festgestellt
+Dokumentiere den Puls der Patientin
+Hat die Patientin Bluthochdruck
+Wurde Bluthochdruck bei der Patientin notiert
+Erfasse den aktuellen Sauerstoffsättigungswert mit X
+Welcher Wert wurde bei der Temperaturmessung aufgezeichnet
+Was war die letzte Temperatur
+Welche Temperatur wurde zuletzt gemessen
+Welche Temperatur wurde das letzte Mal gemessen
+Bitte Temperatur und Pulswerte eingeben
+Was war die Blutzucker-Messung heute früh
+Muss für die Patientin Blutzucker gemessen werden
+Muss für den Patienten Blutzucker gemessen werden
+Was war die Blutzucker-Messung gestern Abend
+Was war die Blutzucker-Messung bei der letzten Untersuchung
+Erfasse die Atmungsfrequenz
+Ist der Sauerstoffsättigung im Zielbereich
+Ist der Sauerstoffsättigung zu gering
+Schmerzempfinden auf einer Skala von 1 bis 10 ist heute 5
+Schmerzempfinden ist heute auf dem Wert 5
+Dokumentiere das Schmerzlevel
+Notiere, dass eine Verwirrung beobachtet wurde
+Notiere, dass es Anzeichen für Atemnot gibt
+Dokumentiere. Patient benötigt Hilfe beim Essen
+Dokumentiere. Patientin benötigt Hilfe beim Anziehen
+Dokumentiere. Klient benötigt Hilfe beim Einkaufen
+Notiere einen Arzttermin für nächste Woche
+Hat der Blutdruck einen Normalwert erreicht
+Wie ist die Einstufung des aktuellen Blutdrucks
+Ist der Blutdruck im Zielbereich
+Ist der Blutdruck zu hoch
+Ist der Blutdruck zu niedrig
+Befindet sich der Puls im Normalbereich
+Hat der Patient einen normalen Puls
+Ist der Pulswert des Patienten zu hoch
+Ist der Pulswert der Patientin zu niedrig
+Wie hoch sollte der Puls sein
+Was ist der Normalbereich des Blutdrucks
+Ist die erfasste Temperatur im Normalbereich
+Befindet sich die Atmungsfrequenz im Normalbereich
+Ist die Atmungsfrequenz erhöht
+Ist die Atemfrequenz zu niedrig
+Notiere die Gabe von Antibiotika
+Welche Notizen wurden zur Patientin erfasst
+Welche Notizen liegen zum Patienten vor
+Erfasse neue Symptome
+Hat der Patient neue Wünsche geäußert
+Hat die Patientin neue Wünsche geäußert
+Bitte Gesprächsnotiz hinzufügen
+Bitte allgemeine Beobachtungen ergänzen
+Frau Mixnix wünscht sich einen weiteren Termin pro Woche. Notiere das für mich.
+Herr Haberl wünscht sich einen weiteren Termin pro Woche. Notiere das für mich.
+Wie alt ist der Patient X
+Wie alt ist Frau Maier
+Was ist das Alter von Herrn Tester
+Füge einen neuen Kontakt von Frau Melher hinzu
+Der  Patient möchte einen neuen Notfallkontakt haben
+Erweitere die Kontaktliste der Patientin
+Neuen Notfallkontakt erfassen
+Neuen Kontakt erfassen
+Verständige den Notfallkontakt des Patienten
+Verständige den Notfallkontakt der Patientin
+Informiere Notfallkontakt
+Klient möchte keine keine Betreuung
+Pflegebesuch wurde vom Patienten abgesagt
+Die Patientin möchte heute nicht betreuut werden
+Klientin wollte die Türe nicht öffnen
+Herr Waehler braucht heute keine Hilfe
+Frau Ernst hat die Untersuchung verweigert
+Die Patientin hat die Pflegekraft abgelehnt
+Der Patient hat den Pfleger abgelehnt
+Die Klientin hat die Pflegerin abgelehnt
+Der Termin wurde aufgrund von Krankheit des Patienten abgesagt
+Der Termin wurde aufgrund von Krankheit des Mitarbeiters abgesagt
+Der Termin wurde aufgrund von Krankheit der Pflegekraft abgesagt
+Termin wurde vom Patienten abgesagt
+Datum für den letzten Sevicecheck des Autos erfassen. Heute
+Nächster Servicetermin wurde im Oktober 2025 vereinbart
+Letzter Servicetermin für das aktuelle Fahrzeug war heute
+Vergangenen Servicetermin für das Fahrzeug erfassen: heute
+Notiere das heutige Datum für den letzten ServiceCheck des Fahrzeugs
+Service für das Kennzeichen X wurde am 3.10.2024 durchgeführt
+Gibt es einen Termin für den nächsten Servicetermin
+Wann ist der nächste Servicetermin geplant
+Wann wurden das letzte Mal Vitalparameterwerte für die Kundin erfasst
+Wann war die letzte Messung der Vitalparameterwerte
+Wann war die letzte Messung der Werte
+Wann wurden das letzte Mal Werte der Patientin erfasst
+Wann wurden das letzte Mal Werte des Patienten erfasst
+Muss der Blutdruck laufend erfasst werden
+Soll der Blutzuckerwert laufend erfasst werden
+Muss ein Blutzuckerwert für Frau Koster erfasst werden
+Muss ein Blutzuckerwert für Herrn Zeppel erfasst werden
+Muss ein Blutzuckerwert für den Patienten erfasst werden
+Muss ein Blutzuckerwert für die Patientin aufgenommen werden

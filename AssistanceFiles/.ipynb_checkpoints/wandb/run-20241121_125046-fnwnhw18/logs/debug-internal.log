@@ -1,0 +1,28 @@
+{"time":"2024-11-21T12:50:46.6589526+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-21T12:50:46.6595097+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241121_125046-fnwnhw18\\logs\\debug-core.log"}
+{"time":"2024-11-21T12:50:46.7800129+01:00","level":"INFO","msg":"created new stream","id":"fnwnhw18"}
+{"time":"2024-11-21T12:50:46.7805728+01:00","level":"INFO","msg":"stream: started","id":"fnwnhw18"}
+{"time":"2024-11-21T12:50:46.7805728+01:00","level":"INFO","msg":"sender: started","stream_id":"fnwnhw18"}
+{"time":"2024-11-21T12:50:46.7805728+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fnwnhw18"}}
+{"time":"2024-11-21T12:50:46.7805728+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"fnwnhw18"}}
+{"time":"2024-11-21T12:50:47.1451381+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-21T12:50:57.1539778+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-21T13:01:43.1671591+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T13:01:43.2029093+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T13:01:43.6904949+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T13:01:43.7156401+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T13:01:45.9233779+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T13:01:45.9495909+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T13:01:46.2210618+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T13:01:46.2337869+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T13:01:46.3400943+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-21T13:01:46.3553288+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-21T13:01:46.3697736+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-21T13:01:46.3728314+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-21T13:01:47.3631998+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7216722}],"total_operations":1}}
+{"time":"2024-11-21T13:01:49.1118622+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-21T13:01:50.4407239+01:00","level":"INFO","msg":"stream: closing","id":"fnwnhw18"}
+{"time":"2024-11-21T13:01:50.4412403+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"fnwnhw18"}}
+{"time":"2024-11-21T13:01:50.4412403+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"fnwnhw18"}}
+{"time":"2024-11-21T13:01:50.4412912+01:00","level":"INFO","msg":"sender: closed","stream_id":"fnwnhw18"}
+{"time":"2024-11-21T13:01:50.4412912+01:00","level":"INFO","msg":"stream: closed","id":"fnwnhw18"}

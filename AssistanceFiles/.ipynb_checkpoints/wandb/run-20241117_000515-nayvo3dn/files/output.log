@@ -1,0 +1,30 @@
+                                                c:\Python312\Lib\site-packages\wandb\sdk\wandb_run.py:2386: UserWarning: Run (9e5cqd4s) is finished. The call to `_console_raw_callback` will be ignored. Please make sure that you are using an active run.
+  lambda data: self._console_raw_callback("stderr", data),
+                                             c:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+{'loss': 2.3448, 'grad_norm': 5.999637603759766, 'learning_rate': 9.285714285714288e-06, 'epoch': 0.36}
+{'loss': 1.9048, 'grad_norm': 6.2792649269104, 'learning_rate': 8.571428571428571e-06, 'epoch': 0.71}
+100%|██████████| 140/140 [09:26<00:00,  4.05s/it]
+100%|██████████| 4/4 [00:02<00:00,  1.49it/s]/it]
+100%|██████████| 4/4 [00:02<00:00,  1.62it/s]
+{'eval_loss': 1.5333765745162964, 'eval_precision': 0.56, 'eval_recall': 0.2692307692307692, 'eval_f1': 0.36363636363636365, 'eval_accuracy': 0.4608294930875576, 'eval_runtime': 2.9484, 'eval_samples_per_second': 8.479, 'eval_steps_per_second': 1.357, 'epoch': 1.0}
+{'loss': 1.6644, 'grad_norm': 6.648312568664551, 'learning_rate': 7.857142857142858e-06, 'epoch': 1.07}
+{'loss': 1.376, 'grad_norm': 5.121374607086182, 'learning_rate': 7.1428571428571436e-06, 'epoch': 1.43}
+{'loss': 1.1674, 'grad_norm': 4.621236801147461, 'learning_rate': 6.4285714285714295e-06, 'epoch': 1.79}
+{'eval_loss': 0.9397597312927246, 'eval_precision': 0.7425742574257426, 'eval_recall': 0.7211538461538461, 'eval_f1': 0.7317073170731707, 'eval_accuracy': 0.7926267281105991, 'eval_runtime': 5.1577, 'eval_samples_per_second': 4.847, 'eval_steps_per_second': 0.776, 'epoch': 2.0}
+{'loss': 1.001, 'grad_norm': 4.449344158172607, 'learning_rate': 5.7142857142857145e-06, 'epoch': 2.14}
+{'loss': 0.8769, 'grad_norm': 4.374251365661621, 'learning_rate': 5e-06, 'epoch': 2.5}
+{'loss': 0.758, 'grad_norm': 4.5487518310546875, 'learning_rate': 4.2857142857142855e-06, 'epoch': 2.86}
+{'eval_loss': 0.6901047229766846, 'eval_precision': 0.7714285714285715, 'eval_recall': 0.7788461538461539, 'eval_f1': 0.7751196172248804, 'eval_accuracy': 0.8294930875576036, 'eval_runtime': 1.9768, 'eval_samples_per_second': 12.647, 'eval_steps_per_second': 2.023, 'epoch': 3.0}
+{'loss': 0.7286, 'grad_norm': 5.006023406982422, 'learning_rate': 3.5714285714285718e-06, 'epoch': 3.21}
+{'loss': 0.5987, 'grad_norm': 4.645883083343506, 'learning_rate': 2.8571428571428573e-06, 'epoch': 3.57}
+{'loss': 0.6139, 'grad_norm': 4.351792812347412, 'learning_rate': 2.1428571428571427e-06, 'epoch': 3.93}
+{'eval_loss': 0.5976005792617798, 'eval_precision': 0.7777777777777778, 'eval_recall': 0.8076923076923077, 'eval_f1': 0.7924528301886792, 'eval_accuracy': 0.8617511520737328, 'eval_runtime': 2.3204, 'eval_samples_per_second': 10.774, 'eval_steps_per_second': 1.724, 'epoch': 4.0}
+{'loss': 0.5827, 'grad_norm': 4.373230457305908, 'learning_rate': 1.4285714285714286e-06, 'epoch': 4.29}
+{'loss': 0.5372, 'grad_norm': 4.532292366027832, 'learning_rate': 7.142857142857143e-07, 'epoch': 4.64}
+{'loss': 0.5684, 'grad_norm': 10.31479549407959, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.5705103278160095, 'eval_precision': 0.7636363636363637, 'eval_recall': 0.8076923076923077, 'eval_f1': 0.7850467289719626, 'eval_accuracy': 0.8617511520737328, 'eval_runtime': 3.0511, 'eval_samples_per_second': 8.194, 'eval_steps_per_second': 1.311, 'epoch': 5.0}
+{'train_runtime': 569.5073, 'train_samples_per_second': 1.905, 'train_steps_per_second': 0.246, 'train_loss': 1.0516353266579763, 'epoch': 5.0}
+[('Welche', 'O'), ('##n', 'O'), ('Blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('Frau', 'B-Person'), ('Fel', 'I-Person'), ('##ber', 'I-Person')]
+[('Ruf', 'B-Action'), ('Frau', 'B-Person'), ('Müller', 'I-Person'), ('an', 'O'), (',', 'O'), ('um', 'O'), ('die', 'O'), ('Einsatz', 'B-Task'), ('##det', 'B-Task'), ('##ails', 'B-Task'), ('zu', 'O'), ('besp', 'O'), ('##rechen', 'O')]
+[('Trag', 'B-Action'), ('mir', 'O'), ('eine', 'O'), ('Pause', 'B-Entity'), ('für', 'O'), ('17', 'B-Time'), (':', 'B-Time'), ('22', 'B-Entity'), ('ein', 'O')]

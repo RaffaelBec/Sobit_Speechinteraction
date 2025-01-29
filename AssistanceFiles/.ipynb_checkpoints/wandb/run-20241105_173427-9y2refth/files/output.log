@@ -1,0 +1,31 @@
+ 25%|██▌       | 26/104 [00:44<02:54,  2.24s/c:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+{'loss': 1.7805, 'grad_norm': 5.813863754272461, 'learning_rate': 3.615384615384616e-05, 'epoch': 0.38}
+{'loss': 0.8772, 'grad_norm': 4.412527561187744, 'learning_rate': 3.230769230769231e-05, 'epoch': 0.77}
+  _warn_prf(average, modifier, msg_start, len(result))
+100%|██████████| 104/104 [03:17<00:00,  1.90s/it]
+100%|██████████| 2/2 [00:00<00:00, 10.99it/s]
+{'eval_loss': 0.6119452118873596, 'eval_precision': 0.8095238095238095, 'eval_recall': 0.8095238095238095, 'eval_f1': 0.8095238095238095, 'eval_accuracy': 0.8048780487804879, 'eval_runtime': 0.4482, 'eval_samples_per_second': 13.387, 'eval_steps_per_second': 4.462, 'epoch': 1.0}
+{'loss': 0.5183, 'grad_norm': 3.707812547683716, 'learning_rate': 2.8461538461538464e-05, 'epoch': 1.15}
+{'loss': 0.2985, 'grad_norm': 2.701111316680908, 'learning_rate': 2.461538461538462e-05, 'epoch': 1.54}
+{'loss': 0.2233, 'grad_norm': 3.8536107540130615, 'learning_rate': 2.0769230769230772e-05, 'epoch': 1.92}
+{'eval_loss': 0.3502156436443329, 'eval_precision': 0.9090909090909091, 'eval_recall': 0.9523809523809523, 'eval_f1': 0.9302325581395349, 'eval_accuracy': 0.926829268292683, 'eval_runtime': 0.3686, 'eval_samples_per_second': 16.277, 'eval_steps_per_second': 5.426, 'epoch': 2.0}
+{'loss': 0.1645, 'grad_norm': 4.590841770172119, 'learning_rate': 1.6923076923076924e-05, 'epoch': 2.31}
+{'loss': 0.0916, 'grad_norm': 4.663431644439697, 'learning_rate': 1.3076923076923078e-05, 'epoch': 2.69}
+{'eval_loss': 0.4403253495693207, 'eval_precision': 0.8333333333333334, 'eval_recall': 0.9523809523809523, 'eval_f1': 0.888888888888889, 'eval_accuracy': 0.8780487804878049, 'eval_runtime': 0.46, 'eval_samples_per_second': 13.045, 'eval_steps_per_second': 4.348, 'epoch': 3.0}
+{'loss': 0.1157, 'grad_norm': 2.222386598587036, 'learning_rate': 9.230769230769232e-06, 'epoch': 3.08}
+{'loss': 0.0822, 'grad_norm': 0.9818885922431946, 'learning_rate': 5.384615384615385e-06, 'epoch': 3.46}
+{'loss': 0.0577, 'grad_norm': 1.3668235540390015, 'learning_rate': 1.5384615384615387e-06, 'epoch': 3.85}
+{'eval_loss': 0.3527930974960327, 'eval_precision': 0.9090909090909091, 'eval_recall': 0.9523809523809523, 'eval_f1': 0.9302325581395349, 'eval_accuracy': 0.926829268292683, 'eval_runtime': 0.4214, 'eval_samples_per_second': 14.24, 'eval_steps_per_second': 4.747, 'epoch': 4.0}
+{'train_runtime': 199.1991, 'train_samples_per_second': 2.088, 'train_steps_per_second': 0.522, 'train_loss': 0.40662981741703474, 'epoch': 4.0}
+[('[CLS]', 'O'), ('Ruf', 'B-Action'), ('##e', 'B-Action'), ('einen', 'O'), ('Angehörigen', 'B-Person'), ('von', 'O'), ('Herr', 'B-Person'), ('Fi', 'I-Person'), ('##ala', 'I-Person'), ('an', 'O'), ('[SEP]', 'B-Person')]
+[('[CLS]', 'O'), ('Wann', 'B-Time'), ('ist', 'O'), ('mein', 'O'), ('nächste', 'B-Task'), ('##r', 'B-Task'), ('Einsatz', 'I-Task'), ('?', 'O'), ('[SEP]', 'B-Task')]
+[('[CLS]', 'O'), ('Schreib', 'B-Action'), ('##e', 'B-Action'), ('eine', 'O'), ('Not', 'B-Action'), ('##iz', 'B-Action'), ('auf', 'O'), ('[SEP]', 'B-Action')]
+[('[CLS]', 'O'), ('Was', 'O'), ('ist', 'O'), ('mein', 'O'), ('derzeit', 'B-Task'), ('##iger', 'B-Entity'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('[SEP]', 'B-Entity')]
+[('[CLS]', 'O'), ('Set', 'B-Action'), ('##ze', 'B-Action'), ('meinen', 'O'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('auf', 'O'), ('300', 'B-Entity'), ('[SEP]', 'B-Entity')]
+[('[CLS]', 'O'), ('Ruf', 'B-Action'), ('##e', 'B-Action'), ('einen', 'O'), ('Angehörigen', 'B-Person'), ('von', 'O'), ('Herr', 'B-Person'), ('Kos', 'I-Person'), ('##ka', 'I-Person'), ('an', 'O'), ('[SEP]', 'B-Person')]
+[('[CLS]', 'O'), ('Ruf', 'B-Action'), ('##e', 'B-Action'), ('einen', 'O'), ('Angehörigen', 'B-Person'), ('von', 'O'), ('Herr', 'B-Person'), ('Mitte', 'I-Person'), ('##re', 'I-Person'), ('##r', 'I-Person'), ('an', 'O'), ('[SEP]', 'B-Person')]
+[('[CLS]', 'O'), ('Ruf', 'B-Action'), ('##e', 'B-Action'), ('einen', 'O'), ('Angehörigen', 'B-Person'), ('von', 'O'), ('Frau', 'B-Person'), ('Be', 'I-Person'), ('##ci', 'I-Person'), ('##re', 'I-Person'), ('##vic', 'I-Person'), ('an', 'O'), ('[SEP]', 'B-Person')]
+[('[CLS]', 'O'), ('Wie', 'O'), ('heißt', 'B-Entity'), ('mein', 'O'), ('derzeit', 'B-Task'), ('##iger', 'B-Task'), ('Patient', 'B-Person'), ('[SEP]', 'B-Entity')]
+[('[CLS]', 'O'), ('Wie', 'B-Entity'), ('alt', 'I-Entity'), ('ist', 'O'), ('mein', 'O'), ('derzeit', 'B-Task'), ('##ger', 'B-Person'), ('Patient', 'B-Person'), ('[SEP]', 'B-Entity')]
+[('[CLS]', 'O'), ('Wie', 'O'), ('heißt', 'B-Entity'), ('mein', 'O'), ('derzeit', 'B-Task'), ('##iger', 'B-Task'), ('Patient', 'B-Person'), ('[SEP]', 'B-Entity')]
+[('[CLS]', 'O'), ('Welche', 'O'), ('Vor', 'B-Entity'), ('##erkran', 'B-Entity'), ('##kungen', 'B-Entity'), ('hat', 'O'), ('Frau', 'B-Person'), ('Fel', 'I-Person'), ('##ber', 'I-Person'), ('[SEP]', 'B-Entity')]

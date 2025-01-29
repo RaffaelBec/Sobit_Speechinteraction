@@ -1,0 +1,28 @@
+{"time":"2024-11-14T13:54:28.9969047+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-14T13:54:28.9974245+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241114_135428-iyabyjps\\logs\\debug-core.log"}
+{"time":"2024-11-14T13:54:29.5684461+01:00","level":"INFO","msg":"created new stream","id":"iyabyjps"}
+{"time":"2024-11-14T13:54:29.5684461+01:00","level":"INFO","msg":"stream: started","id":"iyabyjps"}
+{"time":"2024-11-14T13:54:29.5684461+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"iyabyjps"}}
+{"time":"2024-11-14T13:54:29.5684461+01:00","level":"INFO","msg":"sender: started","stream_id":"iyabyjps"}
+{"time":"2024-11-14T13:54:29.5684461+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"iyabyjps"}}
+{"time":"2024-11-14T13:54:29.9490893+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-14T13:54:39.9519329+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-14T14:00:44.825293+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T14:00:44.9019779+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T14:00:46.5321228+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T14:00:46.6044502+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T14:00:47.3967194+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T14:00:47.4404341+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T14:00:47.9194136+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T14:00:47.9711453+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T14:00:48.4073313+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T14:00:48.4388436+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T14:00:48.4530061+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-14T14:00:48.4567753+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-14T14:00:49.3102702+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-14T14:00:49.4592451+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console logs","runtime_seconds":0.1483444}],"total_operations":1}}
+{"time":"2024-11-14T14:00:50.9246654+01:00","level":"INFO","msg":"stream: closing","id":"iyabyjps"}
+{"time":"2024-11-14T14:00:50.9246654+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"iyabyjps"}}
+{"time":"2024-11-14T14:00:50.9246654+01:00","level":"INFO","msg":"sender: closed","stream_id":"iyabyjps"}
+{"time":"2024-11-14T14:00:50.9246654+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"iyabyjps"}}
+{"time":"2024-11-14T14:00:50.9246654+01:00","level":"INFO","msg":"stream: closed","id":"iyabyjps"}

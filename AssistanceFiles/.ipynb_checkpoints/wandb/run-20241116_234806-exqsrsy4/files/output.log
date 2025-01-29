@@ -1,0 +1,28 @@
+                                                c:\Python312\Lib\site-packages\wandb\sdk\wandb_run.py:2386: UserWarning: Run (9e5cqd4s) is finished. The call to `_console_raw_callback` will be ignored. Please make sure that you are using an active run.
+  lambda data: self._console_raw_callback("stderr", data),
+100%|██████████| 140/140 [06:21<00:00,  2.73s/it]
+100%|██████████| 4/4 [00:01<00:00,  2.56it/s]/it]
+{'loss': 2.2411, 'grad_norm': 5.798422336578369, 'learning_rate': 1.8571428571428575e-05, 'epoch': 0.36}
+{'loss': 1.7249, 'grad_norm': 6.897145748138428, 'learning_rate': 1.7142857142857142e-05, 'epoch': 0.71}
+100%|██████████| 4/4 [00:01<00:00,  2.80it/s]
+{'eval_loss': 1.1443169116973877, 'eval_precision': 0.6021505376344086, 'eval_recall': 0.5384615384615384, 'eval_f1': 0.5685279187817259, 'eval_accuracy': 0.6820276497695853, 'eval_runtime': 1.9906, 'eval_samples_per_second': 12.559, 'eval_steps_per_second': 2.009, 'epoch': 1.0}
+{'loss': 1.3943, 'grad_norm': 6.094486236572266, 'learning_rate': 1.5714285714285715e-05, 'epoch': 1.07}
+{'loss': 1.0837, 'grad_norm': 5.545923709869385, 'learning_rate': 1.4285714285714287e-05, 'epoch': 1.43}
+{'loss': 0.895, 'grad_norm': 4.987250328063965, 'learning_rate': 1.2857142857142859e-05, 'epoch': 1.79}
+{'eval_loss': 0.6255602836608887, 'eval_precision': 0.780952380952381, 'eval_recall': 0.7884615384615384, 'eval_f1': 0.7846889952153111, 'eval_accuracy': 0.8387096774193549, 'eval_runtime': 2.1556, 'eval_samples_per_second': 11.597, 'eval_steps_per_second': 1.856, 'epoch': 2.0}
+{'loss': 0.7289, 'grad_norm': 4.530822277069092, 'learning_rate': 1.1428571428571429e-05, 'epoch': 2.14}
+{'loss': 0.6338, 'grad_norm': 4.7290730476379395, 'learning_rate': 1e-05, 'epoch': 2.5}
+{'loss': 0.5608, 'grad_norm': 4.9940714836120605, 'learning_rate': 8.571428571428571e-06, 'epoch': 2.86}
+{'eval_loss': 0.4631386995315552, 'eval_precision': 0.7807017543859649, 'eval_recall': 0.8557692307692307, 'eval_f1': 0.8165137614678899, 'eval_accuracy': 0.8894009216589862, 'eval_runtime': 1.8175, 'eval_samples_per_second': 13.755, 'eval_steps_per_second': 2.201, 'epoch': 3.0}
+{'loss': 0.4997, 'grad_norm': 5.607412815093994, 'learning_rate': 7.1428571428571436e-06, 'epoch': 3.21}
+{'loss': 0.4164, 'grad_norm': 4.751167297363281, 'learning_rate': 5.7142857142857145e-06, 'epoch': 3.57}
+{'loss': 0.4477, 'grad_norm': 4.358864784240723, 'learning_rate': 4.2857142857142855e-06, 'epoch': 3.93}
+{'eval_loss': 0.4165678322315216, 'eval_precision': 0.7478991596638656, 'eval_recall': 0.8557692307692307, 'eval_f1': 0.7982062780269057, 'eval_accuracy': 0.8894009216589862, 'eval_runtime': 1.9159, 'eval_samples_per_second': 13.048, 'eval_steps_per_second': 2.088, 'epoch': 4.0}
+{'loss': 0.4288, 'grad_norm': 5.090026378631592, 'learning_rate': 2.8571428571428573e-06, 'epoch': 4.29}
+{'loss': 0.3687, 'grad_norm': 5.195288181304932, 'learning_rate': 1.4285714285714286e-06, 'epoch': 4.64}
+{'loss': 0.3915, 'grad_norm': 11.46702766418457, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.3994320333003998, 'eval_precision': 0.7692307692307693, 'eval_recall': 0.8653846153846154, 'eval_f1': 0.8144796380090499, 'eval_accuracy': 0.8940092165898618, 'eval_runtime': 1.9775, 'eval_samples_per_second': 12.642, 'eval_steps_per_second': 2.023, 'epoch': 5.0}
+{'train_runtime': 383.2068, 'train_samples_per_second': 2.831, 'train_steps_per_second': 0.365, 'train_loss': 0.8439474293163844, 'epoch': 5.0}
+[('Welche', 'O'), ('##n', 'O'), ('Blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('Frau', 'B-Person'), ('Fel', 'I-Person'), ('##ber', 'I-Person')]
+[('Ruf', 'B-Action'), ('Frau', 'B-Person'), ('Müller', 'I-Person'), ('an', 'O'), (',', 'O'), ('um', 'O'), ('die', 'O'), ('Einsatz', 'B-Task'), ('##det', 'B-Task'), ('##ails', 'B-Task'), ('zu', 'O'), ('besp', 'O'), ('##rechen', 'O')]
+[('Trag', 'B-Action'), ('mir', 'O'), ('eine', 'O'), ('Pause', 'B-Entity'), ('für', 'O'), ('17', 'B-Time'), (':', 'B-Time'), ('22', 'B-Entity'), ('ein', 'O')]

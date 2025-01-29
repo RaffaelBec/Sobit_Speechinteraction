@@ -1,0 +1,28 @@
+{"time":"2024-11-14T11:26:16.8465929+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-14T11:26:16.8471437+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241114_112616-jo0eyc1p\\logs\\debug-core.log"}
+{"time":"2024-11-14T11:26:17.3616691+01:00","level":"INFO","msg":"created new stream","id":"jo0eyc1p"}
+{"time":"2024-11-14T11:26:17.3622171+01:00","level":"INFO","msg":"stream: started","id":"jo0eyc1p"}
+{"time":"2024-11-14T11:26:17.3627574+01:00","level":"INFO","msg":"sender: started","stream_id":"jo0eyc1p"}
+{"time":"2024-11-14T11:26:17.3627574+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jo0eyc1p"}}
+{"time":"2024-11-14T11:26:17.3627574+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jo0eyc1p"}}
+{"time":"2024-11-14T11:26:17.819406+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-14T11:26:27.8210231+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-14T11:29:24.889136+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T11:29:24.9210445+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T11:29:25.2525775+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T11:29:25.2713959+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T11:29:25.6505394+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T11:29:25.6696468+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T11:29:25.8200034+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T11:29:25.8413595+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T11:29:26.0166099+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-14T11:29:26.0358217+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-14T11:29:26.0550408+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-14T11:29:26.0587695+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-14T11:29:27.0642069+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7014908}],"total_operations":1}}
+{"time":"2024-11-14T11:29:29.3152375+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-14T11:29:31.1987447+01:00","level":"INFO","msg":"stream: closing","id":"jo0eyc1p"}
+{"time":"2024-11-14T11:29:31.1987447+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"jo0eyc1p"}}
+{"time":"2024-11-14T11:29:31.1987447+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"jo0eyc1p"}}
+{"time":"2024-11-14T11:29:31.1987447+01:00","level":"INFO","msg":"sender: closed","stream_id":"jo0eyc1p"}
+{"time":"2024-11-14T11:29:31.1992931+01:00","level":"INFO","msg":"stream: closed","id":"jo0eyc1p"}

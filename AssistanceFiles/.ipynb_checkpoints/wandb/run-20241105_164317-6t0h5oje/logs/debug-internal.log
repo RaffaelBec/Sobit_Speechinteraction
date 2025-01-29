@@ -1,0 +1,23 @@
+{"time":"2024-11-05T16:43:17.7596987+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-05T16:43:17.7607224+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241105_164317-6t0h5oje\\logs\\debug-core.log"}
+{"time":"2024-11-05T16:43:18.0453126+01:00","level":"INFO","msg":"created new stream","id":"6t0h5oje"}
+{"time":"2024-11-05T16:43:18.04584+01:00","level":"INFO","msg":"stream: started","id":"6t0h5oje"}
+{"time":"2024-11-05T16:43:18.0488676+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6t0h5oje"}}
+{"time":"2024-11-05T16:43:18.0568906+01:00","level":"INFO","msg":"sender: started","stream_id":"6t0h5oje"}
+{"time":"2024-11-05T16:43:18.0578801+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6t0h5oje"}}
+{"time":"2024-11-05T16:43:18.7536854+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-05T16:46:18.9750746+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T16:46:19.0184135+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T16:46:19.3474862+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T16:46:19.3578212+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T16:46:20.3799944+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T16:46:20.411359+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T16:46:20.41963+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-05T16:46:20.4384102+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-05T16:46:21.2886603+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-05T16:46:21.4209236+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console logs","runtime_seconds":0.1320036}],"total_operations":1}}
+{"time":"2024-11-05T16:46:22.7619613+01:00","level":"INFO","msg":"stream: closing","id":"6t0h5oje"}
+{"time":"2024-11-05T16:46:22.7619613+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"6t0h5oje"}}
+{"time":"2024-11-05T16:46:22.7625194+01:00","level":"INFO","msg":"sender: closed","stream_id":"6t0h5oje"}
+{"time":"2024-11-05T16:46:22.7625194+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"6t0h5oje"}}
+{"time":"2024-11-05T16:46:22.7635258+01:00","level":"INFO","msg":"stream: closed","id":"6t0h5oje"}

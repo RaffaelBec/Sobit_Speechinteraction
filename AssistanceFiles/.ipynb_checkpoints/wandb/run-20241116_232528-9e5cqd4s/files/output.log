@@ -1,0 +1,93 @@
+100%|██████████| 140/140 [05:54<00:00,  2.53s/it]
+{'loss': 2.0217, 'grad_norm': 5.818052291870117, 'learning_rate': 3.714285714285715e-05, 'epoch': 0.36}
+{'loss': 1.3049, 'grad_norm': 6.210446357727051, 'learning_rate': 3.4285714285714284e-05, 'epoch': 0.71}
+100%|██████████| 4/4 [00:02<00:00,  1.63it/s]
+{'eval_loss': 0.6188149452209473, 'eval_precision': 0.7523809523809524, 'eval_recall': 0.7596153846153846, 'eval_f1': 0.7559808612440191, 'eval_accuracy': 0.815668202764977, 'eval_runtime': 1.95, 'eval_samples_per_second': 12.82, 'eval_steps_per_second': 2.051, 'epoch': 1.0}
+{'loss': 0.8454, 'grad_norm': 4.781315326690674, 'learning_rate': 3.142857142857143e-05, 'epoch': 1.07}
+{'loss': 0.5863, 'grad_norm': 4.680741310119629, 'learning_rate': 2.8571428571428574e-05, 'epoch': 1.43}
+{'loss': 0.4743, 'grad_norm': 5.611692428588867, 'learning_rate': 2.5714285714285718e-05, 'epoch': 1.79}
+{'eval_loss': 0.35540175437927246, 'eval_precision': 0.7837837837837838, 'eval_recall': 0.8365384615384616, 'eval_f1': 0.8093023255813953, 'eval_accuracy': 0.8847926267281107, 'eval_runtime': 1.9635, 'eval_samples_per_second': 12.732, 'eval_steps_per_second': 2.037, 'epoch': 2.0}
+{'loss': 0.3568, 'grad_norm': 4.939205646514893, 'learning_rate': 2.2857142857142858e-05, 'epoch': 2.14}
+{'loss': 0.292, 'grad_norm': 4.2768402099609375, 'learning_rate': 2e-05, 'epoch': 2.5}
+{'loss': 0.2489, 'grad_norm': 4.235632419586182, 'learning_rate': 1.7142857142857142e-05, 'epoch': 2.86}
+{'eval_loss': 0.30954229831695557, 'eval_precision': 0.8333333333333334, 'eval_recall': 0.8653846153846154, 'eval_f1': 0.8490566037735849, 'eval_accuracy': 0.9124423963133641, 'eval_runtime': 2.1457, 'eval_samples_per_second': 11.651, 'eval_steps_per_second': 1.864, 'epoch': 3.0}
+{'loss': 0.1954, 'grad_norm': 3.627352476119995, 'learning_rate': 1.4285714285714287e-05, 'epoch': 3.21}
+{'loss': 0.1489, 'grad_norm': 2.6494500637054443, 'learning_rate': 1.1428571428571429e-05, 'epoch': 3.57}
+{'loss': 0.1945, 'grad_norm': 4.057964324951172, 'learning_rate': 8.571428571428571e-06, 'epoch': 3.93}
+{'eval_loss': 0.2959185838699341, 'eval_precision': 0.8363636363636363, 'eval_recall': 0.8846153846153846, 'eval_f1': 0.8598130841121494, 'eval_accuracy': 0.9124423963133641, 'eval_runtime': 2.2619, 'eval_samples_per_second': 11.053, 'eval_steps_per_second': 1.768, 'epoch': 4.0}
+{'loss': 0.185, 'grad_norm': 2.6439507007598877, 'learning_rate': 5.7142857142857145e-06, 'epoch': 4.29}
+{'loss': 0.1211, 'grad_norm': 4.037761211395264, 'learning_rate': 2.8571428571428573e-06, 'epoch': 4.64}
+{'loss': 0.1389, 'grad_norm': 2.5404820442199707, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.29739856719970703, 'eval_precision': 0.8440366972477065, 'eval_recall': 0.8846153846153846, 'eval_f1': 0.863849765258216, 'eval_accuracy': 0.9170506912442397, 'eval_runtime': 1.9232, 'eval_samples_per_second': 12.999, 'eval_steps_per_second': 2.08, 'epoch': 5.0}
+{'train_runtime': 355.7229, 'train_samples_per_second': 3.05, 'train_steps_per_second': 0.394, 'train_loss': 0.5081564477511815, 'epoch': 5.0}
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\raffa\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     C:\Users\raffa\AppData\Roaming\nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+Parsed Dataset: DatasetDict({
+    train: Dataset({
+        features: ['tokens', 'ner_tags'],
+        num_rows: 242
+    })
+})
+{'tokens': ['Starte', 'den', 'aktuellen', 'Einsatz'], 'ner_tags': ['B-Action', 'O', 'B-Task', 'I-Task']}
+DatasetDict({
+    train: Dataset({
+        features: ['tokens', 'ner_tags'],
+        num_rows: 242
+    })
+})
+Token and tag lengths are consistent.
+Invalid label found in train split: B-Action
+Found invalid labels in the dataset.
+Invalid tag types in train split: ['B-Action', 'O', 'B-Task', 'I-Task']
+Found invalid data types in the dataset.
+Special tokens are handled correctly.
+Invalid label found in train split: B-Action
+Found invalid labels in the dataset.
+c:\Python312\Lib\site-packages\transformers\tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+{'tokens': ['Starte', 'den', 'aktuellen', 'Einsatz'], 'ner_tags': [1, 0, 7, 8]}
+{'input_ids': [3, 4111, 26897, 86, 6426, 2200, 4], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1]}
+--------------------------------------------------------------------------------------
+ ['[CLS]', 'Start', '##e', 'den', 'aktuellen', 'Einsatz', '[SEP]']
+--------------------------------------------------------------------------------------
+ [None, 0, 0, 1, 2, 3, None]
+['[CLS]', 'Start', '##e', 'den', 'aktuellen', 'Einsatz', '[SEP]']
+--------------------------------------------------------------------------------------
+ [1, 0, 7, 8]
+--------------------------------------------------------------------------------------
+ [-100, 1, 2, 0, 7, 8, -100]
+[CLS]	None
+Start	B-Action
+##e	I-Action
+den	O
+aktuellen	B-Task
+Einsatz	I-Task
+[SEP]	None
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+{0: 'O', 1: 'B-Action', 2: 'I-Action', 3: 'B-Entity', 4: 'I-Entity', 5: 'B-Person', 6: 'I-Person', 7: 'B-Task', 8: 'I-Task', 9: 'B-Time', 10: 'I-Time', 11: 'B-Distance'}
+--------------------
+ {'O': 0, 'B-Action': 1, 'I-Action': 2, 'B-Entity': 3, 'I-Entity': 4, 'B-Person': 5, 'I-Person': 6, 'B-Task': 7, 'I-Task': 8, 'B-Time': 9, 'I-Time': 10, 'B-Distance': 11}
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-german-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+ 85%|████████▌ | 119/140 [05:08<00:57,  2.72s/it]
+{'loss': 1.8774, 'grad_norm': 5.318095684051514, 'learning_rate': 3.714285714285715e-05, 'epoch': 0.36}
+{'loss': 1.0501, 'grad_norm': 5.598700046539307, 'learning_rate': 3.4285714285714284e-05, 'epoch': 0.71}
+                                             
+{'eval_loss': 0.48923054337501526, 'eval_precision': 0.7767857142857143, 'eval_recall': 0.8365384615384616, 'eval_f1': 0.8055555555555556, 'eval_accuracy': 0.8847926267281107, 'eval_runtime': 1.7296, 'eval_samples_per_second': 14.455, 'eval_steps_per_second': 2.313, 'epoch': 1.0}
+{'loss': 0.6398, 'grad_norm': 3.242704391479492, 'learning_rate': 3.142857142857143e-05, 'epoch': 1.07}
+{'loss': 0.3948, 'grad_norm': 2.928575038909912, 'learning_rate': 2.8571428571428574e-05, 'epoch': 1.43}
+{'loss': 0.3003, 'grad_norm': 4.483273029327393, 'learning_rate': 2.5714285714285718e-05, 'epoch': 1.79}
+{'eval_loss': 0.3267512917518616, 'eval_precision': 0.8348623853211009, 'eval_recall': 0.875, 'eval_f1': 0.8544600938967136, 'eval_accuracy': 0.9124423963133641, 'eval_runtime': 1.817, 'eval_samples_per_second': 13.759, 'eval_steps_per_second': 2.201, 'epoch': 2.0}
+{'loss': 0.202, 'grad_norm': 3.9095263481140137, 'learning_rate': 2.2857142857142858e-05, 'epoch': 2.14}
+{'loss': 0.1478, 'grad_norm': 2.040199041366577, 'learning_rate': 2e-05, 'epoch': 2.5}
+{'loss': 0.1278, 'grad_norm': 1.891135811805725, 'learning_rate': 1.7142857142857142e-05, 'epoch': 2.86}
+{'eval_loss': 0.2946552634239197, 'eval_precision': 0.8425925925925926, 'eval_recall': 0.875, 'eval_f1': 0.8584905660377359, 'eval_accuracy': 0.9078341013824884, 'eval_runtime': 1.8119, 'eval_samples_per_second': 13.798, 'eval_steps_per_second': 2.208, 'epoch': 3.0}
+{'loss': 0.0984, 'grad_norm': 1.3196903467178345, 'learning_rate': 1.4285714285714287e-05, 'epoch': 3.21}
+{'loss': 0.0533, 'grad_norm': 1.3984054327011108, 'learning_rate': 1.1428571428571429e-05, 'epoch': 3.57}
+{'loss': 0.0975, 'grad_norm': 3.548107385635376, 'learning_rate': 8.571428571428571e-06, 'epoch': 3.93}
+{'eval_loss': 0.28452885150909424, 'eval_precision': 0.8392857142857143, 'eval_recall': 0.9038461538461539, 'eval_f1': 0.8703703703703703, 'eval_accuracy': 0.9170506912442397, 'eval_runtime': 1.8937, 'eval_samples_per_second': 13.202, 'eval_steps_per_second': 2.112, 'epoch': 4.0}

@@ -1,0 +1,27 @@
+{"time":"2024-11-27T11:31:03.7544975+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-27T11:31:03.7550139+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241127_113103-xwsletfm\\logs\\debug-core.log"}
+{"time":"2024-11-27T11:31:03.8706006+01:00","level":"INFO","msg":"created new stream","id":"xwsletfm"}
+{"time":"2024-11-27T11:31:03.8706006+01:00","level":"INFO","msg":"stream: started","id":"xwsletfm"}
+{"time":"2024-11-27T11:31:03.8706006+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xwsletfm"}}
+{"time":"2024-11-27T11:31:03.8706006+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xwsletfm"}}
+{"time":"2024-11-27T11:31:03.8706006+01:00","level":"INFO","msg":"sender: started","stream_id":"xwsletfm"}
+{"time":"2024-11-27T11:31:04.1280115+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-27T11:41:27.555364+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:41:27.577301+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:41:27.5818149+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:41:27.6097625+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:41:27.9260386+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:41:27.957572+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:41:28.2262376+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:41:28.2622678+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:42:22.0833466+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:42:22.102796+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:42:22.1138536+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T11:42:22.1152615+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T11:42:23.1043445+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T11:42:23.1217518+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.016892}],"total_operations":1}}
+{"time":"2024-11-27T11:42:24.3398487+01:00","level":"INFO","msg":"stream: closing","id":"xwsletfm"}
+{"time":"2024-11-27T11:42:24.3398487+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"xwsletfm"}}
+{"time":"2024-11-27T11:42:24.3398487+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"xwsletfm"}}
+{"time":"2024-11-27T11:42:24.3398487+01:00","level":"INFO","msg":"sender: closed","stream_id":"xwsletfm"}
+{"time":"2024-11-27T11:42:24.3403944+01:00","level":"INFO","msg":"stream: closed","id":"xwsletfm"}

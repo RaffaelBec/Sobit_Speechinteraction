@@ -1,0 +1,25 @@
+                                                c:\Python312\Lib\site-packages\wandb\sdk\wandb_run.py:2386: UserWarning: Run (9e5cqd4s) is finished. The call to `_console_raw_callback` will be ignored. Please make sure that you are using an active run.
+  lambda data: self._console_raw_callback("stderr", data),
+100%|██████████| 140/140 [11:43<00:00,  5.03s/it]
+100%|██████████| 4/4 [00:02<00:00,  1.73it/s]/it]
+{'loss': 1.8774, 'grad_norm': 5.318126201629639, 'learning_rate': 3.714285714285715e-05, 'epoch': 0.36}
+{'loss': 1.0501, 'grad_norm': 5.598788261413574, 'learning_rate': 3.4285714285714284e-05, 'epoch': 0.71}
+100%|██████████| 4/4 [00:02<00:00,  1.85it/s]
+{'eval_loss': 0.4892304539680481, 'eval_precision': 0.7767857142857143, 'eval_recall': 0.8365384615384616, 'eval_f1': 0.8055555555555556, 'eval_accuracy': 0.8847926267281107, 'eval_runtime': 13.1657, 'eval_samples_per_second': 1.899, 'eval_steps_per_second': 0.304, 'epoch': 1.0}
+{'loss': 0.6398, 'grad_norm': 3.2427568435668945, 'learning_rate': 3.142857142857143e-05, 'epoch': 1.07}
+{'loss': 0.3948, 'grad_norm': 2.9286794662475586, 'learning_rate': 2.8571428571428574e-05, 'epoch': 1.43}
+{'loss': 0.3003, 'grad_norm': 4.483342170715332, 'learning_rate': 2.5714285714285718e-05, 'epoch': 1.79}
+{'eval_loss': 0.32675135135650635, 'eval_precision': 0.8348623853211009, 'eval_recall': 0.875, 'eval_f1': 0.8544600938967136, 'eval_accuracy': 0.9124423963133641, 'eval_runtime': 6.0368, 'eval_samples_per_second': 4.141, 'eval_steps_per_second': 0.663, 'epoch': 2.0}
+{'loss': 0.202, 'grad_norm': 3.9097816944122314, 'learning_rate': 2.2857142857142858e-05, 'epoch': 2.14}
+{'loss': 0.1478, 'grad_norm': 2.040165424346924, 'learning_rate': 2e-05, 'epoch': 2.5}
+{'loss': 0.1278, 'grad_norm': 1.8912591934204102, 'learning_rate': 1.7142857142857142e-05, 'epoch': 2.86}
+{'eval_loss': 0.29465365409851074, 'eval_precision': 0.8425925925925926, 'eval_recall': 0.875, 'eval_f1': 0.8584905660377359, 'eval_accuracy': 0.9078341013824884, 'eval_runtime': 2.2521, 'eval_samples_per_second': 11.101, 'eval_steps_per_second': 1.776, 'epoch': 3.0}
+{'loss': 0.0984, 'grad_norm': 1.3197135925292969, 'learning_rate': 1.4285714285714287e-05, 'epoch': 3.21}
+{'loss': 0.0533, 'grad_norm': 1.3985694646835327, 'learning_rate': 1.1428571428571429e-05, 'epoch': 3.57}
+{'loss': 0.0975, 'grad_norm': 3.5482633113861084, 'learning_rate': 8.571428571428571e-06, 'epoch': 3.93}
+{'eval_loss': 0.2845344841480255, 'eval_precision': 0.8392857142857143, 'eval_recall': 0.9038461538461539, 'eval_f1': 0.8703703703703703, 'eval_accuracy': 0.9170506912442397, 'eval_runtime': 3.066, 'eval_samples_per_second': 8.154, 'eval_steps_per_second': 1.305, 'epoch': 4.0}
+{'loss': 0.0862, 'grad_norm': 1.4287188053131104, 'learning_rate': 5.7142857142857145e-06, 'epoch': 4.29}
+{'loss': 0.0389, 'grad_norm': 2.7697949409484863, 'learning_rate': 2.8571428571428573e-06, 'epoch': 4.64}
+{'loss': 0.0614, 'grad_norm': 0.9403727054595947, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.27671149373054504, 'eval_precision': 0.8392857142857143, 'eval_recall': 0.9038461538461539, 'eval_f1': 0.8703703703703703, 'eval_accuracy': 0.9170506912442397, 'eval_runtime': 2.7933, 'eval_samples_per_second': 8.95, 'eval_steps_per_second': 1.432, 'epoch': 5.0}
+{'train_runtime': 705.1703, 'train_samples_per_second': 1.539, 'train_steps_per_second': 0.199, 'train_loss': 0.3696798486368997, 'epoch': 5.0}

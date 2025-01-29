@@ -1,0 +1,136 @@
+{"time":"2024-11-05T17:34:27.9076486+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-05T17:34:27.9082516+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241105_173427-9y2refth\\logs\\debug-core.log"}
+{"time":"2024-11-05T17:34:28.0301793+01:00","level":"INFO","msg":"created new stream","id":"9y2refth"}
+{"time":"2024-11-05T17:34:28.0307897+01:00","level":"INFO","msg":"sender: started","stream_id":"9y2refth"}
+{"time":"2024-11-05T17:34:28.0307897+01:00","level":"INFO","msg":"stream: started","id":"9y2refth"}
+{"time":"2024-11-05T17:34:28.0307897+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"9y2refth"}}
+{"time":"2024-11-05T17:34:28.0307897+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"9y2refth"}}
+{"time":"2024-11-05T17:34:28.7590726+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-05T17:37:47.5225738+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:38:24.9549769+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:38:25.098825+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:40:48.5000618+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:40:48.701585+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:42:02.524408+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:42:02.727334+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:43:50.43008+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:43:50.5441849+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:44:38.370159+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:44:38.5909119+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:48:56.8540834+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T17:49:38.0505003+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:49:38.3737301+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T17:51:17.3170195+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T17:51:17.6718625+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T18:22:17.1358243+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T18:22:19.6707663+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T18:22:20.2783128+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.91.102.101:51001->35.186.228.49:443: wsarecv: An established connection was aborted by the software in your host machine."}
+{"time":"2024-11-05T18:22:54.0661111+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T18:22:54.7783138+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T18:23:39.7597911+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T18:23:40.1290199+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T21:30:15.7769032+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": context deadline exceeded"}
+{"time":"2024-11-05T21:30:18.1645989+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:30:22.9908241+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:30:31.5898207+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:30:40.5682432+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.178.46:63279->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-05T21:30:42.8124862+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:30:47.4309899+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:30:49.7923331+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:30:56.7759984+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:31:14.1245295+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:31:27.1803313+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:31:48.2661684+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:32:27.1924829+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:32:48.2741741+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:33:27.2019498+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:33:48.2814556+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:34:27.2097681+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:34:48.2897092+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:35:27.2170539+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:35:48.2981242+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:36:27.2259461+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:36:48.3096302+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:37:27.2353822+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:37:48.316675+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:38:27.2439657+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:38:48.3273714+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:39:27.2532376+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:39:48.3345983+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:40:21.3850477+01:00","level":"WARN","msg":"sender: taking a long time","seconds":600.0005495,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"fuytkeetlh9x\" connection_id:\"127.0.0.1:50959\")"}
+{"time":"2024-11-05T21:40:27.2619971+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:40:48.3432341+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:41:27.2696025+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:41:48.3515097+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:42:27.2776655+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:42:48.359396+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:43:27.2866358+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:43:48.3670352+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:44:27.3023935+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:44:48.3751542+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:45:27.3116247+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:45:48.3829411+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:46:27.3198945+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:46:48.3904035+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:46:48.3904035+01:00","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:46:48.3953012+01:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":987.0142524,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"fuytkeetlh9x\" connection_id:\"127.0.0.1:50959\")"}
+{"time":"2024-11-05T21:47:00.5764666+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:47:02.6296505+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:47:06.7776843+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:47:15.9877789+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:47:27.3288745+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:47:35.4406425+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:48:12.9056061+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:48:27.3368046+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:49:12.9127202+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:49:27.3446867+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:50:12.9219143+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:50:27.3515368+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:51:12.9300461+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:51:27.3598687+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:52:12.9408974+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:52:27.368467+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:53:12.9486139+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:53:27.3766247+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:54:12.9568966+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:54:27.3851094+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:55:12.9648776+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:55:27.3949164+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:56:12.9731422+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:56:27.4034516+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:57:00.569506+01:00","level":"WARN","msg":"sender: taking a long time","seconds":600.0006049,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"53fod6aqsxja\" connection_id:\"127.0.0.1:50959\")"}
+{"time":"2024-11-05T21:57:12.9808395+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:57:27.409919+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:58:12.9960646+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:58:27.4208665+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:58:27.4215267+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:59:13.0046235+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T21:59:27.4297427+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:00:13.013142+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:00:27.4379779+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:01:13.0226584+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:01:27.4449125+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:02:13.0306913+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:02:27.4531796+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:13.0381505+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:13.0381505+01:00","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:13.0387413+01:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":972.4698402,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"53fod6aqsxja\" connection_id:\"127.0.0.1:50959\")"}
+{"time":"2024-11-05T22:03:24.7214951+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:26.8172311+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:27.4549609+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:31.79814+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:40.8296198+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:03:58.7950569+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:04:27.4627762+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:04:34.4482027+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:05:27.471032+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:05:34.4564468+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:06:27.4784737+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-05T22:12:56.46038+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:12:56.9334265+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T22:14:39.5674204+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:14:39.8068772+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T22:15:30.2823406+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:15:30.6505189+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:00:09.5829188+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-11-06T09:00:11.8447187+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raffaelbecirevic-htl-spengergasse/saner/9y2refth/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}

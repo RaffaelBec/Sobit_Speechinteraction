@@ -1,0 +1,103 @@
+100%|██████████| 215/215 [10:19<00:00,  2.88s/it]
+{'loss': 2.0643, 'grad_norm': 7.263380527496338, 'learning_rate': 3.976470588235294e-05, 'epoch': 0.23}
+{'loss': 1.276, 'grad_norm': 6.547557830810547, 'learning_rate': 3.952941176470589e-05, 'epoch': 0.47}
+{'loss': 0.7814, 'grad_norm': 5.064204692840576, 'learning_rate': 3.929411764705882e-05, 'epoch': 0.7}
+{'loss': 0.5508, 'grad_norm': 3.130223035812378, 'learning_rate': 3.905882352941177e-05, 'epoch': 0.93}
+100%|██████████| 5/5 [00:02<00:00,  2.30it/s]
+{'eval_loss': 0.41525641083717346, 'eval_precision': 0.8406593406593407, 'eval_recall': 0.8895348837209303, 'eval_f1': 0.8644067796610171, 'eval_accuracy': 0.8926380368098159, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.8333333333333334, 'eval_Person_f1': 0.8611111111111112, 'eval_Question_f1': 0.9090909090909091, 'eval_Task_f1': 0.9696969696969697, 'eval_Time_f1': 0.7368421052631579, 'eval_overall_precision': 0.8406593406593407, 'eval_overall_recall': 0.8895348837209303, 'eval_overall_f1': 0.8644067796610171, 'eval_overall_accuracy': 0.8926380368098159, 'eval_runtime': 4.2059, 'eval_samples_per_second': 9.035, 'eval_steps_per_second': 1.189, 'epoch': 1.0}
+{'loss': 0.3038, 'grad_norm': 3.4631004333496094, 'learning_rate': 3.882352941176471e-05, 'epoch': 1.16}
+{'loss': 0.2461, 'grad_norm': 2.7848050594329834, 'learning_rate': 3.858823529411765e-05, 'epoch': 1.4}
+{'loss': 0.1319, 'grad_norm': 1.9499003887176514, 'learning_rate': 3.8352941176470596e-05, 'epoch': 1.63}
+{'loss': 0.1332, 'grad_norm': 3.286221742630005, 'learning_rate': 3.811764705882353e-05, 'epoch': 1.86}
+{'eval_loss': 0.16347281634807587, 'eval_precision': 0.92, 'eval_recall': 0.936046511627907, 'eval_f1': 0.9279538904899135, 'eval_accuracy': 0.9478527607361963, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.8846153846153846, 'eval_Person_f1': 0.8857142857142857, 'eval_Question_f1': 0.9565217391304348, 'eval_Task_f1': 0.9444444444444444, 'eval_Time_f1': 1.0, 'eval_overall_precision': 0.92, 'eval_overall_recall': 0.936046511627907, 'eval_overall_f1': 0.9279538904899135, 'eval_overall_accuracy': 0.9478527607361963, 'eval_runtime': 3.2011, 'eval_samples_per_second': 11.871, 'eval_steps_per_second': 1.562, 'epoch': 2.0}
+{'loss': 0.0807, 'grad_norm': 0.772735595703125, 'learning_rate': 3.7882352941176475e-05, 'epoch': 2.09}
+{'loss': 0.0932, 'grad_norm': 1.744441270828247, 'learning_rate': 3.7647058823529415e-05, 'epoch': 2.33}
+{'loss': 0.0457, 'grad_norm': 2.1238579750061035, 'learning_rate': 3.7411764705882355e-05, 'epoch': 2.56}
+{'loss': 0.069, 'grad_norm': 3.875842809677124, 'learning_rate': 3.7176470588235295e-05, 'epoch': 2.79}
+{'eval_loss': 0.16466593742370605, 'eval_precision': 0.92, 'eval_recall': 0.936046511627907, 'eval_f1': 0.9279538904899135, 'eval_accuracy': 0.9570552147239264, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.8598130841121495, 'eval_Person_f1': 0.9275362318840579, 'eval_Question_f1': 0.9565217391304348, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9615384615384616, 'eval_overall_precision': 0.92, 'eval_overall_recall': 0.936046511627907, 'eval_overall_f1': 0.9279538904899135, 'eval_overall_accuracy': 0.9570552147239264, 'eval_runtime': 2.6445, 'eval_samples_per_second': 14.369, 'eval_steps_per_second': 1.891, 'epoch': 3.0}
+{'loss': 0.0551, 'grad_norm': 1.2823247909545898, 'learning_rate': 3.694117647058824e-05, 'epoch': 3.02}
+{'loss': 0.0525, 'grad_norm': 0.4697944223880768, 'learning_rate': 3.6705882352941175e-05, 'epoch': 3.26}
+{'loss': 0.0178, 'grad_norm': 1.0176193714141846, 'learning_rate': 3.647058823529412e-05, 'epoch': 3.49}
+{'loss': 0.0344, 'grad_norm': 0.3639262914657593, 'learning_rate': 3.623529411764706e-05, 'epoch': 3.72}
+{'loss': 0.0219, 'grad_norm': 1.4564555883407593, 'learning_rate': 3.6e-05, 'epoch': 3.95}
+{'eval_loss': 0.1126822829246521, 'eval_precision': 0.9707602339181286, 'eval_recall': 0.9651162790697675, 'eval_f1': 0.967930029154519, 'eval_accuracy': 0.9785276073619632, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.9504950495049505, 'eval_Person_f1': 0.9714285714285714, 'eval_Question_f1': 0.9565217391304348, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9811320754716981, 'eval_overall_precision': 0.9707602339181286, 'eval_overall_recall': 0.9651162790697675, 'eval_overall_f1': 0.967930029154519, 'eval_overall_accuracy': 0.9785276073619632, 'eval_runtime': 2.6178, 'eval_samples_per_second': 14.516, 'eval_steps_per_second': 1.91, 'epoch': 4.0}
+{'loss': 0.0126, 'grad_norm': 0.06193048879504204, 'learning_rate': 3.576470588235295e-05, 'epoch': 4.19}
+{'loss': 0.0207, 'grad_norm': 0.056267645210027695, 'learning_rate': 3.552941176470588e-05, 'epoch': 4.42}
+{'loss': 0.0191, 'grad_norm': 0.0820348933339119, 'learning_rate': 3.529411764705883e-05, 'epoch': 4.65}
+{'loss': 0.0072, 'grad_norm': 0.5571346282958984, 'learning_rate': 3.505882352941177e-05, 'epoch': 4.88}
+{'eval_loss': 0.09098108112812042, 'eval_precision': 0.9485714285714286, 'eval_recall': 0.9651162790697675, 'eval_f1': 0.956772334293948, 'eval_accuracy': 0.9754601226993865, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.9142857142857144, 'eval_Person_f1': 1.0, 'eval_Question_f1': 0.9565217391304348, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9433962264150944, 'eval_overall_precision': 0.9485714285714286, 'eval_overall_recall': 0.9651162790697675, 'eval_overall_f1': 0.956772334293948, 'eval_overall_accuracy': 0.9754601226993865, 'eval_runtime': 3.0027, 'eval_samples_per_second': 12.655, 'eval_steps_per_second': 1.665, 'epoch': 5.0}
+{'train_runtime': 620.2096, 'train_samples_per_second': 2.741, 'train_steps_per_second': 0.347, 'train_loss': 0.28032032535519713, 'epoch': 5.0}
+[('welchen', 'O'), ('blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('frau', 'B-Person'), ('fel', 'I-Person'), ('##ber', 'I-Person')]
+(['starte', 'einen', 'anruf'], ['B-Action', 'O', 'B-Action'])
+(['wie', 'viele', 'patienten', 'hab', 'ich', 'betreut'], ['B-Question', 'I-Question', 'B-Person', 'O', 'O', 'B-Entity'])
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\raffa\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     C:\Users\raffa\AppData\Roaming\nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+Parsed Dataset: DatasetDict({
+    train: Dataset({
+        features: ['tokens', 'ner_tags'],
+        num_rows: 378
+    })
+})
+{'tokens': ['Starte', 'den', 'aktuellen', 'Einsatz'], 'ner_tags': ['B-Action', 'O', 'B-Time', 'B-Task']}
+DatasetDict({
+    train: Dataset({
+        features: ['tokens', 'ner_tags'],
+        num_rows: 378
+    })
+})
+c:\Python312\Lib\site-packages\transformers\tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+{'tokens': ['Starte', 'den', 'aktuellen', 'Einsatz'], 'ner_tags': [1, 0, 9, 7]}
+Token and tag lengths are consistent.
+All labels are valid.
+Data types are consistent.
+Special tokens are handled correctly.
+All checks passed. The dataset looks good.
+{'input_ids': [102, 2629, 30937, 179, 5670, 2001, 103], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1]}
+--------------------------------------------------------------------------------------
+ ['[CLS]', 'start', '##e', 'den', 'aktuellen', 'einsatz', '[SEP]']
+--------------------------------------------------------------------------------------
+ [None, 0, 0, 1, 2, 3, None]
+['[CLS]', 'start', '##e', 'den', 'aktuellen', 'einsatz', '[SEP]']
+--------------------------------------------------------------------------------------
+ [1, 0, 9, 7]
+--------------------------------------------------------------------------------------
+ [-100, 1, 2, 0, 9, 7, -100]
+[CLS]	None
+start	B-Action
+##e	I-Action
+den	O
+aktuellen	B-Time
+einsatz	B-Task
+[SEP]	None
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+{0: 'O', 1: 'B-Action', 2: 'I-Action', 3: 'B-Entity', 4: 'I-Entity', 5: 'B-Person', 6: 'I-Person', 7: 'B-Task', 8: 'I-Task', 9: 'B-Time', 10: 'I-Time', 11: 'B-Distance', 12: 'B-Question', 13: 'I-Question'}
+--------------------
+ {'O': 0, 'B-Action': 1, 'I-Action': 2, 'B-Entity': 3, 'I-Entity': 4, 'B-Person': 5, 'I-Person': 6, 'B-Task': 7, 'I-Task': 8, 'B-Time': 9, 'I-Time': 10, 'B-Distance': 11, 'B-Question': 12, 'I-Question': 13}
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-german-dbmdz-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+ 74%|███████▍  | 159/215 [08:33<03:09,  3.38s/it]
+{'loss': 2.0643, 'grad_norm': 7.263360023498535, 'learning_rate': 3.976470588235294e-05, 'epoch': 0.23}
+{'loss': 1.276, 'grad_norm': 6.547497749328613, 'learning_rate': 3.952941176470589e-05, 'epoch': 0.47}
+{'loss': 0.7814, 'grad_norm': 5.064115524291992, 'learning_rate': 3.929411764705882e-05, 'epoch': 0.7}
+{'loss': 0.5508, 'grad_norm': 3.1300201416015625, 'learning_rate': 3.905882352941177e-05, 'epoch': 0.93}
+                                             
+{'eval_loss': 0.41524338722229004, 'eval_precision': 0.8406593406593407, 'eval_recall': 0.8895348837209303, 'eval_f1': 0.8644067796610171, 'eval_accuracy': 0.8926380368098159, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.8333333333333334, 'eval_Person_f1': 0.8611111111111112, 'eval_Question_f1': 0.9090909090909091, 'eval_Task_f1': 0.9696969696969697, 'eval_Time_f1': 0.7368421052631579, 'eval_overall_precision': 0.8406593406593407, 'eval_overall_recall': 0.8895348837209303, 'eval_overall_f1': 0.8644067796610171, 'eval_overall_accuracy': 0.8926380368098159, 'eval_runtime': 2.8472, 'eval_samples_per_second': 13.346, 'eval_steps_per_second': 1.756, 'epoch': 1.0}
+{'loss': 0.3038, 'grad_norm': 3.463027000427246, 'learning_rate': 3.882352941176471e-05, 'epoch': 1.16}
+{'loss': 0.2461, 'grad_norm': 2.7847607135772705, 'learning_rate': 3.858823529411765e-05, 'epoch': 1.4}
+{'loss': 0.1319, 'grad_norm': 1.9498484134674072, 'learning_rate': 3.8352941176470596e-05, 'epoch': 1.63}
+{'loss': 0.1332, 'grad_norm': 3.2864835262298584, 'learning_rate': 3.811764705882353e-05, 'epoch': 1.86}
+{'eval_loss': 0.16347631812095642, 'eval_precision': 0.92, 'eval_recall': 0.936046511627907, 'eval_f1': 0.9279538904899135, 'eval_accuracy': 0.9478527607361963, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.8846153846153846, 'eval_Person_f1': 0.8857142857142857, 'eval_Question_f1': 0.9565217391304348, 'eval_Task_f1': 0.9444444444444444, 'eval_Time_f1': 1.0, 'eval_overall_precision': 0.92, 'eval_overall_recall': 0.936046511627907, 'eval_overall_f1': 0.9279538904899135, 'eval_overall_accuracy': 0.9478527607361963, 'eval_runtime': 4.6597, 'eval_samples_per_second': 8.155, 'eval_steps_per_second': 1.073, 'epoch': 2.0}
+{'loss': 0.0807, 'grad_norm': 0.7730674147605896, 'learning_rate': 3.7882352941176475e-05, 'epoch': 2.09}
+{'loss': 0.0933, 'grad_norm': 1.7442972660064697, 'learning_rate': 3.7647058823529415e-05, 'epoch': 2.33}
+{'loss': 0.0457, 'grad_norm': 2.123796224594116, 'learning_rate': 3.7411764705882355e-05, 'epoch': 2.56}
+{'loss': 0.069, 'grad_norm': 3.875871181488037, 'learning_rate': 3.7176470588235295e-05, 'epoch': 2.79}
+{'eval_loss': 0.16467013955116272, 'eval_precision': 0.92, 'eval_recall': 0.936046511627907, 'eval_f1': 0.9279538904899135, 'eval_accuracy': 0.9570552147239264, 'eval_Action_f1': 0.967741935483871, 'eval_Entity_f1': 0.8598130841121495, 'eval_Person_f1': 0.9275362318840579, 'eval_Question_f1': 0.9565217391304348, 'eval_Task_f1': 1.0, 'eval_Time_f1': 0.9615384615384616, 'eval_overall_precision': 0.92, 'eval_overall_recall': 0.936046511627907, 'eval_overall_f1': 0.9279538904899135, 'eval_overall_accuracy': 0.9570552147239264, 'eval_runtime': 4.3245, 'eval_samples_per_second': 8.787, 'eval_steps_per_second': 1.156, 'epoch': 3.0}
+{'loss': 0.0551, 'grad_norm': 1.2815512418746948, 'learning_rate': 3.694117647058824e-05, 'epoch': 3.02}
+{'loss': 0.0525, 'grad_norm': 0.4698457419872284, 'learning_rate': 3.6705882352941175e-05, 'epoch': 3.26}
+{'loss': 0.0178, 'grad_norm': 1.0189119577407837, 'learning_rate': 3.647058823529412e-05, 'epoch': 3.49}

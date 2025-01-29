@@ -1,0 +1,41 @@
+100%|██████████| 100/100 [04:55<00:00,  2.95s/it]
+{'loss': 1.7101, 'grad_norm': 6.258248805999756, 'learning_rate': 3.6e-05, 'epoch': 0.4}
+{'loss': 1.0662, 'grad_norm': 6.788356781005859, 'learning_rate': 3.2000000000000005e-05, 'epoch': 0.8}
+100%|██████████| 3/3 [00:04<00:00,  1.59s/it]
+{'eval_loss': 0.47925111651420593, 'eval_precision': 0.9117647058823529, 'eval_recall': 0.7948717948717948, 'eval_f1': 0.8493150684931507, 'eval_accuracy': 0.8846153846153846, 'eval_runtime': 1.24, 'eval_samples_per_second': 9.677, 'eval_steps_per_second': 2.419, 'epoch': 1.0}
+{'loss': 0.4685, 'grad_norm': 4.578212261199951, 'learning_rate': 2.8e-05, 'epoch': 1.2}
+{'loss': 0.3113, 'grad_norm': 6.197564125061035, 'learning_rate': 2.4e-05, 'epoch': 1.6}
+{'loss': 0.2576, 'grad_norm': 7.64351224899292, 'learning_rate': 2e-05, 'epoch': 2.0}
+{'eval_loss': 0.31295427680015564, 'eval_precision': 0.9166666666666666, 'eval_recall': 0.8461538461538461, 'eval_f1': 0.8799999999999999, 'eval_accuracy': 0.9230769230769231, 'eval_runtime': 0.9206, 'eval_samples_per_second': 13.035, 'eval_steps_per_second': 3.259, 'epoch': 2.0}
+{'loss': 0.116, 'grad_norm': 0.9405732750892639, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.4}
+{'loss': 0.1096, 'grad_norm': 1.8074971437454224, 'learning_rate': 1.2e-05, 'epoch': 2.8}
+{'eval_loss': 0.3008989989757538, 'eval_precision': 0.9166666666666666, 'eval_recall': 0.8461538461538461, 'eval_f1': 0.8799999999999999, 'eval_accuracy': 0.9230769230769231, 'eval_runtime': 1.0661, 'eval_samples_per_second': 11.256, 'eval_steps_per_second': 2.814, 'epoch': 3.0}
+{'loss': 0.0953, 'grad_norm': 2.7188613414764404, 'learning_rate': 8.000000000000001e-06, 'epoch': 3.2}
+{'loss': 0.0609, 'grad_norm': 3.0079150199890137, 'learning_rate': 4.000000000000001e-06, 'epoch': 3.6}
+{'loss': 0.0456, 'grad_norm': 2.142489433288574, 'learning_rate': 0.0, 'epoch': 4.0}
+{'eval_loss': 0.3089773952960968, 'eval_precision': 0.9142857142857143, 'eval_recall': 0.8205128205128205, 'eval_f1': 0.8648648648648648, 'eval_accuracy': 0.9230769230769231, 'eval_runtime': 0.6861, 'eval_samples_per_second': 17.491, 'eval_steps_per_second': 4.373, 'epoch': 4.0}
+{'train_runtime': 296.3638, 'train_samples_per_second': 1.336, 'train_steps_per_second': 0.337, 'train_loss': 0.42412579894065855, 'epoch': 4.0}
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-german-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+ 15%|█▌        | 10/65 [00:47<04:18,  4.71s/ic:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+{'loss': 1.8611, 'grad_norm': 5.294075965881348, 'learning_rate': 2.5384615384615386e-05, 'epoch': 0.77}
+  _warn_prf(average, modifier, msg_start, len(result))
+100%|██████████| 65/65 [04:24<00:00,  4.06s/it]
+100%|██████████| 2/2 [00:00<00:00,  4.14it/s]
+{'eval_loss': 1.253653883934021, 'eval_precision': 0.8333333333333334, 'eval_recall': 0.38461538461538464, 'eval_f1': 0.5263157894736842, 'eval_accuracy': 0.5641025641025641, 'eval_runtime': 4.5116, 'eval_samples_per_second': 2.66, 'eval_steps_per_second': 0.443, 'epoch': 0.77}
+{'loss': 0.9459, 'grad_norm': 4.710885524749756, 'learning_rate': 2.076923076923077e-05, 'epoch': 1.54}
+{'eval_loss': 0.6181102991104126, 'eval_precision': 0.9032258064516129, 'eval_recall': 0.717948717948718, 'eval_f1': 0.8, 'eval_accuracy': 0.8333333333333334, 'eval_runtime': 1.2372, 'eval_samples_per_second': 9.7, 'eval_steps_per_second': 1.617, 'epoch': 1.54}
+{'loss': 0.5425, 'grad_norm': 3.257018804550171, 'learning_rate': 1.6153846153846154e-05, 'epoch': 2.31}
+{'eval_loss': 0.4451240003108978, 'eval_precision': 0.9393939393939394, 'eval_recall': 0.7948717948717948, 'eval_f1': 0.8611111111111112, 'eval_accuracy': 0.8846153846153846, 'eval_runtime': 1.2715, 'eval_samples_per_second': 9.438, 'eval_steps_per_second': 1.573, 'epoch': 2.31}
+{'loss': 0.3604, 'grad_norm': 2.9352102279663086, 'learning_rate': 1.153846153846154e-05, 'epoch': 3.08}
+{'eval_loss': 0.34457194805145264, 'eval_precision': 0.9705882352941176, 'eval_recall': 0.8461538461538461, 'eval_f1': 0.9041095890410958, 'eval_accuracy': 0.9102564102564102, 'eval_runtime': 1.0731, 'eval_samples_per_second': 11.183, 'eval_steps_per_second': 1.864, 'epoch': 3.08}
+{'loss': 0.2362, 'grad_norm': 2.135859251022339, 'learning_rate': 6.923076923076923e-06, 'epoch': 3.85}
+{'eval_loss': 0.3114255964756012, 'eval_precision': 0.9714285714285714, 'eval_recall': 0.8717948717948718, 'eval_f1': 0.9189189189189189, 'eval_accuracy': 0.9358974358974359, 'eval_runtime': 0.6665, 'eval_samples_per_second': 18.004, 'eval_steps_per_second': 3.001, 'epoch': 3.85}
+{'loss': 0.1886, 'grad_norm': 2.283151865005493, 'learning_rate': 2.307692307692308e-06, 'epoch': 4.62}
+{'eval_loss': 0.3038669526576996, 'eval_precision': 0.9714285714285714, 'eval_recall': 0.8717948717948718, 'eval_f1': 0.9189189189189189, 'eval_accuracy': 0.9358974358974359, 'eval_runtime': 0.6486, 'eval_samples_per_second': 18.5, 'eval_steps_per_second': 3.083, 'epoch': 4.62}
+{'train_runtime': 264.22, 'train_samples_per_second': 1.873, 'train_steps_per_second': 0.246, 'train_loss': 0.6499329447746277, 'epoch': 5.0}
+Map: 100%|██████████| 111/111 [00:00<00:00, 2124.62 examples/s]
+c:\Python312\Lib\site-packages\transformers\tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+c:\Python312\Lib\site-packages\transformers\tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(

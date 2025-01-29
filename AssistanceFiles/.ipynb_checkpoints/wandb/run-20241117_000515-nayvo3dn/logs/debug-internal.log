@@ -1,0 +1,30 @@
+{"time":"2024-11-17T00:05:15.0670742+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-17T00:05:15.0670742+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241117_000515-nayvo3dn\\logs\\debug-core.log"}
+{"time":"2024-11-17T00:05:16.3348615+01:00","level":"INFO","msg":"created new stream","id":"nayvo3dn"}
+{"time":"2024-11-17T00:05:16.3348615+01:00","level":"INFO","msg":"stream: started","id":"nayvo3dn"}
+{"time":"2024-11-17T00:05:16.3348615+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"nayvo3dn"}}
+{"time":"2024-11-17T00:05:16.3348615+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"nayvo3dn"}}
+{"time":"2024-11-17T00:05:16.335379+01:00","level":"INFO","msg":"sender: started","stream_id":"nayvo3dn"}
+{"time":"2024-11-17T00:05:16.6600192+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-17T00:05:26.6736994+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-17T00:14:54.8566726+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:14:54.941417+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:14:55.0056722+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:14:55.0373462+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:14:55.681824+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:14:55.7001294+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:14:58.0436494+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:14:58.077267+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:14:58.6946967+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:14:58.7235731+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:14:59.0776427+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:14:59.1072425+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:14:59.1386219+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-17T00:14:59.1422296+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-17T00:15:00.031948+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-17T00:15:00.1524231+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.1204751}],"total_operations":1}}
+{"time":"2024-11-17T00:15:01.7392967+01:00","level":"INFO","msg":"stream: closing","id":"nayvo3dn"}
+{"time":"2024-11-17T00:15:01.7392967+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"nayvo3dn"}}
+{"time":"2024-11-17T00:15:01.7392967+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"nayvo3dn"}}
+{"time":"2024-11-17T00:15:01.7400126+01:00","level":"INFO","msg":"sender: closed","stream_id":"nayvo3dn"}
+{"time":"2024-11-17T00:15:01.7420061+01:00","level":"INFO","msg":"stream: closed","id":"nayvo3dn"}

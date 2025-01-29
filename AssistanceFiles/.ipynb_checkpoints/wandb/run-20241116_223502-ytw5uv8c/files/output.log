@@ -1,0 +1,162 @@
+ 20%|██        | 11/55 [00:45<02:59,  4.08s/ic:\Python312\Lib\site-packages\seqeval\metrics\v1.py:57: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+{'loss': 1.9258, 'grad_norm': 4.934484481811523, 'learning_rate': 3.272727272727273e-05, 'epoch': 0.91}
+  _warn_prf(average, modifier, msg_start, len(result))
+100%|██████████| 55/55 [04:03<00:00,  4.43s/it]
+100%|██████████| 3/3 [00:02<00:00,  1.49it/s]
+{'eval_loss': 1.2641562223434448, 'eval_precision': 0.5347593582887701, 'eval_recall': 0.5494505494505495, 'eval_f1': 0.5420054200542005, 'eval_accuracy': 0.6942355889724311, 'eval_runtime': 4.6419, 'eval_samples_per_second': 9.263, 'eval_steps_per_second': 0.646, 'epoch': 1.0}
+{'loss': 1.1098, 'grad_norm': 4.390249729156494, 'learning_rate': 2.5454545454545457e-05, 'epoch': 1.82}
+{'eval_loss': 0.7254503965377808, 'eval_precision': 0.6715686274509803, 'eval_recall': 0.7527472527472527, 'eval_f1': 0.7098445595854923, 'eval_accuracy': 0.7994987468671679, 'eval_runtime': 5.177, 'eval_samples_per_second': 8.306, 'eval_steps_per_second': 0.579, 'epoch': 2.0}
+{'loss': 0.6713, 'grad_norm': 2.938908338546753, 'learning_rate': 1.8181818181818182e-05, 'epoch': 2.73}
+{'eval_loss': 0.5508430600166321, 'eval_precision': 0.6956521739130435, 'eval_recall': 0.7912087912087912, 'eval_f1': 0.7403598971722366, 'eval_accuracy': 0.8270676691729323, 'eval_runtime': 3.4476, 'eval_samples_per_second': 12.473, 'eval_steps_per_second': 0.87, 'epoch': 3.0}
+{'loss': 0.5379, 'grad_norm': 3.584333658218384, 'learning_rate': 1.0909090909090909e-05, 'epoch': 3.64}
+{'eval_loss': 0.4905381202697754, 'eval_precision': 0.7121951219512195, 'eval_recall': 0.8021978021978022, 'eval_f1': 0.7545219638242895, 'eval_accuracy': 0.8370927318295739, 'eval_runtime': 4.7312, 'eval_samples_per_second': 9.089, 'eval_steps_per_second': 0.634, 'epoch': 4.0}
+{'loss': 0.4168, 'grad_norm': 3.5741682052612305, 'learning_rate': 3.6363636363636366e-06, 'epoch': 4.55}
+{'eval_loss': 0.4726402461528778, 'eval_precision': 0.7170731707317073, 'eval_recall': 0.8076923076923077, 'eval_f1': 0.7596899224806202, 'eval_accuracy': 0.8395989974937343, 'eval_runtime': 3.3106, 'eval_samples_per_second': 12.988, 'eval_steps_per_second': 0.906, 'epoch': 5.0}
+{'train_runtime': 247.8832, 'train_samples_per_second': 3.389, 'train_steps_per_second': 0.222, 'train_loss': 0.8848496090282093, 'epoch': 5.0}
+Results for fold 1: {'eval_loss': 0.4726402461528778, 'eval_precision': 0.7170731707317073, 'eval_recall': 0.8076923076923077, 'eval_f1': 0.7596899224806202, 'eval_accuracy': 0.8395989974937343, 'eval_runtime': 3.2119, 'eval_samples_per_second': 13.388, 'eval_steps_per_second': 0.934, 'epoch': 5.0}
+Training on fold 2
+100%|██████████| 55/55 [04:08<00:00,  4.51s/it]
+{'loss': 0.4005, 'grad_norm': 2.9827115535736084, 'learning_rate': 3.272727272727273e-05, 'epoch': 0.91}
+100%|██████████| 3/3 [00:02<00:00,  1.22it/s]
+{'eval_loss': 0.3204615116119385, 'eval_precision': 0.8681318681318682, 'eval_recall': 0.8926553672316384, 'eval_f1': 0.8802228412256268, 'eval_accuracy': 0.904320987654321, 'eval_runtime': 2.7896, 'eval_samples_per_second': 15.056, 'eval_steps_per_second': 1.075, 'epoch': 1.0}
+{'loss': 0.2594, 'grad_norm': 2.5161473751068115, 'learning_rate': 2.5454545454545457e-05, 'epoch': 1.82}
+{'eval_loss': 0.3127835690975189, 'eval_precision': 0.8688524590163934, 'eval_recall': 0.8983050847457628, 'eval_f1': 0.8833333333333333, 'eval_accuracy': 0.9074074074074074, 'eval_runtime': 2.7726, 'eval_samples_per_second': 15.148, 'eval_steps_per_second': 1.082, 'epoch': 2.0}
+{'loss': 0.1848, 'grad_norm': 2.2164673805236816, 'learning_rate': 1.8181818181818182e-05, 'epoch': 2.73}
+{'eval_loss': 0.3173028826713562, 'eval_precision': 0.8736263736263736, 'eval_recall': 0.8983050847457628, 'eval_f1': 0.8857938718662953, 'eval_accuracy': 0.904320987654321, 'eval_runtime': 3.1164, 'eval_samples_per_second': 13.477, 'eval_steps_per_second': 0.963, 'epoch': 3.0}
+{'loss': 0.1302, 'grad_norm': 1.9530208110809326, 'learning_rate': 1.0909090909090909e-05, 'epoch': 3.64}
+{'eval_loss': 0.30900466442108154, 'eval_precision': 0.8797814207650273, 'eval_recall': 0.9096045197740112, 'eval_f1': 0.8944444444444445, 'eval_accuracy': 0.9166666666666666, 'eval_runtime': 2.8952, 'eval_samples_per_second': 14.507, 'eval_steps_per_second': 1.036, 'epoch': 4.0}
+{'loss': 0.0959, 'grad_norm': 1.2128510475158691, 'learning_rate': 3.6363636363636366e-06, 'epoch': 4.55}
+{'eval_loss': 0.3087718188762665, 'eval_precision': 0.8846153846153846, 'eval_recall': 0.9096045197740112, 'eval_f1': 0.8969359331476322, 'eval_accuracy': 0.9166666666666666, 'eval_runtime': 3.7558, 'eval_samples_per_second': 11.183, 'eval_steps_per_second': 0.799, 'epoch': 5.0}
+{'train_runtime': 248.2896, 'train_samples_per_second': 3.403, 'train_steps_per_second': 0.222, 'train_loss': 0.20437562574039805, 'epoch': 5.0}
+Results for fold 2: {'eval_loss': 0.3087718188762665, 'eval_precision': 0.8846153846153846, 'eval_recall': 0.9096045197740112, 'eval_f1': 0.8969359331476322, 'eval_accuracy': 0.9166666666666666, 'eval_runtime': 3.7462, 'eval_samples_per_second': 11.211, 'eval_steps_per_second': 0.801, 'epoch': 5.0}
+Training on fold 3
+100%|██████████| 55/55 [03:54<00:00,  4.26s/it]
+{'loss': 0.1286, 'grad_norm': 1.1760002374649048, 'learning_rate': 3.272727272727273e-05, 'epoch': 0.91}
+100%|██████████| 3/3 [00:02<00:00,  1.38it/s]
+{'eval_loss': 0.08764246106147766, 'eval_precision': 0.9518072289156626, 'eval_recall': 0.9634146341463414, 'eval_f1': 0.9575757575757576, 'eval_accuracy': 0.976878612716763, 'eval_runtime': 2.8115, 'eval_samples_per_second': 14.939, 'eval_steps_per_second': 1.067, 'epoch': 1.0}
+{'loss': 0.0953, 'grad_norm': 1.0547000169754028, 'learning_rate': 2.5454545454545457e-05, 'epoch': 1.82}
+{'eval_loss': 0.0779295265674591, 'eval_precision': 0.9636363636363636, 'eval_recall': 0.9695121951219512, 'eval_f1': 0.9665653495440729, 'eval_accuracy': 0.9826589595375722, 'eval_runtime': 3.0141, 'eval_samples_per_second': 13.935, 'eval_steps_per_second': 0.995, 'epoch': 2.0}
+{'loss': 0.0616, 'grad_norm': 0.30773797631263733, 'learning_rate': 1.8181818181818182e-05, 'epoch': 2.73}
+{'eval_loss': 0.07248196005821228, 'eval_precision': 0.975609756097561, 'eval_recall': 0.975609756097561, 'eval_f1': 0.975609756097561, 'eval_accuracy': 0.9855491329479769, 'eval_runtime': 2.7704, 'eval_samples_per_second': 15.16, 'eval_steps_per_second': 1.083, 'epoch': 3.0}
+{'loss': 0.0583, 'grad_norm': 3.2405543327331543, 'learning_rate': 1.0909090909090909e-05, 'epoch': 3.64}
+{'eval_loss': 0.07810851186513901, 'eval_precision': 0.9696969696969697, 'eval_recall': 0.975609756097561, 'eval_f1': 0.9726443768996961, 'eval_accuracy': 0.9826589595375722, 'eval_runtime': 4.2156, 'eval_samples_per_second': 9.963, 'eval_steps_per_second': 0.712, 'epoch': 4.0}
+{'loss': 0.0315, 'grad_norm': 2.5702738761901855, 'learning_rate': 3.6363636363636366e-06, 'epoch': 4.55}
+{'eval_loss': 0.08141891658306122, 'eval_precision': 0.9578313253012049, 'eval_recall': 0.9695121951219512, 'eval_f1': 0.9636363636363636, 'eval_accuracy': 0.9797687861271677, 'eval_runtime': 2.5971, 'eval_samples_per_second': 16.172, 'eval_steps_per_second': 1.155, 'epoch': 5.0}
+{'train_runtime': 234.181, 'train_samples_per_second': 3.608, 'train_steps_per_second': 0.235, 'train_loss': 0.07235632728446614, 'epoch': 5.0}
+Results for fold 3: {'eval_loss': 0.08141891658306122, 'eval_precision': 0.9578313253012049, 'eval_recall': 0.9695121951219512, 'eval_f1': 0.9636363636363636, 'eval_accuracy': 0.9797687861271677, 'eval_runtime': 3.1127, 'eval_samples_per_second': 13.493, 'eval_steps_per_second': 0.964, 'epoch': 5.0}
+Training on fold 4
+100%|██████████| 55/55 [04:22<00:00,  4.76s/it]
+{'loss': 0.0523, 'grad_norm': 2.9165091514587402, 'learning_rate': 3.272727272727273e-05, 'epoch': 0.91}
+100%|██████████| 3/3 [00:01<00:00,  1.65it/s]
+{'eval_loss': 0.024684390053153038, 'eval_precision': 0.9940828402366864, 'eval_recall': 0.9940828402366864, 'eval_f1': 0.9940828402366864, 'eval_accuracy': 0.9938837920489296, 'eval_runtime': 3.4379, 'eval_samples_per_second': 12.217, 'eval_steps_per_second': 0.873, 'epoch': 1.0}
+{'loss': 0.0371, 'grad_norm': 1.5274949073791504, 'learning_rate': 2.5454545454545457e-05, 'epoch': 1.82}
+{'eval_loss': 0.038807936012744904, 'eval_precision': 0.9823529411764705, 'eval_recall': 0.9881656804733728, 'eval_f1': 0.9852507374631269, 'eval_accuracy': 0.9908256880733946, 'eval_runtime': 2.3551, 'eval_samples_per_second': 17.834, 'eval_steps_per_second': 1.274, 'epoch': 2.0}
+{'loss': 0.0186, 'grad_norm': 0.31259775161743164, 'learning_rate': 1.8181818181818182e-05, 'epoch': 2.73}
+{'eval_loss': 0.017698675394058228, 'eval_precision': 0.9823529411764705, 'eval_recall': 0.9881656804733728, 'eval_f1': 0.9852507374631269, 'eval_accuracy': 0.9938837920489296, 'eval_runtime': 3.1746, 'eval_samples_per_second': 13.23, 'eval_steps_per_second': 0.945, 'epoch': 3.0}
+{'loss': 0.019, 'grad_norm': 0.6468241810798645, 'learning_rate': 1.0909090909090909e-05, 'epoch': 3.64}
+{'eval_loss': 0.016621794551610947, 'eval_precision': 0.9882352941176471, 'eval_recall': 0.9940828402366864, 'eval_f1': 0.9911504424778761, 'eval_accuracy': 0.9969418960244648, 'eval_runtime': 4.5978, 'eval_samples_per_second': 9.135, 'eval_steps_per_second': 0.652, 'epoch': 4.0}
+{'loss': 0.0176, 'grad_norm': 1.4147868156433105, 'learning_rate': 3.6363636363636366e-06, 'epoch': 4.55}
+{'eval_loss': 0.015264938585460186, 'eval_precision': 0.9882352941176471, 'eval_recall': 0.9940828402366864, 'eval_f1': 0.9911504424778761, 'eval_accuracy': 0.9969418960244648, 'eval_runtime': 2.5415, 'eval_samples_per_second': 16.525, 'eval_steps_per_second': 1.18, 'epoch': 5.0}
+{'train_runtime': 262.0442, 'train_samples_per_second': 3.225, 'train_steps_per_second': 0.21, 'train_loss': 0.030075842413035306, 'epoch': 5.0}
+Results for fold 4: {'eval_loss': 0.015264938585460186, 'eval_precision': 0.9882352941176471, 'eval_recall': 0.9940828402366864, 'eval_f1': 0.9911504424778761, 'eval_accuracy': 0.9969418960244648, 'eval_runtime': 2.819, 'eval_samples_per_second': 14.899, 'eval_steps_per_second': 1.064, 'epoch': 5.0}
+Training on fold 5
+100%|██████████| 55/55 [04:07<00:00,  4.50s/it]
+{'loss': 0.015, 'grad_norm': 0.5065778493881226, 'learning_rate': 3.272727272727273e-05, 'epoch': 0.91}
+100%|██████████| 3/3 [00:01<00:00,  1.75it/s]
+{'eval_loss': 0.11039499938488007, 'eval_precision': 0.9761904761904762, 'eval_recall': 0.9820359281437125, 'eval_f1': 0.9791044776119404, 'eval_accuracy': 0.9787878787878788, 'eval_runtime': 2.8043, 'eval_samples_per_second': 14.977, 'eval_steps_per_second': 1.07, 'epoch': 1.0}
+{'loss': 0.04, 'grad_norm': 3.3537075519561768, 'learning_rate': 2.5454545454545457e-05, 'epoch': 1.82}
+{'eval_loss': 0.06659562885761261, 'eval_precision': 0.9819277108433735, 'eval_recall': 0.9760479041916168, 'eval_f1': 0.978978978978979, 'eval_accuracy': 0.9848484848484849, 'eval_runtime': 3.3232, 'eval_samples_per_second': 12.639, 'eval_steps_per_second': 0.903, 'epoch': 2.0}
+{'loss': 0.0158, 'grad_norm': 0.1477484256029129, 'learning_rate': 1.8181818181818182e-05, 'epoch': 2.73}
+{'eval_loss': 0.06392884254455566, 'eval_precision': 0.9878787878787879, 'eval_recall': 0.9760479041916168, 'eval_f1': 0.9819277108433735, 'eval_accuracy': 0.9848484848484849, 'eval_runtime': 2.6494, 'eval_samples_per_second': 15.852, 'eval_steps_per_second': 1.132, 'epoch': 3.0}
+{'loss': 0.0099, 'grad_norm': 0.18094941973686218, 'learning_rate': 1.0909090909090909e-05, 'epoch': 3.64}
+{'eval_loss': 0.06315477937459946, 'eval_precision': 0.9878787878787879, 'eval_recall': 0.9760479041916168, 'eval_f1': 0.9819277108433735, 'eval_accuracy': 0.9848484848484849, 'eval_runtime': 2.7454, 'eval_samples_per_second': 15.298, 'eval_steps_per_second': 1.093, 'epoch': 4.0}
+{'loss': 0.0278, 'grad_norm': 2.3544349670410156, 'learning_rate': 3.6363636363636366e-06, 'epoch': 4.55}
+{'eval_loss': 0.05999637395143509, 'eval_precision': 0.9878787878787879, 'eval_recall': 0.9760479041916168, 'eval_f1': 0.9819277108433735, 'eval_accuracy': 0.9848484848484849, 'eval_runtime': 3.0182, 'eval_samples_per_second': 13.916, 'eval_steps_per_second': 0.994, 'epoch': 5.0}
+{'train_runtime': 247.5645, 'train_samples_per_second': 3.413, 'train_steps_per_second': 0.222, 'train_loss': 0.022061330486427656, 'epoch': 5.0}
+Results for fold 5: {'eval_loss': 0.05999637395143509, 'eval_precision': 0.9878787878787879, 'eval_recall': 0.9760479041916168, 'eval_f1': 0.9819277108433735, 'eval_accuracy': 0.9848484848484849, 'eval_runtime': 3.2375, 'eval_samples_per_second': 12.973, 'eval_steps_per_second': 0.927, 'epoch': 5.0}
+[('Trag', 'B-Action'), ('mir', 'O'), ('eine', 'O'), ('Pause', 'B-Entity'), ('für', 'O'), ('12', 'B-Time'), (':', 'B-Time'), ('45', 'B-Time'), ('ein', 'O')]
+[('Trag', 'B-Action'), ('mir', 'O'), ('eine', 'O'), ('Pause', 'B-Entity'), ('für', 'O'), ('17', 'B-Time'), (':', 'B-Time'), ('22', 'B-Entity'), ('ein', 'O')]
+[('Was', 'O'), ('ist', 'O'), ('mein', 'O'), ('derzeit', 'B-Entity'), ('##iger', 'B-Entity'), ('Kilometer', 'I-Entity'), ('##stand', 'B-Entity')]
+[('Änder', 'B-Action'), ('##e', 'B-Action'), ('meinen', 'O'), ('derzeit', 'B-Entity'), ('##iger', 'B-Entity'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity')]
+[('Änder', 'B-Action'), ('##e', 'B-Action'), ('meinen', 'O'), ('derzeit', 'B-Entity'), ('##iger', 'B-Entity'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('##auf', 'O'), ('99', 'B-Entity')]
+[('Änder', 'B-Action'), ('##e', 'B-Action'), ('meinen', 'O'), ('derzeit', 'B-Entity'), ('##iger', 'B-Entity'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('auf', 'O'), ('99', 'B-Entity')]
+[('Änder', 'B-Action'), ('##e', 'B-Action'), ('meinen', 'O'), ('derzeit', 'B-Entity'), ('##iger', 'B-Entity'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('66', 'B-Entity')]
+[('Trag', 'B-Action'), ('##e', 'B-Action'), ('den', 'O'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('50', 'B-Distance'), ('##23', 'B-Distance'), ('##4', 'B-Distance'), ('als', 'O'), ('Start', 'B-Entity'), ('##kilometer', 'B-Entity'), ('ein', 'O')]
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\raffa\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     C:\Users\raffa\AppData\Roaming\nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+Generating train split: 242 examples [00:00, 6616.23 examples/s]
+Map: 100%|██████████| 242/242 [00:00<00:00, 4876.86 examples/s]
+Parsed Dataset: DatasetDict({
+    train: Dataset({
+        features: ['tokens', 'ner_tags'],
+        num_rows: 242
+    })
+})
+{'tokens': ['Starte', 'den', 'aktuellen', 'Einsatz'], 'ner_tags': ['B-Action', 'O', 'B-Task', 'I-Task']}
+Map: 100%|██████████| 242/242 [00:00<00:00, 4696.52 examples/s]
+DatasetDict({
+    train: Dataset({
+        features: ['tokens', 'ner_tags'],
+        num_rows: 242
+    })
+})
+Token and tag lengths are consistent.
+Invalid label found in train split: B-Action
+Found invalid labels in the dataset.
+Invalid tag types in train split: ['B-Action', 'O', 'B-Task', 'I-Task']
+Found invalid data types in the dataset.
+Special tokens are handled correctly.
+Invalid label found in train split: B-Action
+Found invalid labels in the dataset.
+c:\Python312\Lib\site-packages\transformers\tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Casting the dataset: 100%|██████████| 242/242 [00:00<00:00, 5838.66 examples/s]
+{'tokens': ['Starte', 'den', 'aktuellen', 'Einsatz'], 'ner_tags': [1, 0, 7, 8]}
+{'input_ids': [3, 4111, 26897, 86, 6426, 2200, 4], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1]}
+--------------------------------------------------------------------------------------
+ ['[CLS]', 'Start', '##e', 'den', 'aktuellen', 'Einsatz', '[SEP]']
+--------------------------------------------------------------------------------------
+ [None, 0, 0, 1, 2, 3, None]
+['[CLS]', 'Start', '##e', 'den', 'aktuellen', 'Einsatz', '[SEP]']
+--------------------------------------------------------------------------------------
+ [1, 0, 7, 8]
+--------------------------------------------------------------------------------------
+ [-100, 1, 2, 0, 7, 8, -100]
+[CLS]	None
+Start	B-Action
+##e	I-Action
+den	O
+aktuellen	B-Task
+Einsatz	I-Task
+[SEP]	None
+Map: 100%|██████████| 242/242 [00:00<00:00, 2347.44 examples/s]
+{'input_ids': [[3, 4111, 26897, 86, 6426, 2200, 4], [3, 4111, 26897, 86, 16346, 2200, 4], [3, 4111, 26897, 86, 20480, 2200, 4], [3, 4111, 26897, 86, 9460, 26, 10606, 2200, 4], [3, 4111, 26897, 86, 5649, 2200, 4], [3, 163, 765, 86, 18334, 2200, 4], [3, 163, 765, 86, 16346, 2200, 4], [3, 163, 765, 86, 20480, 2200, 4], [3, 6858, 26897, 303, 11679, 88, 946, 5477, 104, 4], [3, 6858, 26897, 303, 11679, 88, 946, 9461, 6, 104, 4], [3, 6858, 26897, 303, 11679, 88, 946, 15163, 26900, 104, 4], [3, 6858, 26897, 303, 17081, 88, 946, 5477, 104, 4], [3, 6858, 26897, 303, 17081, 88, 946, 9461, 6, 104, 4], [3, 6858, 26897, 303, 17081, 88, 946, 15163, 26900, 104, 4], [3, 6858, 26897, 303, 11679, 88, 1964, 5477, 104, 4], [3, 6858, 26897, 303, 11679, 88, 1964, 15163, 26900, 104, 4], [3, 6858, 26897, 303, 11679, 88, 1964, 9461, 6, 104, 4], [3, 6858, 26897, 303, 17081, 88, 1964, 5477, 104, 4], [3, 6858, 26897, 303, 17081, 88, 1964, 9461, 6, 104, 4], [3, 6858, 26897, 303, 17081, 88, 1964, 15163, 26900, 104, 4], [3, 1316, 2197, 13108, 21, 8974, 2200, 357, 4], [3, 1316, 2197, 13108, 21, 3153, 288, 2200, 357, 4], [3, 1316, 2197, 13108, 21, 11991, 288, 2200, 357, 4], [3, 15209, 2538, 21, 6920, 2200, 1245, 4], [3, 15209, 2538, 21, 8974, 2200, 1245, 4], [3, 1316, 2197, 13108, 21, 8974, 2200, 4], [3, 1316, 2197, 13108, 21, 6920, 2200, 4], [3, 15209, 127, 8055, 3507, 3587, 2200, 4], [3, 15209, 127, 1138, 3507, 1207, 6, 2200, 4], [3, 1316, 2197, 127, 21, 6920, 2200, 4], [3, 1316, 2197, 20292, 1169, 255, 260, 3380, 2200, 4], [3, 1316, 2197, 555, 1169, 417, 255, 260, 3380, 2200, 4], [3, 9214, 26897, 86, 2706, 453, 10092, 26960, 153, 4111, 453, 39, 4], [3, 9214, 26897, 86, 2706, 453, 13550, 26942, 153, 3558, 453, 39, 4], [3, 304, 7375, 3512, 5137, 26897, 1169, 1138, 260, 2200, 4], [3, 9214, 26897, 106, 14277, 2046, 4310, 2396, 366, 39, 4], [3, 1316, 127, 21, 3504, 91, 815, 3448, 4], [3, 1316, 127, 21, 3504, 21, 815, 1692, 14, 4], [3, 1309, 193, 93, 3649, 1307, 30, 815, 1692, 14, 11968, 26897, 26249, 12405, 4], [3, 4111, 26897, 86, 2200, 4], [3, 163, 765, 86, 2200, 4], [3, 1316, 2018, 30, 714, 1692, 14, 4], [3, 1316, 2018, 21, 815, 1692, 4], [3, 1316, 2197, 260, 3380, 2200, 4], [3, 1316, 2197, 13108, 21, 8974, 2200, 4], [3, 4111, 26897, 2200, 4], [3, 163, 765, 2200, 4], [3, 6858, 26897, 13480, 104, 4], [3, 6858, 26897, 11679, 104, 4], [3, 1316, 870, 417, 3141, 3667, 142, 86, 6426, 2200, 357, 4], [3, 1316, 2197, 19009, 1169, 357, 142, 30, 815, 1692, 14, 417, 4], [3, 1316, 2197, 555, 1169, 357, 417, 4], [3, 15209, 1080, 1169, 785, 3380, 2200, 167, 4], [3, 1316, 2197, 5137, 26897, 1169, 260, 3380, 2200, 4], [3, 10360, 22, 4310, 2396, 366, 260, 2200, 4187, 4], [3, 2396, 366, 260, 2200, 4187, 688, 52, 4], [3, 11388, 26897, 30, 2396, 366, 115, 4], [3, 3128, 26897, 14843, 30, 2396, 366, 4], [3, 1316, 3778, 127, 21, 815, 1692, 4], [3, 1316, 3778, 127, 21, 16129, 4], [3, 1316, 3778, 127, 30, 815, 1692, 14, 4], [3, 1316, 3778, 127, 30, 16129, 14, 4], [3, 11679, 104, 12220, 4], [3, 13480, 88, 946, 5477, 104, 12220, 4], [3, 13480, 88, 7010, 26249, 104, 12220, 4], [3, 4111, 447, 142, 86, 2200, 115, 1868, 6047, 4], [3, 1868, 4111, 447, 142, 86, 2200, 19754, 4620, 4], [3, 6858, 26897, 946, 17545, 104, 4], [3, 7010, 10729, 97, 104, 12220, 4], [3, 815, 3448, 91, 3380, 2200, 16, 104, 12220, 4], [3, 5501, 142, 3380, 2200, 104, 12220, 4], [3, 15063, 104, 946, 2944, 4], [3, 6858, 26897, 9345, 26903, 10929, 6, 104, 4], [3, 4111, 26897, 86, 1280, 2200, 4], [3, 2602, 26897, 86, 2200, 142, 946, 5477, 4], [3, 163, 765, 86, 6426, 2200, 142, 1138, 4], [3, 23830, 416, 86, 2200, 115, 6164, 4], [3, 4111, 26897, 30, 12366, 142, 86, 3380, 2200, 4], [3, 1316, 2197, 13108, 21, 2200, 178, 946, 423, 19012, 26900, 1138, 4], [3, 15209, 127, 3507, 6920, 26900, 2200, 1138, 4], [3, 1316, 1480, 3951, 555, 1169, 357, 142, 86, 6426, 2200, 4], [3, 15209, 127, 21, 2200, 88, 1138, 7170, 4], [3, 1316, 1480, 14471, 555, 1169, 1138, 357, 4], [3, 2019, 127, 21, 3504, 91, 6426, 815, 3448, 4], [3, 1309, 127, 30, 815, 1692, 14, 785, 3380, 2200, 4], [3, 1316, 3778, 127, 21, 16129, 1138, 4], [3, 1309, 185, 12656
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+{0: 'O', 1: 'B-Action', 2: 'I-Action', 3: 'B-Entity', 4: 'I-Entity', 5: 'B-Person', 6: 'I-Person', 7: 'B-Task', 8: 'I-Task', 9: 'B-Time', 10: 'I-Time', 11: 'B-Distance'}
+--------------------
+ {'O': 0, 'B-Action': 1, 'I-Action': 2, 'B-Entity': 3, 'I-Entity': 4, 'B-Person': 5, 'I-Person': 6, 'B-Task': 7, 'I-Task': 8, 'B-Time': 9, 'I-Time': 10, 'B-Distance': 11}
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-german-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+100%|██████████| 70/70 [04:46<00:00,  4.09s/it]
+{'loss': 1.873, 'grad_norm': 5.520669937133789, 'learning_rate': 3.4285714285714284e-05, 'epoch': 0.71}
+100%|██████████| 2/2 [00:00<00:00,  2.91it/s]
+{'eval_loss': 0.8897067904472351, 'eval_precision': 0.6607142857142857, 'eval_recall': 0.7115384615384616, 'eval_f1': 0.6851851851851851, 'eval_accuracy': 0.8018433179723502, 'eval_runtime': 1.6287, 'eval_samples_per_second': 15.349, 'eval_steps_per_second': 1.228, 'epoch': 1.0}
+{'loss': 1.0569, 'grad_norm': 3.8679299354553223, 'learning_rate': 2.8571428571428574e-05, 'epoch': 1.43}
+{'eval_loss': 0.44836997985839844, 'eval_precision': 0.8108108108108109, 'eval_recall': 0.8653846153846154, 'eval_f1': 0.8372093023255813, 'eval_accuracy': 0.9032258064516129, 'eval_runtime': 1.5269, 'eval_samples_per_second': 16.373, 'eval_steps_per_second': 1.31, 'epoch': 2.0}
+{'loss': 0.6165, 'grad_norm': 3.3313252925872803, 'learning_rate': 2.2857142857142858e-05, 'epoch': 2.14}
+{'loss': 0.4354, 'grad_norm': 3.0055317878723145, 'learning_rate': 1.7142857142857142e-05, 'epoch': 2.86}
+{'eval_loss': 0.3424569070339203, 'eval_precision': 0.782608695652174, 'eval_recall': 0.8653846153846154, 'eval_f1': 0.8219178082191783, 'eval_accuracy': 0.9124423963133641, 'eval_runtime': 2.0084, 'eval_samples_per_second': 12.448, 'eval_steps_per_second': 0.996, 'epoch': 3.0}
+{'loss': 0.3386, 'grad_norm': 2.7310097217559814, 'learning_rate': 1.1428571428571429e-05, 'epoch': 3.57}
+{'eval_loss': 0.3109327554702759, 'eval_precision': 0.8070175438596491, 'eval_recall': 0.8846153846153846, 'eval_f1': 0.8440366972477065, 'eval_accuracy': 0.9170506912442397, 'eval_runtime': 2.1128, 'eval_samples_per_second': 11.833, 'eval_steps_per_second': 0.947, 'epoch': 4.0}
+{'loss': 0.3241, 'grad_norm': 2.7551469802856445, 'learning_rate': 5.7142857142857145e-06, 'epoch': 4.29}
+{'loss': 0.2421, 'grad_norm': 2.479591131210327, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.2988041639328003, 'eval_precision': 0.8214285714285714, 'eval_recall': 0.8846153846153846, 'eval_f1': 0.8518518518518519, 'eval_accuracy': 0.9216589861751152, 'eval_runtime': 1.7542, 'eval_samples_per_second': 14.252, 'eval_steps_per_second': 1.14, 'epoch': 5.0}
+{'train_runtime': 286.4459, 'train_samples_per_second': 3.788, 'train_steps_per_second': 0.244, 'train_loss': 0.6980954987662179, 'epoch': 5.0}
+[('Welche', 'O'), ('##n', 'O'), ('Blut', 'B-Entity'), ('##druck', 'B-Entity'), ('hat', 'O'), ('Frau', 'B-Person'), ('Fel', 'I-Person'), ('##ber', 'I-Person')]
+[('Ruf', 'B-Action'), ('Frau', 'B-Person'), ('Müller', 'I-Person'), ('an', 'O'), (',', 'O'), ('um', 'O'), ('die', 'O'), ('Einsatz', 'B-Task'), ('##det', 'B-Task'), ('##ails', 'B-Task'), ('zu', 'O'), ('besp', 'O'), ('##rechen', 'O')]
+[('Trag', 'B-Action'), ('##e', 'B-Action'), ('den', 'O'), ('Kilometer', 'B-Entity'), ('##stand', 'B-Entity'), ('50', 'B-Distance'), ('##23', 'B-Distance'), ('##4', 'B-Entity'), ('als', 'O'), ('Start', 'B-Entity'), ('##kilometer', 'B-Entity'), ('ein', 'O')]

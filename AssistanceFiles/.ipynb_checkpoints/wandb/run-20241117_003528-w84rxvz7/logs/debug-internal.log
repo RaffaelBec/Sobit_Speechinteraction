@@ -1,0 +1,28 @@
+{"time":"2024-11-17T00:35:29.0045842+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-17T00:35:29.0045842+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241117_003528-w84rxvz7\\logs\\debug-core.log"}
+{"time":"2024-11-17T00:35:29.1226533+01:00","level":"INFO","msg":"created new stream","id":"w84rxvz7"}
+{"time":"2024-11-17T00:35:29.1226533+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"w84rxvz7"}}
+{"time":"2024-11-17T00:35:29.1231748+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"w84rxvz7"}}
+{"time":"2024-11-17T00:35:29.1234694+01:00","level":"INFO","msg":"sender: started","stream_id":"w84rxvz7"}
+{"time":"2024-11-17T00:35:29.1234694+01:00","level":"INFO","msg":"stream: started","id":"w84rxvz7"}
+{"time":"2024-11-17T00:35:29.4670545+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-17T00:35:39.4681216+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-17T00:41:51.7797877+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:41:51.8096475+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:41:52.0868925+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:41:52.1006752+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:41:53.2990141+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:41:53.3200153+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:41:53.6063036+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:41:53.6319882+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:41:53.8921786+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-17T00:41:53.9154919+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-17T00:41:53.9366034+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-17T00:41:53.9398351+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-17T00:41:54.8046191+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-17T00:41:55.16401+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.1361642}],"total_operations":1}}
+{"time":"2024-11-17T00:41:56.330357+01:00","level":"INFO","msg":"stream: closing","id":"w84rxvz7"}
+{"time":"2024-11-17T00:41:56.3308714+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"w84rxvz7"}}
+{"time":"2024-11-17T00:41:56.3308714+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"w84rxvz7"}}
+{"time":"2024-11-17T00:41:56.3308714+01:00","level":"INFO","msg":"sender: closed","stream_id":"w84rxvz7"}
+{"time":"2024-11-17T00:41:56.3308714+01:00","level":"INFO","msg":"stream: closed","id":"w84rxvz7"}

@@ -1,0 +1,10 @@
+{"time":"2024-11-17T00:16:52.0204663+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-17T00:16:52.0204663+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241117_001651-b5m3fs76\\logs\\debug-core.log"}
+{"time":"2024-11-17T00:16:52.6349073+01:00","level":"INFO","msg":"created new stream","id":"b5m3fs76"}
+{"time":"2024-11-17T00:16:52.6349073+01:00","level":"INFO","msg":"stream: started","id":"b5m3fs76"}
+{"time":"2024-11-17T00:16:52.6349073+01:00","level":"INFO","msg":"sender: started","stream_id":"b5m3fs76"}
+{"time":"2024-11-17T00:16:52.6349073+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"b5m3fs76"}}
+{"time":"2024-11-17T00:16:52.6349073+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"b5m3fs76"}}
+{"time":"2024-11-17T00:16:52.9911311+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-17T00:17:03.0226367+01:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2024-11-17T00:28:42.3735111+01:00","level":"INFO","msg":"Pausing system monitor"}

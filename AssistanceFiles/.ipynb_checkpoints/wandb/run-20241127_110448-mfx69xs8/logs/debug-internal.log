@@ -1,0 +1,27 @@
+{"time":"2024-11-27T11:04:48.1128877+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-27T11:04:48.1134374+01:00","level":"INFO","msg":"created symlink","path":"c:\\5EHIF\\Diplomprojekt\\Sobit_Speechinteraction\\AssistanceFiles\\.ipynb_checkpoints\\wandb\\run-20241127_110448-mfx69xs8\\logs\\debug-core.log"}
+{"time":"2024-11-27T11:04:48.2319694+01:00","level":"INFO","msg":"created new stream","id":"mfx69xs8"}
+{"time":"2024-11-27T11:04:48.2325146+01:00","level":"INFO","msg":"stream: started","id":"mfx69xs8"}
+{"time":"2024-11-27T11:04:48.2325146+01:00","level":"INFO","msg":"sender: started","stream_id":"mfx69xs8"}
+{"time":"2024-11-27T11:04:48.2325146+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"mfx69xs8"}}
+{"time":"2024-11-27T11:04:48.2325146+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"mfx69xs8"}}
+{"time":"2024-11-27T11:04:48.5639121+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-27T11:15:12.8495304+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:15:12.8720546+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:15:13.5667678+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:15:13.5991086+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:15:13.9991522+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:15:14.0321501+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:15:14.1992118+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:15:14.2251199+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:16:07.9312861+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-27T11:16:07.9470716+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-27T11:16:07.9577601+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T11:16:07.9620468+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T11:16:08.9566441+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.3916533,"progress":"11.6KB/11.6KB"}],"total_operations":1}}
+{"time":"2024-11-27T11:16:08.9753035+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T11:16:10.1998882+01:00","level":"INFO","msg":"stream: closing","id":"mfx69xs8"}
+{"time":"2024-11-27T11:16:10.1998882+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"mfx69xs8"}}
+{"time":"2024-11-27T11:16:10.1998882+01:00","level":"INFO","msg":"sender: closed","stream_id":"mfx69xs8"}
+{"time":"2024-11-27T11:16:10.1998882+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"mfx69xs8"}}
+{"time":"2024-11-27T11:16:10.2004067+01:00","level":"INFO","msg":"stream: closed","id":"mfx69xs8"}

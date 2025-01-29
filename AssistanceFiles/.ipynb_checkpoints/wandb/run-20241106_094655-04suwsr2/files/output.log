@@ -1,0 +1,19 @@
+100%|██████████| 104/104 [02:54<00:00,  1.68s/it]
+{'loss': 1.8526, 'grad_norm': 8.254961013793945, 'learning_rate': 3.615384615384616e-05, 'epoch': 0.38}
+{'loss': 0.9411, 'grad_norm': 7.0648980140686035, 'learning_rate': 3.230769230769231e-05, 'epoch': 0.77}
+100%|██████████| 2/2 [00:00<00:00,  7.71it/s]
+{'eval_loss': 0.406867653131485, 'eval_precision': 0.9444444444444444, 'eval_recall': 0.8947368421052632, 'eval_f1': 0.918918918918919, 'eval_accuracy': 0.8484848484848485, 'eval_runtime': 0.5266, 'eval_samples_per_second': 11.393, 'eval_steps_per_second': 3.798, 'epoch': 1.0}
+{'loss': 0.4886, 'grad_norm': 4.071592807769775, 'learning_rate': 2.8461538461538464e-05, 'epoch': 1.15}
+{'loss': 0.3195, 'grad_norm': 1.4838322401046753, 'learning_rate': 2.461538461538462e-05, 'epoch': 1.54}
+{'loss': 0.2765, 'grad_norm': 6.126762390136719, 'learning_rate': 2.0769230769230772e-05, 'epoch': 1.92}
+{'eval_loss': 0.15604065358638763, 'eval_precision': 0.9473684210526315, 'eval_recall': 0.9473684210526315, 'eval_f1': 0.9473684210526315, 'eval_accuracy': 0.9696969696969697, 'eval_runtime': 0.4542, 'eval_samples_per_second': 13.21, 'eval_steps_per_second': 4.403, 'epoch': 2.0}
+{'loss': 0.1191, 'grad_norm': 4.126945972442627, 'learning_rate': 1.6923076923076924e-05, 'epoch': 2.31}
+{'loss': 0.1188, 'grad_norm': 1.5141985416412354, 'learning_rate': 1.3076923076923078e-05, 'epoch': 2.69}
+{'eval_loss': 0.09958256036043167, 'eval_precision': 0.9473684210526315, 'eval_recall': 0.9473684210526315, 'eval_f1': 0.9473684210526315, 'eval_accuracy': 0.9696969696969697, 'eval_runtime': 0.3018, 'eval_samples_per_second': 19.879, 'eval_steps_per_second': 6.626, 'epoch': 3.0}
+{'loss': 0.1571, 'grad_norm': 1.0590386390686035, 'learning_rate': 9.230769230769232e-06, 'epoch': 3.08}
+{'loss': 0.079, 'grad_norm': 0.8283674120903015, 'learning_rate': 5.384615384615385e-06, 'epoch': 3.46}
+{'loss': 0.0731, 'grad_norm': 2.2416889667510986, 'learning_rate': 1.5384615384615387e-06, 'epoch': 3.85}
+{'eval_loss': 0.09155148267745972, 'eval_precision': 1.0, 'eval_recall': 0.9473684210526315, 'eval_f1': 0.972972972972973, 'eval_accuracy': 0.9696969696969697, 'eval_runtime': 0.3615, 'eval_samples_per_second': 16.596, 'eval_steps_per_second': 5.532, 'epoch': 4.0}
+{'train_runtime': 175.6494, 'train_samples_per_second': 2.368, 'train_steps_per_second': 0.592, 'train_loss': 0.4273693118817531, 'epoch': 4.0}
+[('[CLS]', 'O'), ('Welche', 'B-Entity'), ('Vor', 'B-Task'), ('##erkran', 'B-Person'), ('##kungen', 'B-Entity'), ('hat', 'O'), ('Frau', 'B-Person'), ('Fel', 'I-Person'), ('##ber', 'I-Person'), ('[SEP]', 'I-Person')]
+[('[CLS]', 'O'), ('Start', 'B-Action'), ('##e', 'B-Action'), ('den', 'O'), ('Einsatz', 'B-Task'), ('[SEP]', 'B-Action')]

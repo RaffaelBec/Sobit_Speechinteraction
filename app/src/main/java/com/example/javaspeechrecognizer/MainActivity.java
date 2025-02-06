@@ -1,5 +1,29 @@
 package com.example.javaspeechrecognizer;
 
+import android.Manifest;
+import android.app.ActivityManager;
+import android.content.BroadcastReceiver;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.widget.Toast;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import org.vosk.Model;
+import org.vosk.Recognizer;
+import org.vosk.android.SpeechService;
+import org.vosk.android.RecognitionListener;
+import org.vosk.android.SpeechStreamService;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Locale;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
@@ -37,6 +61,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
@@ -48,23 +73,59 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import ai.djl.huggingface.tokenizers.Encoding;
-import ai.djl.huggingface.tokenizers.HuggingFaceTokenizer;
+
 import ai.onnxruntime.OnnxTensor;
 import ai.onnxruntime.OrtEnvironment;
 import ai.onnxruntime.OrtException;
 import ai.onnxruntime.OrtSession;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RecognitionListener {
+    private static final int REQUEST_RECORD_AUDIO_PERMISSION = 1;
+    private SpeechService speechService;
     private static final int REQUEST_MICROPHONE = 1;
+    private static final String MODEL_NAME = "vosk-model-small-de-0.15";
 
+    private static final String HOTWORD = "platon";
 
     private TextView textViewGreeting;
     private Button buttonBackToLogin;
     private OrtEnvironment env;
     private OrtSession session;
     private EditText editTextInput;  // EditText field for user input
+    private ActivityResultLauncher<Intent> speechLauncher;
 
+// MainActivity.java
+
+    private BroadcastReceiver hotwordReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            speechLauncher = registerForActivityResult(
+                    new ActivityResultContracts.StartActivityForResult(),
+                    result -> {
+                        if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                            List<String> matches = result.getData().getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                            if (matches != null && !matches.isEmpty()) {
+                                String recognizedText = matches.get(0);
+                                Toast.makeText(context, "You said: " + recognizedText, Toast.LENGTH_SHORT).show();
+                                processInputText(recognizedText);
+                            }
+                        }
+                    });
+            if (intent.getAction().equals("com.example.javaspeechrecognizer.HOTWORD_DETECTED")) {
+                if (isAppInForeground()) {
+                    startSpeechInput("Speak now", speechLauncher);
+                } else {
+                    Intent mainIntent = new Intent(MainActivity.this, MainActivity.class);
+                    mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(mainIntent);
+
+                    new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                        startSpeechInput("Speak now", speechLauncher);
+                    }, 500); // Adjust the delay as needed
+                }
+            }
+        }
+    };
     String[] labelNames = {
             "O",
             "B-Action",
@@ -95,10 +156,33 @@ public class MainActivity extends AppCompatActivity {
 
 
         super.onCreate(savedInstanceState);
+        speechLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> {
+                    if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                        List<String> matches = result.getData().getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                        if (matches != null && !matches.isEmpty()) {
+                            String recognizedText = matches.get(0);
+                            Toast.makeText(this, "You said: " + recognizedText, Toast.LENGTH_SHORT).show();
+                            processInputText(recognizedText);
+                        }
+                    }
+                }
+        );
 
         //removes action bar color
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+
+
+//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_RECORD_AUDIO_PERMISSION);
+//        } else {
+//            initVosk();
+//        }
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -170,6 +254,7 @@ public class MainActivity extends AppCompatActivity {
                 requestMicrophonePermission();
             }
         });
+        requestMicrophonePermission();
 
         //displaying info from login
         textViewGreeting = findViewById(R.id.textViewGreeting);
@@ -215,7 +300,19 @@ public class MainActivity extends AppCompatActivity {
                 clearResults();
             }
         });
+
+        // Request RECORD_AUDIO permission
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_RECORD_AUDIO_PERMISSION);
+        } else {
+            Log.d("Hotword Service", "Starting hotword service");
+            startHotwordService();
+        }
+        // Register the BroadcastReceiver
+        IntentFilter filter = new IntentFilter("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
+        registerReceiver(hotwordReceiver, filter, Context.RECEIVER_NOT_EXPORTED);
     }
+
 
     // Method to clear user data from SharedPreferences
     private void clearUserData() {
@@ -264,7 +361,7 @@ public class MainActivity extends AppCompatActivity {
     //    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_MICROPHONE);
     //}
 
-    private void requestMicrophonePermission() {
+    public void requestMicrophonePermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_MICROPHONE);
@@ -275,9 +372,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == REQUEST_MICROPHONE) {
+        if (requestCode == REQUEST_RECORD_AUDIO_PERMISSION) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Microphone permission granted", Toast.LENGTH_SHORT).show();
+            //    startHotwordService();
             } else {
                 Toast.makeText(this, "Microphone permission denied", Toast.LENGTH_SHORT).show();
             }
@@ -570,4 +667,150 @@ public class MainActivity extends AppCompatActivity {
         textViewLabeledResult.setVisibility(View.GONE);
     }
 
+    private void initVosk() {
+        new Thread(() -> {
+            try {
+                String modelName = "vosk-model-small-de-0.15";
+                File modelDir = new File(getExternalFilesDir(null), modelName);
+
+                if (!modelDir.exists() || modelDir.list().length == 0) {
+                    Log.d("Vosk", "Copying model files...");
+                    copyAssets(modelName, modelName);
+                }
+
+                Model model = new Model(modelDir.getAbsolutePath());
+                Recognizer recognizer = new Recognizer(model, 16000);
+                speechService = new SpeechService(recognizer, 16000);
+                speechService.startListening(this);
+
+                Log.d("Vosk", "Vosk initialized successfully");
+            } catch (IOException e) {
+                Log.e("Vosk", "Failed to initialize Vosk", e);
+            }
+        }).start();
+    }
+
+
+
+    private void copyAssets(String assetFolder, String outputFolder) throws IOException {
+        AssetManager assetManager = getAssets();
+        File outputDir = new File(getExternalFilesDir(null), outputFolder);
+        if (!outputDir.exists()) outputDir.mkdirs();
+
+        String[] files = assetManager.list(assetFolder);
+        if (files == null || files.length == 0) {
+            Log.e("Vosk", "Asset folder is empty: " + assetFolder);
+            return;
+        }
+
+        for (String filename : files) {
+            String assetPath = assetFolder + "/" + filename;
+            File outFile = new File(outputDir, filename);
+
+            if (assetManager.list(assetPath).length > 0) {
+                // If it's a directory, create it and recurse
+                outFile.mkdirs();
+                copyAssets(assetPath, outputFolder + "/" + filename);
+            } else {
+                // If it's a file, copy it
+                if (!outFile.exists()) {
+                    try (InputStream in = assetManager.open(assetPath);
+                         FileOutputStream out = new FileOutputStream(outFile)) {
+                        byte[] buffer = new byte[4096];
+                        int read;
+                        while ((read = in.read(buffer)) != -1) {
+                            out.write(buffer, 0, read);
+                        }
+                        Log.d("Vosk", "Copied: " + assetPath);
+                    } catch (Exception e) {
+                        Log.e("Vosk", "Failed to copy file: " + assetPath, e);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    private void startHotwordService() {
+        Intent serviceIntent = new Intent(this, HotwordService.class);
+        startForegroundService(serviceIntent);
+    }
+
+
+    @Override
+    public void onPartialResult(String hypothesis) {
+        if (hypothesis.contains(HOTWORD)) {
+            speechService.stop();
+            Log.d("Hotword Service", "Hotword detected: " + HOTWORD);
+
+            if (!isAppInForeground()) {
+                Log.d("Hotword Service", "App is not in the foreground");
+                launchApp();
+            } else {
+                startSpeechInput("Speak now", speechLauncher);
+            }
+        }
+    }
+    private boolean isAppLaunching = false;
+
+    private void launchApp() {
+        if(!isAppLaunching) {
+
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> isAppLaunching = false, 2000); // Adjust the delay as needed
+
+        }
+
+    }
+
+    // Method to check if the app is in the foreground
+    private boolean isAppInForeground() {
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> appProcesses = activityManager.getRunningAppProcesses();
+        if (appProcesses == null) {
+            return false;
+        }
+        final String packageName = getPackageName();
+        for (ActivityManager.RunningAppProcessInfo appProcess : appProcesses) {
+            if (appProcess.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND && appProcess.processName.equals(packageName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public void onResult(String hypothesis) {
+        // No need to handle, handled in partial result
+    }
+
+    @Override
+    public void onFinalResult(String hypothesis) {
+        speechService.startListening(this); // Restart listening after recognition
+    }
+
+    @Override
+    public void onError(Exception e) {
+        e.printStackTrace();
+    }
+
+    @Override
+    public void onTimeout() {
+        speechService.startListening(this); // Restart listening on timeout
+    }
+
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (speechService != null) {
+            speechService.stop();
+        }
+        unregisterReceiver(hotwordReceiver);
+
+    }
 }

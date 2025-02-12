@@ -1,6 +1,7 @@
 package com.example.javaspeechrecognizer;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
@@ -92,25 +93,11 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private OrtEnvironment env;
     private OrtSession session;
     private EditText editTextInput;  // EditText field for user input
-    private ActivityResultLauncher<Intent> speechLauncher;
-
-// MainActivity.java
+    public static ActivityResultLauncher<Intent> speechLauncher;
 
     private BroadcastReceiver hotwordReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            speechLauncher = registerForActivityResult(
-                    new ActivityResultContracts.StartActivityForResult(),
-                    result -> {
-                        if (result.getResultCode() == RESULT_OK && result.getData() != null) {
-                            List<String> matches = result.getData().getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                            if (matches != null && !matches.isEmpty()) {
-                                String recognizedText = matches.get(0);
-                                Toast.makeText(context, "You said: " + recognizedText, Toast.LENGTH_SHORT).show();
-                                processInputText(recognizedText);
-                            }
-                        }
-                    });
             if (intent.getAction().equals("com.example.javaspeechrecognizer.HOTWORD_DETECTED")) {
                 if (isAppInForeground()) {
                     startSpeechInput("Speak now", speechLauncher);
@@ -147,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     static Map<Integer, String> id2label = new HashMap<>();
 
 
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         for(int i = 0; i < labelNames.length; i++) {
@@ -216,10 +204,20 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             inputStream.read(modelBytes);
             inputStream.close();
 
+
+/*TODO: check if this works
+//            OnnxModelManager.init(this);
+//
+//            // Später kannst du das Modell wie folgt abrufen:
+//            OrtSession session = OnnxModelManager.getSession();
+
+ */
+
             env = OrtEnvironment.getEnvironment();
             OrtSession.SessionOptions opts = new OrtSession.SessionOptions();
             session = env.createSession(modelBytes, opts);
             Log.d("ONNX", "ONNX model loaded successfully!");
+
 
 
 
@@ -310,7 +308,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         }
         // Register the BroadcastReceiver
         IntentFilter filter = new IntentFilter("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
-        registerReceiver(hotwordReceiver, filter, Context.RECEIVER_NOT_EXPORTED);
+        registerReceiver(hotwordReceiver, filter, 0);
     }
 
 
@@ -752,18 +750,11 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             }
         }
     }
-    private boolean isAppLaunching = false;
 
     private void launchApp() {
-        if(!isAppLaunching) {
-
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-            new Handler(Looper.getMainLooper()).postDelayed(() -> isAppLaunching = false, 2000); // Adjust the delay as needed
-
-        }
-
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
     // Method to check if the app is in the foreground

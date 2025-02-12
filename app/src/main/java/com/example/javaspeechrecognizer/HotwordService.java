@@ -11,8 +11,12 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
+import android.speech.RecognizerIntent;
 import android.util.Log;
 
+import android.widget.Toast;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
@@ -25,27 +29,72 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 public class HotwordService extends Service implements RecognitionListener {
 
     private static final String TAG = "HotwordService";
     private static final String HOTWORD = "platon";
     private static final String CHANNEL_ID = "HotwordServiceChannel";
+    private boolean isLaunchingApp = false;
+
 
     private Model model;
     private Recognizer recognizer;
     private SpeechService speechService;
 
     @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+
+
+        // Erstelle den Notification Channel (ab API 26 erforderlich)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(
+                    CHANNEL_ID,
+                    "Hotword Service Channel",
+                    NotificationManager.IMPORTANCE_LOW
+            );
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            if (manager != null) {
+                manager.createNotificationChannel(channel);
+            }
+        }
+
+        // Erstelle die Notification, die im Foreground-Service angezeigt werden soll
+        Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setContentTitle("Hotword Service")
+                .setContentText("Die Hotword-Erkennung läuft im Hintergrund.")
+                .setSmallIcon(R.drawable.splash_logo) // Ersetze ic_notification durch dein Icon
+                .build();
+
+        // Starte den Service als Foreground-Service
+        startForeground(1, notification);
+
+        Log.d(TAG, "Service started bluberi");
+        // Führe hier die weitere Logik deines Service aus, z.B. startListener, etc.
+
+        return START_STICKY;
+    }
+    @Override
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "Service started");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    initializeVosk();
+                } catch (Exception e) {
+                    Log.e(TAG, "Fehler bei der Initialisierung: ", e);
+                }
+            }
+        }).start();
 
         createNotificationChannel();
         startForeground(1, getNotification());
         Log.d(TAG, "Foreground started");
 
-        new Thread(this::initializeVosk).start();
     }
 
     private void initializeVosk() {
@@ -133,11 +182,7 @@ public class HotwordService extends Service implements RecognitionListener {
                 .build();
     }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        initializeVosk();
-        return START_STICKY;
-    }
+
 
 @Override
     public void onResult(String hypothesis) {
@@ -181,14 +226,36 @@ public class HotwordService extends Service implements RecognitionListener {
         Log.d(TAG, "Speech service timeout");
     }
 
+
     private void launchApp() {
+        if (isLaunchingApp) {
+            return;
+        }
+        isLaunchingApp = true;
         Log.d(TAG, "Launching app...");
+        // 2 Versuche
+         //Intent intent = new Intent(this, MainActivity.class);
+         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+         //startActivity(intent);
+
         Intent intent = new Intent("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
-        sendBroadcast(intent);
+        TODO:sendBroadcast(intent);
+
+        // Setze das Flag nach einer definierten Verzögerung zurück (z.B. 1000 Millisekunden)
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                isLaunchingApp = false;
+            }
+        }, 1000);
     }
+
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
+
+
 }

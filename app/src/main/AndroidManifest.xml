@@ -11,9 +11,8 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
 
-    <!--   <uses-permission android:name="android.permission.CAPTURE_AUDIO_HOTWORD" />
-     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
- -->
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
     <application
         android:largeHeap="true"
@@ -72,7 +71,8 @@
             <!-- Optional: You can add an intent filter to make it accessible via some other means -->
         </activity>
         <receiver android:name=".BootReceiver"
-            android:exported="false">
+                  android:enabled="true"
+                  android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -82,7 +82,8 @@
             android:name=".HotwordService"
             android:foregroundServiceType="microphone"
             android:permission="android:permission/START_FOREGROUND_SERVICES_FROM_BACKGROUND"
-            android:exported="false" />
+            android:enabled="true"
+            android:exported="true" />
 
 
 

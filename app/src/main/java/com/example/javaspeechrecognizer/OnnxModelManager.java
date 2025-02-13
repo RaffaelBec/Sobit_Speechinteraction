@@ -11,9 +11,8 @@ import ai.onnxruntime.OrtSession.SessionOptions;
 
 public class OnnxModelManager {
 
-    private static OrtEnvironment ortEnvironment;
     private static OrtSession ortSession;
-    private static final String MODEL_FILE_NAME = "dein-model.onnx";
+    private static final String MODEL_FILE_NAME = "bert_model_trained.onnx";
 
 
     public static synchronized void init(Context context) {
@@ -35,7 +34,7 @@ public class OnnxModelManager {
                 }
             }
 
-            ortEnvironment = OrtEnvironment.getEnvironment();
+            OrtEnvironment ortEnvironment = OrtEnvironment.getEnvironment();
             ortSession = ortEnvironment.createSession(modelFile.getAbsolutePath(), new SessionOptions());
         } catch (Exception e) {
             e.printStackTrace();

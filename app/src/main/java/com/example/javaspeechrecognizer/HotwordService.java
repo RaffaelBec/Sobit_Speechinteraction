@@ -1,35 +1,26 @@
 package com.example.javaspeechrecognizer;
 
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.app.Service;
+import android.app.*;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
-import android.speech.RecognizerIntent;
 import android.util.Log;
-
-import android.widget.Toast;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
-
+import androidx.core.content.ContextCompat;
 import org.vosk.Model;
 import org.vosk.Recognizer;
-import org.vosk.android.SpeechService;
 import org.vosk.android.RecognitionListener;
+import org.vosk.android.SpeechService;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
+import java.util.Objects;
 
 public class HotwordService extends Service implements RecognitionListener {
 
@@ -60,7 +51,13 @@ public class HotwordService extends Service implements RecognitionListener {
                 manager.createNotificationChannel(channel);
             }
         }
-
+        new Thread(() -> {
+            try {
+                initializeVosk();
+            } catch (Exception e) {
+                Log.e(TAG, "Fehler bei der Initialisierung: ", e);
+            }
+        }).start();
         // Erstelle die Notification, die im Foreground-Service angezeigt werden soll
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("Hotword Service")
@@ -69,6 +66,7 @@ public class HotwordService extends Service implements RecognitionListener {
                 .build();
 
         // Starte den Service als Foreground-Service
+
         startForeground(1, notification);
 
         Log.d(TAG, "Service started bluberi");
@@ -102,7 +100,7 @@ public class HotwordService extends Service implements RecognitionListener {
             String modelName = "vosk-model-small-de-0.15";
             File modelDir = new File(getExternalFilesDir(null), modelName);
 
-            if (!modelDir.exists() || modelDir.list().length == 0) {
+            if (!modelDir.exists() || Objects.requireNonNull(modelDir.list()).length == 0) {
                 Log.d("Vosk", "Copying model files...");
                 copyAssets(modelName, modelName);
             }
@@ -187,6 +185,7 @@ public class HotwordService extends Service implements RecognitionListener {
 @Override
     public void onResult(String hypothesis) {
         if (hypothesis.contains(HOTWORD)) {
+
             Log.d(TAG, "Hotword detected");
             launchApp();
         }
@@ -204,6 +203,7 @@ public class HotwordService extends Service implements RecognitionListener {
     @Override
     public void onPartialResult(String hypothesis) {
         if (hypothesis.contains(HOTWORD)) {
+
             Log.d(TAG, "Hotword detected");
             launchApp();
         }
@@ -212,6 +212,7 @@ public class HotwordService extends Service implements RecognitionListener {
     @Override
     public void onFinalResult(String hypothesis) {
         if (hypothesis.contains(HOTWORD)) {
+
             launchApp();
         }
     }
@@ -239,15 +240,10 @@ public class HotwordService extends Service implements RecognitionListener {
          //startActivity(intent);
 
         Intent intent = new Intent("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
-        TODO:sendBroadcast(intent);
+        sendBroadcast(intent);
 
         // Setze das Flag nach einer definierten Verzögerung zurück (z.B. 1000 Millisekunden)
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                isLaunchingApp = false;
-            }
-        }, 1000);
+        new Handler(Looper.getMainLooper()).postDelayed(() -> isLaunchingApp = false, 1000);
     }
 
 

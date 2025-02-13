@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +13,7 @@ import java.util.Map;
 
 public class BertTokenizer {
 
-    private Map<String, Integer> vocab;
+    private final Map<String, Integer> vocab;
     private static final String CLS_TOKEN = "[CLS]";
     private static final String SEP_TOKEN = "[SEP]";
     private static final String PAD_TOKEN = "[PAD]";

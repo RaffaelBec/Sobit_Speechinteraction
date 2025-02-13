@@ -1,90 +1,53 @@
 package com.example.javaspeechrecognizer;
 
+import ai.onnxruntime.OnnxTensor;
+import ai.onnxruntime.OrtEnvironment;
+import ai.onnxruntime.OrtException;
+import ai.onnxruntime.OrtSession;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
-import android.content.BroadcastReceiver;
-import android.content.Intent;
-import android.content.IntentFilter;
+import android.content.*;
 import android.content.pm.PackageManager;
-import android.os.Build;
+import android.content.pm.ResolveInfo;
+import android.content.res.AssetManager;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.widget.Toast;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import org.vosk.Model;
-import org.vosk.Recognizer;
-import org.vosk.android.SpeechService;
-import org.vosk.android.RecognitionListener;
-import org.vosk.android.SpeechStreamService;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.Locale;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.text.TextUtils;
-import android.view.WindowManager;
-import android.widget.TextView;
-import android.content.SharedPreferences;
-import android.content.pm.ResolveInfo;
-import android.content.res.AssetManager;
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-//additional imports
-import android.content.Context;
-import android.speech.SpeechRecognizer;
-import android.Manifest;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.speech.SpeechRecognizer;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+import androidx.activity.EdgeToEdge;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import org.jetbrains.annotations.NotNull;
+import org.vosk.android.SpeechService;
+import android.speech.RecognitionListener;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-
-
-import ai.onnxruntime.OnnxTensor;
-import ai.onnxruntime.OrtEnvironment;
-import ai.onnxruntime.OrtException;
-import ai.onnxruntime.OrtSession;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity implements RecognitionListener {
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 1;
     private SpeechService speechService;
     private static final int REQUEST_MICROPHONE = 1;
     private static final String MODEL_NAME = "vosk-model-small-de-0.15";
+    private SpeechRecognizer speechRecognizer;
 
     private static final String HOTWORD = "platon";
 
@@ -95,10 +58,27 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private EditText editTextInput;  // EditText field for user input
     public static ActivityResultLauncher<Intent> speechLauncher;
 
-    private BroadcastReceiver hotwordReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver hotwordReceiver = new BroadcastReceiver() {
+
         @Override
         public void onReceive(Context context, Intent intent) {
+            Log.d("MainActivity", "Hotword detected");
+
             if (intent.getAction().equals("com.example.javaspeechrecognizer.HOTWORD_DETECTED")) {
+                speechLauncher = registerForActivityResult(
+                        new ActivityResultContracts.StartActivityForResult(),
+                        result -> {
+                            if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                                List<String> matches = result.getData().getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                                if (matches != null && !matches.isEmpty()) {
+                                    String recognizedText = matches.get(0);
+//                                    Toast.makeText(this, "You said: " + recognizedText, Toast.LENGTH_SHORT).show();
+                                    processInputText(recognizedText);
+                                }
+                            }
+                        }
+                );
+                Log.d("MainActivity", "Hotword detected");
                 if (isAppInForeground()) {
                     startSpeechInput("Speak now", speechLauncher);
                 } else {
@@ -137,13 +117,8 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     @SuppressLint("UnspecifiedRegisterReceiverFlag")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        for(int i = 0; i < labelNames.length; i++) {
-            id2label.put(i, labelNames[i]);
-        }
-
-
-
         super.onCreate(savedInstanceState);
+
         speechLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -157,6 +132,14 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
                     }
                 }
         );
+
+        for(int i = 0; i < labelNames.length; i++) {
+            id2label.put(i, labelNames[i]);
+        }
+
+
+
+
 
         //removes action bar color
         EdgeToEdge.enable(this);
@@ -203,26 +186,27 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             byte[] modelBytes = new byte[inputStream.available()];
             inputStream.read(modelBytes);
             inputStream.close();
-
-
-/*TODO: check if this works
-//            OnnxModelManager.init(this);
-//
-//            // Später kannst du das Modell wie folgt abrufen:
-//            OrtSession session = OnnxModelManager.getSession();
-
- */
-
             env = OrtEnvironment.getEnvironment();
             OrtSession.SessionOptions opts = new OrtSession.SessionOptions();
             session = env.createSession(modelBytes, opts);
             Log.d("ONNX", "ONNX model loaded successfully!");
 
+//
+//
+////TODO: check if this works
+//            OnnxModelManager.init(this);
+//              Log.d("ONNX", "ONNX model loaded successfully!");
+//            // Später kannst du das Modell wie folgt abrufen:
+//            session = OnnxModelManager.getSession();
+//
 
 
 
-        } catch (IOException | OrtException e) {
+
+
+        } catch (Exception e) {
             e.printStackTrace();
+            Log.e("ONNX", "Failed to load ONNX model");
         }
 
 
@@ -290,25 +274,24 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             Intent intent = new Intent(MainActivity.this, HelpActivity.class);
             startActivity(intent);
         });
-
+        IntentFilter filter = new IntentFilter("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
+        ContextCompat.registerReceiver(this,hotwordReceiver, filter, ContextCompat.RECEIVER_EXPORTED);
         Button buttonClearResults = findViewById(R.id.buttonClearResults);
-        buttonClearResults.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clearResults();
-            }
-        });
+        buttonClearResults.setOnClickListener(v -> clearResults());
 
         // Request RECORD_AUDIO permission
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_RECORD_AUDIO_PERMISSION);
-        } else {
+
+        }
+        else {
             Log.d("Hotword Service", "Starting hotword service");
             startHotwordService();
         }
+        speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
+        speechRecognizer.setRecognitionListener(this);
         // Register the BroadcastReceiver
-        IntentFilter filter = new IntentFilter("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
-        registerReceiver(hotwordReceiver, filter, 0);
+
     }
 
 
@@ -348,7 +331,8 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "de-DE");
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_PROMPT, title);
-        launcher.launch(intent);
+        speechRecognizer.startListening(intent);
+        //launcher.launch(intent);
     }
 
     public boolean hasPermissionToMicrophone() {
@@ -368,11 +352,11 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
 
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NotNull String[] permissions, @NotNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_RECORD_AUDIO_PERMISSION) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            //    startHotwordService();
+                startHotwordService();
             } else {
                 Toast.makeText(this, "Microphone permission denied", Toast.LENGTH_SHORT).show();
             }
@@ -665,6 +649,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         textViewLabeledResult.setVisibility(View.GONE);
     }
 
+    /*
     private void initVosk() {
         new Thread(() -> {
             try {
@@ -728,7 +713,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         }
     }
 
-
+     */
 
     private void startHotwordService() {
         Intent serviceIntent = new Intent(this, HotwordService.class);
@@ -736,20 +721,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     }
 
 
-    @Override
-    public void onPartialResult(String hypothesis) {
-        if (hypothesis.contains(HOTWORD)) {
-            speechService.stop();
-            Log.d("Hotword Service", "Hotword detected: " + HOTWORD);
 
-            if (!isAppInForeground()) {
-                Log.d("Hotword Service", "App is not in the foreground");
-                launchApp();
-            } else {
-                startSpeechInput("Speak now", speechLauncher);
-            }
-        }
-    }
 
     private void launchApp() {
         Intent intent = new Intent(this, MainActivity.class);
@@ -773,25 +745,8 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         return false;
     }
 
-    @Override
-    public void onResult(String hypothesis) {
-        // No need to handle, handled in partial result
-    }
 
-    @Override
-    public void onFinalResult(String hypothesis) {
-        speechService.startListening(this); // Restart listening after recognition
-    }
 
-    @Override
-    public void onError(Exception e) {
-        e.printStackTrace();
-    }
-
-    @Override
-    public void onTimeout() {
-        speechService.startListening(this); // Restart listening on timeout
-    }
 
 
 
@@ -803,5 +758,57 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         }
         unregisterReceiver(hotwordReceiver);
 
+    }
+
+    @Override
+    public void onResults(Bundle results) {
+        // Called when recognition results are ready
+        List<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+        if (matches != null && !matches.isEmpty()) {
+            String recognizedText = matches.get(0);
+            Toast.makeText(this, "You said: " + recognizedText, Toast.LENGTH_SHORT).show();
+            processInputText(recognizedText);
+        }
+    }
+
+
+    @Override
+    public void onReadyForSpeech(Bundle params) {
+        // Called when the recognizer is ready to listen
+    }
+
+    @Override
+    public void onBeginningOfSpeech() {
+        // Called when the user starts speaking
+    }
+
+    @Override
+    public void onRmsChanged(float rmsdB) {
+        // Called when the sound level in the audio stream has changed
+    }
+
+    @Override
+    public void onBufferReceived(byte[] buffer) {
+        // Called when more sound has been received
+    }
+
+    @Override
+    public void onEndOfSpeech() {
+        // Called when the user stops speaking
+    }
+
+    @Override
+    public void onError(int error) {
+        // Called when a recognition error occurs
+    }
+
+    @Override
+    public void onPartialResults(Bundle partialResults) {
+        // Called when partial recognition results are available
+    }
+
+    @Override
+    public void onEvent(int eventType, Bundle params) {
+        // Called when a recognition event occurs
     }
 }

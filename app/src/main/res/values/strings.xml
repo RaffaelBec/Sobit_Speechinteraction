@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Java Speech Recognizer</string>
+    <string name="welcome_message">Welcome, %1$s %2$s!</string>
+    <string name="user_data_cleared">User data cleared. Please log in.</string>
 </resources>

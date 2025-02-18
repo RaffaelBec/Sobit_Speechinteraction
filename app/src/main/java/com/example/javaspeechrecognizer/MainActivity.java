@@ -7,17 +7,22 @@ import ai.onnxruntime.OrtSession;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.*;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
+import android.speech.tts.TextToSpeech;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -28,8 +33,10 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -43,13 +50,15 @@ import java.io.InputStream;
 import java.util.*;
 
 public class MainActivity extends AppCompatActivity implements RecognitionListener {
+    private TextToSpeech t1;
+
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 1;
     private SpeechService speechService;
     private static final int REQUEST_MICROPHONE = 1;
-    private static final String MODEL_NAME = "vosk-model-small-de-0.15";
     private SpeechRecognizer speechRecognizer;
 
-    private static final String HOTWORD = "platon";
+
+
 
     private TextView textViewGreeting;
     private Button buttonBackToLogin;
@@ -114,11 +123,20 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     static Map<Integer, String> id2label = new HashMap<>();
 
 
+    @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
     @SuppressLint("UnspecifiedRegisterReceiverFlag")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        t1 = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.ERROR) {
+                    t1.setLanguage(Locale.GERMAN);
+                }
+            }
+            });
         speechLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -147,11 +165,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
 
 
 
-//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
-//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_RECORD_AUDIO_PERMISSION);
-//        } else {
-//            initVosk();
-//        }
+//
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -190,6 +204,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             OrtSession.SessionOptions opts = new OrtSession.SessionOptions();
             session = env.createSession(modelBytes, opts);
             Log.d("ONNX", "ONNX model loaded successfully!");
+            createNotificationChannel();
 
 //
 //
@@ -205,8 +220,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
 
 
         } catch (Exception e) {
-            e.printStackTrace();
-            Log.e("ONNX", "Failed to load ONNX model");
+            Log.e("ONNX", "Failed to load ONNX model", e);
         }
 
 
@@ -237,6 +251,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             }
         });
         requestMicrophonePermission();
+        Log.d("Notification channel", "Starting notification channel");
 
         //displaying info from login
         textViewGreeting = findViewById(R.id.textViewGreeting);
@@ -246,8 +261,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         String firstName = sharedPreferences.getString("firstName", "User");
         String lastName = sharedPreferences.getString("lastName", "");
 
-        textViewGreeting.setText("Welcome, " + firstName + " " + lastName + "!");
-
+        textViewGreeting.setText(getString(R.string.welcome_message, firstName, lastName));
 
         // Button to clear user data
         Button buttonClearData = findViewById(R.id.buttonClearData);
@@ -292,6 +306,8 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         speechRecognizer.setRecognitionListener(this);
         // Register the BroadcastReceiver
 
+
+
     }
 
 
@@ -305,8 +321,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         Toast.makeText(this, "User data cleared", Toast.LENGTH_SHORT).show();
 
         // Optionally, update UI or perform actions after clearing
-        textViewGreeting.setText("User data cleared. Please log in.");
-
+        textViewGreeting.setText(getString(R.string.user_data_cleared));
         // Enable the Logout button after clearing data
         buttonBackToLogin.setEnabled(true); // Makes the button clickable
         buttonBackToLogin.setClickable(true); // Enables touch events again -> Not sure if this does anything
@@ -344,9 +359,22 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     //}
 
     public void requestMicrophonePermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, REQUEST_MICROPHONE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            // Android 13+ (API 33+): Check for both permissions
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED ||
+                    ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS, Manifest.permission.RECORD_AUDIO},
+                        REQUEST_RECORD_AUDIO_PERMISSION);
+            }
+        } else {
+            // For older Android versions, only check RECORD_AUDIO
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.RECORD_AUDIO},
+                        REQUEST_RECORD_AUDIO_PERMISSION);
+            }
         }
     }
 
@@ -358,7 +386,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startHotwordService();
             } else {
-                Toast.makeText(this, "Microphone permission denied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Microphone or Notification permission denied", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -400,6 +428,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             tokenizer = new BertTokenizer("assets/vocab.txt"); // Replace with your vocab file path
 
         } catch (IOException e) {
+            Log.e("MainActivity", "Failed to initialize tokenizer", e);
             throw new RuntimeException(e);
         }
         List<Integer> tokenizedInput = tokenizer.tokenize(inputText);
@@ -423,7 +452,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         List<int[]> result = performOnnxInference(inputIdsArray, attentionMaskArray);
         List<List<String>> labeledResult = idToLabel(result);
 
-        if (result != null) {
+        if (result != null && !result.isEmpty()) {
             for (int[] array : result) {
                 List<Integer> singleSequence = new ArrayList<>();
                 for (int id : array) {
@@ -501,6 +530,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             if (cursor.moveToFirst()) {
                 lastAppointment = cursor.getString(0);
                 System.out.println("Last Appointment: " + lastAppointment);
+                t1.speak(lastAppointment, TextToSpeech.QUEUE_FLUSH, null, null);
                 Log.d("SQL", "Last Appointment: " + lastAppointment);
             }
             cursor.close();
@@ -532,6 +562,12 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             // Run the session to get the output
             OrtSession.Result result = session.run(inputs);
 
+            if(result == null || result.get("output").isEmpty()) {
+                Log.e("MainActivity", "Failed to perform Onnx Inference");
+                return null;
+            } else {
+                result.get("output").get();
+            }
             // Retrieve the output using the output name
             float[][][] output = (float[][][]) result.get("output").get().getValue();
 
@@ -546,8 +582,8 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             return predictedLabels;
 
         } catch (OrtException e) {
-            e.printStackTrace();
-            return null;
+            Log.e("MainActivity", "Failed to perform Onnx Inference", e);
+            throw new RuntimeException(e);
         }
     }
 
@@ -767,9 +803,11 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         if (matches != null && !matches.isEmpty()) {
             String recognizedText = matches.get(0);
             Toast.makeText(this, "You said: " + recognizedText, Toast.LENGTH_SHORT).show();
+            showNotification(recognizedText);
             processInputText(recognizedText);
         }
     }
+
 
 
     @Override
@@ -811,4 +849,31 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     public void onEvent(int eventType, Bundle params) {
         // Called when a recognition event occurs
     }
+
+
+    private void createNotificationChannel() {
+        NotificationChannel channel = new NotificationChannel(
+                "SpeechRecognitionChannel",
+                "Speech Recognition",
+                NotificationManager.IMPORTANCE_DEFAULT
+        );
+        NotificationManager manager = getSystemService(NotificationManager.class);
+        if (manager != null) {
+            manager.createNotificationChannel(channel);
+        }
+    }
+
+    private void showNotification(String recognizedText) {
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        String channelId = "SpeechRecognitionChannel";
+        Notification notification = new NotificationCompat.Builder(this, channelId)
+                .setContentTitle("Speech Recognized")
+                .setContentText("You said: " + recognizedText)
+                .setSmallIcon(R.drawable.splash_logo) // Replace with your icon
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .build();
+        notificationManager.notify(1, notification);
+    }
+
+
 }

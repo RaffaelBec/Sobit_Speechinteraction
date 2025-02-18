@@ -39,7 +39,7 @@ public class HotwordService extends Service implements RecognitionListener {
 
 
 
-        // Erstelle den Notification Channel (ab API 26 erforderlich)
+        // Erstellt den Notification Channel (ab API 26 erforderlich)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
                     CHANNEL_ID,
@@ -58,7 +58,7 @@ public class HotwordService extends Service implements RecognitionListener {
                 Log.e(TAG, "Fehler bei der Initialisierung: ", e);
             }
         }).start();
-        // Erstelle die Notification, die im Foreground-Service angezeigt werden soll
+        // Erstellt die Notification, die im Foreground-Service angezeigt werden soll
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("Hotword Service")
                 .setContentText("Die Hotword-Erkennung läuft im Hintergrund.")
@@ -70,7 +70,7 @@ public class HotwordService extends Service implements RecognitionListener {
         startForeground(1, notification);
 
         Log.d(TAG, "Service started bluberi");
-        // Führe hier die weitere Logik deines Service aus, z.B. startListener, etc.
+        // weitere Logik vom Service startListener, etc.
 
         return START_STICKY;
     }

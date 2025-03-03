@@ -1,32 +1,54 @@
 package org.example;
 
 import java.util.List;
+import java.util.Map;
 import java.util.StringJoiner;
 
 public class NERPreprocessor {
 
     private static boolean isTitle(String word) {
-        return word.equalsIgnoreCase("herr") || word.equalsIgnoreCase("frau" ) || word.equalsIgnoreCase("herrn");
+        return word.equalsIgnoreCase("herr") || word.equalsIgnoreCase("frau") || word.equalsIgnoreCase("herrn");
     }
 
     public static class ProcessedNER {
         public String action;
         public String person;
         public String personType;
-        public String relationType="FM";
+        public String relationType = "relative|FM";
         public String firstName;
         public String lastName;
         public String time;
         public String entity;
         public String task;
         public String distance;
+        public int clientId;
         public boolean isAssignedPatient;
+    }
+
+
+    public static Integer getOngoingAssignmentClientId(int employeeId) {
+        String query = "SELECT ClientId " +
+                "FROM Assignment " +
+                "WHERE EmployeeId = " + employeeId + " " +
+                "AND ActualTimeStart IS NOT NULL " +
+                "AND ActualTimeStart <= DATETIME('now','localtime') " +
+                "AND ActualTimeEnd IS NULL " +
+                "ORDER BY ActualTimeStart DESC " +
+                "LIMIT 1";
+
+        List<Map<String, Object>> results = DatabaseQueryExecutor.executeQuery(query);
+
+        if (!results.isEmpty()) {
+            return (Integer) results.get(0).get("ClientId");
+        }
+
+        return null; // No ongoing assignment found
     }
 
     public static ProcessedNER processNER(List<String[]> nerTaggedWords, int employeeId) {
         ProcessedNER result = new ProcessedNER();
         result.action = "SELECT";
-        result.time = "datetime('now')";
+        result.time = "now";
 
         StringJoiner firstNameBuilder = new StringJoiner(" ");
         StringJoiner lastNameBuilder = new StringJoiner(" ");
@@ -91,61 +113,72 @@ public class NERPreprocessor {
                         processingLastName = true;
                         lastNameBuilder = new StringJoiner(" ");
                         System.out.println("→ Title detected: " + word + " (Expecting Last Name next)");
+                    } else {
+                        // First, check if it's a known special person type (CURRENT_PATIENT, etc.)
+                        String mappedPerson = KeywordMapper.mapPerson(word);
+                        if (mappedPerson != null) {
+                            result.personType = mappedPerson;
+                            System.out.println("→ Identified as a special person type: " + result.personType);
+                            personDetected = true;
+                        }
+                        // If it's NOT a special person, then check if it's a contact type (e.g., relative, sibling)
+                        else {
+                            String mappedContact = KeywordMapper.mapContact(word);
+                            if (mappedContact != null) {
+                                result.relationType = mappedContact;
+                                System.out.println("→ Identified as a contact type: " + result.relationType + " (Not a Name)");
+                            }
+                            // If it's neither, treat it as a first name
+                            else {
+                                processingLastName = false;
+                                firstNameBuilder = new StringJoiner(" ");
+                                firstNameBuilder.add(word);
+                                personDetected = true;
+                                System.out.println("→ First Name detected: " + word);
+                            }
+                        }
                     }
-                    // Check if it's a known person reference (e.g., "klienten" -> "CURRENT_PATIENT")
-                    else if (KeywordMapper.mapPerson(word) != null) {
-                        result.personType = KeywordMapper.mapPerson(word);
-                        System.out.println("→ Identified as a special person type: " + result.personType);
-                    }
-                    // Check if it's a contact type (relative, sibling, etc.), assign it to `personType`
-                    else if (KeywordMapper.mapContact(word) != null) {
-                        result.relationType = KeywordMapper.mapContact(word);
-                        System.out.println("→ Identified as a contact type: " + result.relationType + " (Not a Name)");
-                    }
-                    // Otherwise, assume it's a first name
-                    else {
-                        processingLastName = false;
-                        firstNameBuilder = new StringJoiner(" ");
-                        firstNameBuilder.add(word);
-                        System.out.println("→ First Name detected: " + word);
-                    }
-
-                    personDetected = true;
+                    System.out.println("Person detected status: " + personDetected);
                     break;
-
 
                 case "I-Person":
-                    // If we already detected a first name, treat the next I-Person as a last name
-                    if (!firstNameBuilder.toString().isEmpty() && lastNameBuilder.toString().isEmpty()) {
+                    // If we detected a title before, treat this as part of the last name
+                    if (processingLastName) {
                         lastNameBuilder.add(word);
+                        personDetected = true;
+                        System.out.println("Person detected status: " + personDetected);
                         System.out.println("→ Adding to Last Name: " + word);
-                    } else {
+                    }
+                    // Otherwise, continue adding to first name
+                    else {
                         firstNameBuilder.add(word);
+                        personDetected = true;
                         System.out.println("→ Adding to First Name: " + word);
                     }
-
                     break;
 
-                  // Flag to track if a valid time has been set
 
                 case "B-Time":
-                    if (word.equalsIgnoreCase("wann")) {
+                    if (word.equalsIgnoreCase("wann") ) {
                         System.out.println("→ Ignored 'wann' as B-Time");
                         break;  // Ignore "wann" and move on
                     }
+                    if(KeywordMapper.mapTime(word)!=null) {
+                        System.out.print(word);
+                    System.out.println(KeywordMapper.mapTime(word));
 
-                    if (!timeRegistered) {  // Only register the first valid B-Time
-                        String mappedTime = KeywordMapper.mapTime(word);
-                        if (mappedTime != null) {
-                            result.time = mappedTime;
-                            timeRegistered = true;  // Lock further changes
-                            System.out.println("→ Time registered: " + result.time);
+                        if (!timeRegistered) {  // Only register the first valid B-Time
+                            String mappedTime = KeywordMapper.mapTime(word);
+                            if (mappedTime != null) {
+                                result.time = mappedTime;
+                                timeRegistered = true;  // Lock further changes
+                                System.out.println("→ Time registered: " + result.time);
+                            }
+                        } else {
+                            System.out.println("→ Ignored extra B-Time: " + word);
                         }
-                    } else {
-                        System.out.println("→ Ignored extra B-Time: " + word);
+                        break;
                     }
-                    break;
-
                 case "I-Time":
                     if (timeRegistered) {  // Append I-Time only if a B-Time was set
                         result.time += " " + word;
@@ -167,8 +200,7 @@ public class NERPreprocessor {
                     break;
             }
         }
-
-        // Resolve detected names
+// Resolve detected names
         String detectedFirstName = firstNameBuilder.length() > 0 ? firstNameBuilder.toString() : null;
         String detectedLastName = lastNameBuilder.length() > 0 ? lastNameBuilder.toString() : null;
         String fullName = (detectedFirstName != null ? detectedFirstName : "") +
@@ -178,15 +210,33 @@ public class NERPreprocessor {
         System.out.println("→ Detected Last Name: " + detectedLastName);
         System.out.println("→ Full Name Built: " + fullName);
 
+// If a person was detected and has a first name, check if they are an assigned patient
         if (personDetected && detectedFirstName != null) {
             result.isAssignedPatient = PatientBuffer.isAssignedPatient(fullName);
             System.out.println("→ Is Assigned Patient: " + result.isAssignedPatient);
-
             result.person = fullName;
-        } else {
+        }
+// If no person was detected, default to CURRENT_CLIENT instead of CURRENT_EMPLOYEE
+        else if (!personDetected) {
+            result.person = "CURRENT_CLIENT";
+            System.out.println("→ No person detected, defaulting to CURRENT_CLIENT");
+            if(NERPreprocessor.getOngoingAssignmentClientId(employeeId)!=null) {
+                result.clientId = NERPreprocessor.getOngoingAssignmentClientId(employeeId);
+                System.out.println(result.clientId);// Fetch using existing method
+                System.out.println(result.person);
+            }
+            else{
+                System.out.println("No active Client found");
+            }
+        }
+
+
+// If for some reason we get here without detecting anything, default to CURRENT_EMPLOYEE
+        else {
             result.person = "CURRENT_EMPLOYEE";
         }
 
+// Assign other properties
         result.firstName = detectedFirstName;
         result.lastName = detectedLastName;
         result.entity = entityBuilder.length() > 0 ? entityBuilder.toString() : null;
@@ -196,5 +246,6 @@ public class NERPreprocessor {
         System.out.println("====================================");
 
         return result;
+
     }
 }

@@ -20,15 +20,16 @@ public class KeywordMapper {
         cal.add(Calendar.DATE, 7);
         Date firstDateOfNextWeek = cal.getTime();
         // Time Mappings
-        timeMappings.put("jetzige", "datetime('now') AND date('now')");
-        timeMappings.put("aktuell", "datetime('now') AND TargetTimeStart >= datetime('now', 'start of day') AND TargetTimeStart < datetime('now', 'start of day', '+1 day') ");
-        timeMappings.put("aktuelle", "datetime('now') AND TargetTimeStart >= datetime('now', 'start of day') AND TargetTimeStart < datetime('now', 'start of day', '+1 day') ");
-        timeMappings.put("aktuellen", "datetime('now') AND TargetTimeStart >= datetime('now', 'start of day') AND TargetTimeStart < datetime('now', 'start of day', '+1 day') ");
-        timeMappings.put("morgen", "date('now', '+1 day')");
-        timeMappings.put("gestern", "date('now', '-1 day')");
-        timeMappings.put("jetzt", "datetime('now')");
+        timeMappings.put("jetzige","now");
+        timeMappings.put("jetzt","now");
+        timeMappings.put("aktuell", "now");
+        timeMappings.put("aktuelle", "now");
+        timeMappings.put("aktuellen","now" );
+        //timeMappings.put("morgen", "date('now', '+1 day')");
+        //timeMappings.put("gestern", "date('now', '-1 day')");
         timeMappings.put("sofort", "datetime('now')");
-
+        timeMappings.put("kommenden","next");
+        timeMappings.put("anstehenden","next");
         timeMappings.put("nachsten", "next");
         timeMappings.put("nachste", "next");
 
@@ -40,6 +41,7 @@ public class KeywordMapper {
         actionMap.put("beginne","start");
         actionMap.put("starte","start");
         actionMap.put("starten","start");
+        actionMap.put("setzen","start");
         actionMap.put("beende","end");
         actionMap.put("finish","end");
         actionMap.put("ende","end");
@@ -53,10 +55,11 @@ public class KeywordMapper {
         personMap.put("bewohner", "CURRENT_PATIENT");
         personMap.put("pflegebedurftigen", "CURRENT_PATIENT");
 
-        contactMap.put("verwandten", "relative");
-        contactMap.put("verwandter", "relative");
+        contactMap.put("verwandten", "relative|fm");
+        contactMap.put("verwandter", "relative|fm");
         contactMap.put("bekannten", "relative|fr");
-
+        contactMap.put("angehorigen", "relative|fm");
+        contactMap.put("angehörigen", "relative|fm");
         // Specific relationship types (Keeps "relative" category)
         contactMap.put("geschwister", "relative|si");
         contactMap.put("bruder", "relative|si");
@@ -69,16 +72,15 @@ public class KeywordMapper {
 
     }
 
-    public static String mapTime(String timeExpression) {
-        return timeMappings.getOrDefault(timeExpression.toLowerCase(), timeExpression);
+    public static String mapTime(String timeExpression) {return timeMappings.getOrDefault(timeExpression.toLowerCase(), null);
     }
 
     public static String mapAction(String action) {
-        return actionMap.getOrDefault(action.toLowerCase(), action);
+        return actionMap.getOrDefault(action.toLowerCase(), null);
     }
 
     public static String mapPerson(String person) {
-        return personMap.getOrDefault(person.toLowerCase(), person);
+        return personMap.getOrDefault(person.toLowerCase(), null);
     }
     public static String mapContact(String person) {
         return contactMap.getOrDefault(person.toLowerCase(), null);  // ✅ Return `null` if not a contact type

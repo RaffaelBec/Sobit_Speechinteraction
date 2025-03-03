@@ -10,6 +10,7 @@ public class SQLQueryBuilder {
         String firstName = nerData.firstName;
         String lastName = nerData.lastName;
         String personType= nerData.personType;
+
         String relationType=nerData.relationType;
         String person = nerData.person;
         String action = nerData.action.toLowerCase();
@@ -57,7 +58,7 @@ public class SQLQueryBuilder {
 
                 if ("next".equals(resolvedTime)) {
                     // Get the next upcoming assignment
-                    sql = "SELECT c.* FROM Client c " +
+                    sql = "SELECT c.*,a.* FROM Client c " +
                             "JOIN Assignment a ON c.ClientId = a.ClientId " +
                             "WHERE a.EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                             "AND a.TargetTimeStart > datetime('now', 'localtime') " +
@@ -66,7 +67,7 @@ public class SQLQueryBuilder {
                 }
                 else if ("heute".equals(resolvedTime)) {
                     // Get all assignments for today
-                    sql = "SELECT c.* FROM Client c " +
+                    sql = "SELECT c.*,a.*  FROM Client c " +
                             "JOIN Assignment a ON c.ClientId = a.ClientId " +
                             "WHERE a.EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                             "AND date(a.TargetTimeStart) = date('now', 'localtime')";  // ✅ Only this condition is needed
@@ -80,21 +81,29 @@ public class SQLQueryBuilder {
                 }
                 else if ("gestern".equals(resolvedTime)) {
                     // Get all assignments for yesterday
-                    sql = "SELECT c.* FROM Client c " +
+                    sql = "SELECT c.*,a.*  FROM Client c " +
                             "JOIN Assignment a ON c.ClientId = a.ClientId " +
                             "WHERE a.EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                             "AND date(a.TargetTimeStart) = date('now', '-1 day', 'localtime')";
                 }
                 else if ("morgen".equals(resolvedTime)) {
                     // Get all assignments for tomorrow
-                    sql = "SELECT c.* FROM Client c " +
+                    sql = "SELECT c.*,a.*  FROM Client c " +
                             "JOIN Assignment a ON c.ClientId = a.ClientId " +
                             "WHERE a.EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                             "AND date(a.TargetTimeStart) = date('now', '+1 day', 'localtime')";
                 }
-                else if ("CURRENT_PATIENT".equals(nerData.personType)) {
+                else if ("CURRENT_CLIENT".equals(nerData.personType)) {
                     // Get the currently assigned patient at this moment
-                    sql = "SELECT c.* FROM Client c " +
+                    sql = "SELECT c.*,a.* FROM Client c " +
+                            "JOIN Assignment a ON c.ClientId = a.ClientId " +
+                            "WHERE a.EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
+                            "AND a.TargetTimeStart <= datetime('now', 'localtime') " +
+                            "AND a.TargetTimeEnd >= datetime('now', 'localtime')";
+                }
+                else if ("now".equals(resolvedTime)) {
+                    // Get all assignments for tomorrow
+                    sql = "SELECT c.*,a.*  FROM Client c " +
                             "JOIN Assignment a ON c.ClientId = a.ClientId " +
                             "WHERE a.EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                             "AND a.TargetTimeStart <= datetime('now', 'localtime') " +
@@ -110,18 +119,19 @@ public class SQLQueryBuilder {
 
 
             case "start":
-                sql = "UPDATE Assignment SET ActualTimeStart = datetime('now') " +
+                sql = "UPDATE Assignment SET ActualTimeStart = datetime('now','localtime') " +
                         "WHERE AssignmentId = (SELECT AssignmentId FROM Assignment WHERE " +
-                        "ClientId = (SELECT ClientId FROM Client WHERE " + whereClause + " " +
+                        "EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                         "AND TargetTimeStart <= datetime('now') " +
-                        "AND TargetTimeStart = date('now')\n" +
+                        "AND TargetTimeEnd >= datetime('now')\n" +
                         "ORDER BY TargetTimeStart ASC " +
-                        "LIMIT 1);";
+                        "LIMIT 1" +
+                        ");";
                 break;
             case "end":
-                sql = "UPDATE Assignment SET ActualTimeEnd = datetime('now') " +
+                sql = "UPDATE Assignment SET ActualTimeEnd = datetime('now','localtime') " +
                         "WHERE AssignmentId = (SELECT AssignmentId FROM Assignment WHERE " +
-                        "ClientId = (SELECT ClientId FROM Client WHERE " + whereClause + ") " +
+                        "EmployeeId = (SELECT EmployeeId FROM Employee WHERE " + whereClause + ") " +
                         "AND ActualTimeStart IS NOT NULL AND ActualTimeEnd IS NULL " +  // Ensures assignment has started but not ended
                         "ORDER BY TargetTimeStart DESC " +  // Prioritizes the most recent active assignment
                         "LIMIT 1);";
@@ -130,13 +140,20 @@ public class SQLQueryBuilder {
 
             case "call":
                 if (nerData.person != null) {
+                    System.out.println("DEBUG: relationType -> " + nerData.relationType);
+                    if (nerData.relationType != null) {
+                        System.out.println("DEBUG: relationType content -> '" + nerData.relationType + "'");
+                    } else {
+                        System.out.println("ERROR: relationType is NULL!");
+                    }
+
                     // Check if personType is not null before trying to use startsWith
-                    if (nerData.relationType != null && nerData.relationType.startsWith("relative")) {
+                    if (nerData.relationType != null && nerData.relationType.startsWith("relative") && !nerData.person.equals("CURRENT_CLIENT")) {
                         // Extract the relationship type (if it's specified in the personType)
                         String relationshipType = nerData.relationType.split("\\|")[1];  // Get the part after "relative|", e.g., "mother", "sibling"
 
                         // Build the SQL query with dynamic relationship type handling
-                        sql = "SELECT p.*, rt.Value AS RelationshipType " +
+                        sql = "SELECT p.PhoneNr,p.firstName,p.LastName, rt.Value AS RelationshipType " +
                                 "FROM Person p " +
                                 "JOIN PersonRelationship pr ON p.PersonId = pr.PersonId " +
                                 "JOIN RelationshipType rt ON pr.RelationshipTypeId = rt.RelationshipTypeId " +
@@ -145,7 +162,19 @@ public class SQLQueryBuilder {
                                 "AND pr.DateStart <= DATE('now') " +
                                 "AND rt.ShortValue = '" + relationshipType.toUpperCase() + "' " +  // Directly insert the relationshipType into the query
                                 "LIMIT 1";
-                    } else {
+                    }
+                    else if(nerData.person.equals("CURRENT_CLIENT")){
+                        String relationshipType = nerData.relationType.split("\\|")[1];  // Get the part after "relative|", e.g., "mother", "sibling"
+                        sql = "SELECT p.PhoneNr,p.firstName,p.Lastname,rt.Value AS RelationshipType " +
+                                "FROM Person p " +
+                                "JOIN PersonRelationship pr ON p.PersonId = pr.PersonId " +
+                                "JOIN RelationshipType rt ON pr.RelationshipTypeId = rt.RelationshipTypeId " +
+                                "WHERE pr.ClientId = " + nerData.clientId + " " +
+                                "AND (pr.DateEnd IS NULL OR pr.DateEnd >= DATE('now')) " +  // Ensuring active relationships
+                                "AND pr.DateStart <= DATE('now') " +
+                                "AND rt.ShortValue = '" + relationshipType.toUpperCase() + "' " +  // Directly insert the relationshipType into the query
+                                "LIMIT 1";
+                    }else {
                         // For non-relative person types, just fetch the phone number
                         sql = "SELECT PhoneNr " +
                                 "FROM Person " +

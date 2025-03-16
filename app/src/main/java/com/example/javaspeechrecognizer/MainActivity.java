@@ -41,6 +41,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import org.jetbrains.annotations.NotNull;
 import org.vosk.android.SpeechService;
 import android.speech.RecognitionListener;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             Log.d("MainActivity", "Hotword detected");
 
             if (intent.getAction().equals("com.example.javaspeechrecognizer.HOTWORD_DETECTED")) {
+
                 speechLauncher = registerForActivityResult(
                         new ActivityResultContracts.StartActivityForResult(),
                         result -> {
@@ -238,18 +240,19 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
                 }
         );
 
-        Button speechButton = findViewById(R.id.btn_speech);
-        speechButton.setOnClickListener(v -> {
-            if (hasPermissionToMicrophone()) {
-                if (isSpeechAvailable()) {
-                    startSpeechInput("Speak now", speechLauncher);
-                } else {
-                    Toast.makeText(this, "Speech recognition not available", Toast.LENGTH_SHORT).show();
-                }
-            } else {
-                requestMicrophonePermission();
-            }
-        });
+        // no need for speechbutoon in the new version
+//        Button speechButton = findViewById(R.id.btn_speech);
+//        speechButton.setOnClickListener(v -> {
+//            if (hasPermissionToMicrophone()) {
+//                if (isSpeechAvailable()) {
+//                    startSpeechInput("Speak now", speechLauncher);
+//                } else {
+//                    Toast.makeText(this, "Speech recognition not available", Toast.LENGTH_SHORT).show();
+//                }
+//            } else {
+//                requestMicrophonePermission();
+//            }
+//        });
         requestMicrophonePermission();
         Log.d("Notification channel", "Starting notification channel");
 
@@ -754,16 +757,18 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private void startHotwordService() {
         Intent serviceIntent = new Intent(this, HotwordService.class);
         startForegroundService(serviceIntent);
+        showPopupDialog();
+    }
+
+    private void showPopupDialog() {
+        new MaterialAlertDialogBuilder(this, com.google.android.material.R.style.MaterialAlertDialog_Material3)
+                .setTitle("All Set!")
+                .setMessage("You can close this app now and let Platon do the magic. Enjoy!")
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                .show();
     }
 
 
-
-
-    private void launchApp() {
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-    }
 
     // Method to check if the app is in the foreground
     private boolean isAppInForeground() {

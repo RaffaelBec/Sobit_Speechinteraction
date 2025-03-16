@@ -3,11 +3,14 @@ package com.example.javaspeechrecognizer;
 import android.app.*;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
+import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
@@ -180,9 +183,28 @@ public class HotwordService extends Service implements RecognitionListener {
                 .build();
     }
 
+    private void playHotwordDetectedSound() {
+        ToneGenerator toneGenerator =
+                new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
+        toneGenerator.startTone(
+                ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD,
+                200
+        );
+        new Handler(Looper.getMainLooper()).post(() ->
+                Toast.makeText(getApplicationContext(),
+                        "Hotword detected! You can speak now.",
+                        Toast.LENGTH_SHORT
+                ).show()
+        );
+        // Release resources after a short delay
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            toneGenerator.stopTone();
+            toneGenerator.release();
+        }, 200);
+    }
 
 
-@Override
+    @Override
     public void onResult(String hypothesis) {
         if (hypothesis.contains(HOTWORD)) {
 
@@ -232,12 +254,10 @@ public class HotwordService extends Service implements RecognitionListener {
         if (isLaunchingApp) {
             return;
         }
+        playHotwordDetectedSound();
         isLaunchingApp = true;
         Log.d(TAG, "Launching app...");
-        // 2 Versuche
-         //Intent intent = new Intent(this, MainActivity.class);
-         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-         //startActivity(intent);
+
 
         Intent intent = new Intent("com.example.javaspeechrecognizer.HOTWORD_DETECTED");
         sendBroadcast(intent);

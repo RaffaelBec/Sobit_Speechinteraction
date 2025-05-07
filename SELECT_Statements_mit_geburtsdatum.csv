@@ -1,0 +1,196 @@
+tokens;intent
+Wie ist der Name des Klienten;NAME_BEKOMMEN
+Wie ist der Name der Klientin;NAME_BEKOMMEN
+Was ist der Name des aktuellen Klienten;NAME_BEKOMMEN
+Was ist der Name der aktuellen Klientin;NAME_BEKOMMEN
+Wie lautet der Name des Klienten;NAME_BEKOMMEN
+Wie lautet der Name der Klientin;NAME_BEKOMMEN
+Wie alt ist der Klient;ALTER_BEKOMMEN
+Wie alt ist der Patient;ALTER_BEKOMMEN
+Wie alt ist die Klientin;ALTER_BEKOMMEN
+Wie alt ist die Patientin;ALTER_BEKOMMEN
+Wie alt ist der Patient heute;ALTER_BEKOMMEN
+Kannst du mir den Namen des Klienten sagen;NAME_BEKOMMEN
+Kannst du mir den Namen der Klientin nennen;NAME_BEKOMMEN
+Wie heißt der Klient;NAME_BEKOMMEN
+Wie heißt die Klientin;NAME_BEKOMMEN
+Ich brauche den Namen des aktuellen Klienten;NAME_BEKOMMEN
+Nenne mir den Namen der aktuellen Klientin;NAME_BEKOMMEN
+Wie heißt der aktuelle Patient;NAME_BEKOMMEN
+Wie heißt die aktuelle Patientin;NAME_BEKOMMEN
+Was ist der vollständige Name des Klienten;NAME_BEKOMMEN
+Was ist der vollständige Name der Klientin;NAME_BEKOMMEN
+Wie lautet der vollständige Name des Patienten;NAME_BEKOMMEN
+Wie lautet der vollständige Name der Patientin;NAME_BEKOMMEN
+Ich möchte wissen, wie der Klient heißt;NAME_BEKOMMEN
+Ich möchte wissen, wie die Klientin heißt;NAME_BEKOMMEN
+Wie viele Jahre ist der Klient alt;ALTER_BEKOMMEN
+Wie viele Jahre alt ist der Patient;ALTER_BEKOMMEN
+Welches Alter hat der Klient;ALTER_BEKOMMEN
+Welches Alter hat die Klientin;ALTER_BEKOMMEN
+Ich brauche das Alter des Patienten;ALTER_BEKOMMEN
+Ich möchte wissen, wie alt der Klient ist;ALTER_BEKOMMEN
+Ich möchte wissen, wie alt die Klientin ist;ALTER_BEKOMMEN
+Sag mir bitte das Alter des Klienten;ALTER_BEKOMMEN
+Sag mir bitte das Alter der Patientin;ALTER_BEKOMMEN
+Wie alt ist der aktuelle Klient;ALTER_BEKOMMEN
+Wie alt ist die aktuelle Patientin;ALTER_BEKOMMEN
+Welches Alter hat der aktuelle Patient;ALTER_BEKOMMEN
+Wie viele Jahre hat die Klientin;ALTER_BEKOMMEN
+Wer ist der Klient;NAME_BEKOMMEN
+Wer ist die Klientin;NAME_BEKOMMEN
+Wie nennt sich der Klient;NAME_BEKOMMEN
+Wie nennt sich die Klientin;NAME_BEKOMMEN
+Ich wüsste gern, wie der Klient heißt;NAME_BEKOMMEN
+Ich wüsste gern, wie die Klientin heißt;NAME_BEKOMMEN
+Hast du den Namen des Patienten;NAME_BEKOMMEN
+Hast du den Namen der Patientin;NAME_BEKOMMEN
+Könntest du mir den Klientennamen sagen;NAME_BEKOMMEN
+Könntest du mir den Namen der Klientin verraten;NAME_BEKOMMEN
+Wie wird der Patient genannt;NAME_BEKOMMEN
+Wie wird die Patientin genannt;NAME_BEKOMMEN
+Unter welchem Namen ist der Klient bekannt;NAME_BEKOMMEN
+Unter welchem Namen ist die Klientin bekannt;NAME_BEKOMMEN
+Ich interessiere mich für den Namen des Patienten;NAME_BEKOMMEN
+Wie hoch ist das Alter des Klienten;ALTER_BEKOMMEN
+Wie hoch ist das Alter der Klientin;ALTER_BEKOMMEN
+Ich hätte gern das Alter des Patienten gewusst;ALTER_BEKOMMEN
+Ich hätte gern das Alter der Patientin gewusst;ALTER_BEKOMMEN
+Kannst du mir sagen, wie alt der Patient ist;ALTER_BEKOMMEN
+Kannst du mir sagen, wie alt die Klientin ist;ALTER_BEKOMMEN
+Was weißt du über das Alter des Klienten;ALTER_BEKOMMEN
+Was weißt du über das Alter der Patientin;ALTER_BEKOMMEN
+Ich frage mich, wie alt der Klient wohl ist;ALTER_BEKOMMEN
+Ich frage mich, wie alt die Patientin wohl ist;ALTER_BEKOMMEN
+Gib mir bitte das Alter des aktuellen Klienten;ALTER_BEKOMMEN
+Wie viele Jahre zählt der Patient;ALTER_BEKOMMEN
+Wie viele Jahre zählt die Klientin;ALTER_BEKOMMEN
+Ich möchte das genaue Alter des Patienten wissen;ALTER_BEKOMMEN
+Ich möchte das genaue Alter der Klientin wissen;ALTER_BEKOMMEN
+Weißt du, wie der Klient heißt;NAME_BEKOMMEN
+Weißt du, wie die Klientin heißt;NAME_BEKOMMEN
+Ich suche den Namen des Patienten;NAME_BEKOMMEN
+Ich suche den Namen der Patientin;NAME_BEKOMMEN
+Der Name des Klienten interessiert mich;NAME_BEKOMMEN
+Der Name der Klientin interessiert mich;NAME_BEKOMMEN
+Mit welchem Namen ist der Patient registriert;NAME_BEKOMMEN
+Mit welchem Namen ist die Patientin eingetragen;NAME_BEKOMMEN
+Wie lautet bitte der vollständige Name des Klienten;NAME_BEKOMMEN
+Wie lautet bitte der vollständige Name der Klientin;NAME_BEKOMMEN
+Kannst du mir sagen, wer der Patient ist;NAME_BEKOMMEN
+Kannst du mir sagen, wer die Patientin ist;NAME_BEKOMMEN
+Wer genau ist der aktuelle Klient;NAME_BEKOMMEN
+Wer genau ist die aktuelle Klientin;NAME_BEKOMMEN
+Ich brauche den vollen Namen des Patienten;NAME_BEKOMMEN
+Wie alt genau ist der Klient;ALTER_BEKOMMEN
+Wie alt genau ist die Klientin;ALTER_BEKOMMEN
+Hast du eine Info über das Alter des Patienten;ALTER_BEKOMMEN
+Hast du eine Info über das Alter der Klientin;ALTER_BEKOMMEN
+Weißt du, wie viele Jahre der Patient alt ist;ALTER_BEKOMMEN
+Weißt du, wie viele Jahre die Klientin alt ist;ALTER_BEKOMMEN
+Ich will wissen, in welchem Alter sich der Klient befindet;ALTER_BEKOMMEN
+Ich will wissen, in welchem Alter sich die Patientin befindet;ALTER_BEKOMMEN
+Wie alt ist er;ALTER_BEKOMMEN
+Wie alt ist sie;ALTER_BEKOMMEN
+Welches Alter hat er gerade;ALTER_BEKOMMEN
+Welches Alter hat sie gerade;ALTER_BEKOMMEN
+Kannst du das Alter des Klienten überprüfen;ALTER_BEKOMMEN
+Kannst du das Alter der Klientin überprüfen;ALTER_BEKOMMEN
+Wie viele Jahre bringt der Patient mit;ALTER_BEKOMMEN
+Wie lautet die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse der Klientin;ADDRESSE_BEKOMMEN
+Was ist die Anschrift des Patienten;ADDRESSE_BEKOMMEN
+Was ist die Anschrift der Patientin;ADDRESSE_BEKOMMEN
+Kannst du mir die Adresse vom Klienten sagen;ADDRESSE_BEKOMMEN
+Kannst du mir die Adresse von der Klientin nennen;ADDRESSE_BEKOMMEN
+Ich brauche die Wohnadresse des Patienten;ADDRESSE_BEKOMMEN
+Ich brauche die Wohnadresse der Patientin;ADDRESSE_BEKOMMEN
+Wo wohnt der Klient;ADDRESSE_BEKOMMEN
+Wo wohnt die Klientin;ADDRESSE_BEKOMMEN
+Unter welcher Adresse ist der Patient gemeldet;ADDRESSE_BEKOMMEN
+Unter welcher Adresse ist die Klientin registriert;ADDRESSE_BEKOMMEN
+Ich möchte wissen, wo der Klient wohnt;ADDRESSE_BEKOMMEN
+Ich möchte wissen, wo die Klientin wohnt;ADDRESSE_BEKOMMEN
+Gib mir bitte die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Gib mir bitte die Adresse der Patientin;ADDRESSE_BEKOMMEN
+An welcher Adresse ist der Klient erreichbar;ADDRESSE_BEKOMMEN
+An welcher Adresse ist die Patientin erreichbar;ADDRESSE_BEKOMMEN
+Wo finde ich den Patienten;ADDRESSE_BEKOMMEN
+Wo finde ich die Klientin;ADDRESSE_BEKOMMEN
+Ich suche die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Ich suche die Adresse der Klientin;ADDRESSE_BEKOMMEN
+Wo ist der Wohnort des Patienten;ADDRESSE_BEKOMMEN
+Wo ist der Wohnort der Klientin;ADDRESSE_BEKOMMEN
+Könntest du mir sagen, wo der Klient wohnt;ADDRESSE_BEKOMMEN
+Könntest du mir sagen, wo die Klientin wohnt;ADDRESSE_BEKOMMEN
+Wie ist die Postanschrift des Patienten;ADDRESSE_BEKOMMEN
+Wie ist die Postanschrift der Patientin;ADDRESSE_BEKOMMEN
+Ich hätte gern die Meldeadresse vom Klienten;ADDRESSE_BEKOMMEN
+Ich hätte gern die Meldeadresse der Klientin;ADDRESSE_BEKOMMEN
+Welche Adresse hat der Klient angegeben;ADDRESSE_BEKOMMEN
+Welche Adresse hat die Klientin hinterlegt;ADDRESSE_BEKOMMEN
+Wo lebt der Patient aktuell;ADDRESSE_BEKOMMEN
+Wo lebt die Patientin derzeit;ADDRESSE_BEKOMMEN
+Gibt es eine Adresse zum Klienten;ADDRESSE_BEKOMMEN
+Gibt es eine Adresse zur Patientin;ADDRESSE_BEKOMMEN
+Wie lautet der Wohnsitz des Patienten;ADDRESSE_BEKOMMEN
+Wie lautet der Wohnsitz der Klientin;ADDRESSE_BEKOMMEN
+Ich wüsste gern die Adresse vom Patienten;ADDRESSE_BEKOMMEN
+Ich wüsste gern die Adresse von der Patientin;ADDRESSE_BEKOMMEN
+Kannst du mir sagen, wo der Patient wohnt;ADDRESSE_BEKOMMEN
+Kannst du mir sagen, wo die Patientin wohnt;ADDRESSE_BEKOMMEN
+Wo ist der Klient zu Hause;ADDRESSE_BEKOMMEN
+Wo ist die Klientin zu Hause;ADDRESSE_BEKOMMEN
+An welche Adresse wurde der Klient gemeldet;ADDRESSE_BEKOMMEN
+An welche Adresse wurde die Klientin gemeldet;ADDRESSE_BEKOMMEN
+Wie ist die Adresse vom Wohnort des Patienten;ADDRESSE_BEKOMMEN
+Wie ist die Adresse vom Wohnort der Klientin;ADDRESSE_BEKOMMEN
+Welche Adresse steht im System für den Klienten;ADDRESSE_BEKOMMEN
+Welche Adresse steht im System für die Klientin;ADDRESSE_BEKOMMEN
+Wie lautet das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Wie lautet das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Was ist das Geburtsdatum vom Patienten;GEBURTSDATUM_BEKOMMEN
+Was ist das Geburtsdatum von der Patientin;GEBURTSDATUM_BEKOMMEN
+Wann wurde der Klient geboren;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Klientin geboren;GEBURTSDATUM_BEKOMMEN
+Ich möchte wissen, wann der Patient geboren wurde;GEBURTSDATUM_BEKOMMEN
+Ich möchte wissen, wann die Patientin geboren wurde;GEBURTSDATUM_BEKOMMEN
+Kannst du mir das Geburtsdatum des Klienten sagen;GEBURTSDATUM_BEKOMMEN
+Kannst du mir das Geburtsdatum der Klientin nennen;GEBURTSDATUM_BEKOMMEN
+Ich brauche das Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Ich brauche das Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Gib mir bitte das Geburtsdatum vom Klienten;GEBURTSDATUM_BEKOMMEN
+Gib mir bitte das Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Welches Datum ist das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Welches Datum ist das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Was steht als Geburtsdatum beim Patienten;GEBURTSDATUM_BEKOMMEN
+Was steht als Geburtsdatum bei der Patientin;GEBURTSDATUM_BEKOMMEN
+Ich suche das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Ich suche das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Wann genau wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Wann genau wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde der Klient geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde die Klientin geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag des Patienten;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag der Patientin;GEBURTSDATUM_BEKOMMEN
+Weißt du, wann der Klient Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Weißt du, wann die Klientin Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Wann hat der Patient Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wann hat die Klientin Geburtstag;GEBURTSDATUM_BEKOMMEN
+Ich hätte gern den Geburtstag vom Klienten;GEBURTSDATUM_BEKOMMEN
+Ich hätte gern den Geburtstag der Klientin;GEBURTSDATUM_BEKOMMEN
+Kannst du den Geburtstag des Patienten nachsehen;GEBURTSDATUM_BEKOMMEN
+Kannst du den Geburtstag der Patientin überprüfen;GEBURTSDATUM_BEKOMMEN
+Was steht im System als Geburtsdatum für den Klienten;GEBURTSDATUM_BEKOMMEN
+Was steht im System als Geburtsdatum für die Klientin;GEBURTSDATUM_BEKOMMEN
+Wann ist das genaue Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Wann ist das genaue Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Gibt es ein Geburtsdatum für den Klienten;GEBURTSDATUM_BEKOMMEN
+Gibt es ein Geburtsdatum für die Klientin;GEBURTSDATUM_BEKOMMEN
+Ich wüsste gern, wann die Klientin geboren ist;GEBURTSDATUM_BEKOMMEN
+Wie alt ist der Klient und wann hat er Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wie alt ist die Patientin und wann wurde sie geboren;GEBURTSDATUM_BEKOMMEN
+Was ist das exakte Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Was ist das exakte Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+An welchem Datum wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Datum wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN

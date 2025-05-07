@@ -1,0 +1,103 @@
+﻿tokens;intent
+Wie lange dauert der aktuelle Einsatz noch;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wie lange dauert der derzeitige Einsatz noch;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wie lange dauert der jetzige Einsatz noch;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wann findet der nächste Einsatz statt;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wann findet der aktuelle Einsatz statt;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie lange dauert der aktuelle Einsatz;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wie lange dauert der nächste Einsatz;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie lange ist der nächste Einsatz;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie lange habe ich Zeit bis zum nächsten Einsatz;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie ist der Name des Klienten;NAME_BEKOMMEN
+Wie ist der Name der Klientin;NAME_BEKOMMEN
+Wie viel Zeit bleibt mir für den aktuellen Einsatz noch;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wie lange hab ich noch für die Klientin Zeit;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wie lange habe ich noch Zeit;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wann muss ich beim nächsten Einsatz sein;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie alt ist der Klient;ALTER_BEKOMMEN
+Wie alt ist der Patient;ALTER_BEKOMMEN
+Wie alt ist die Klientin;ALTER_BEKOMMEN
+Wie alt ist die Patientin;ALTER_BEKOMMEN
+Wie lange dauert der Einsatz bei Frau Abseher heute;EINSATZ_VON_KLIENT_BEKOMMEN
+Wann ist mein nächster Einsatz heute;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie viele Minuten habe ich noch für den aktuellen Einsatz;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wann ist der Einsatz von heute beendet;JETZTIGER_EINSATZ_ENDE_BEKOMMEN
+Wie viele Einsätze habe ich heute noch;ANZAHL_EINSAETZE_HEUTE_BEKOMMEN
+Was ist der Name des aktuellen Klienten;NAME_BEKOMMEN
+Wer ist die Klientin beim nächsten Einsatz;NÄCHSTER_EINSATZ_KLIENT_BEKOMMEN
+Wie alt ist der Patient heute;ALTER_BEKOMMEN
+Wie viel Zeit habe ich bis zum nächsten Einsatz;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Welche Klienten habe ich heute besucht;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Welche Patienten habe ich heute besucht;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Welche Klienten habe ich heute betreut;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Welche Patienten habe ich heute betreut;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Wie viele Klienten habe ich heute betreut;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Wie viele Patienten habe ich heute betreut;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Wie heißen die Klienten die ich heute besucht habe;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Wie heißen die Patienten die ich heute besucht habe;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Welche Patientinnen habe ich heute besucht;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Welche Klienteninnen habe ich heute betreut;BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN
+Habe ich heute noch Einsätze;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Habe ich alle Einsätze abgearbeitet;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Sind alle Einsätze fertig;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Sind alle Patientinnen versorgt;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Sind alle Klientinnen versorgt;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Wie viele Einsätze habe ich heute noch;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Welche Patienten muss ich heute noch besuchen;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Welche Klienten muss ich heute noch versorgen;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Liste alle Einsätze von heute auf.;ANZAHL_EINSAETZE_HEUTE_BEKOMMEN
+Wie viele Einsätze habe ich heute;ANZAHL_EINSAETZE_HEUTE_BEKOMMEN
+Welche Klienten muss ich heute besuchen;ANZAHL_EINSAETZE_HEUTE_BEKOMMEN
+Wie lange war mein Einsatz bei Frau Lehmann heute Morgen;EINSATZ_VON_KLIENT_BEKOMMEN
+Wie lange war mein Einsatz bei Herrn Abraham;EINSATZ_VON_KLIENT_BEKOMMEN
+Wann beginnt mein nächster Einsatz;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie viel Zeit bleibt mir bis zum nächsten Einsatz;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie lange habe ich für den Einsatz bei Frau Kraznec gebraucht;EINSATZ_VON_KLIENT_BEKOMMEN
+Wann habe ich Herrn Münster heute besucht;EINSATZ_VON_KLIENT_BEKOMMEN
+Wann war ich bei Frau Münster;EINSATZ_VON_KLIENT_BEKOMMEN
+Sind alle heutigen Aufgaben erledigt;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Wie hoch war der letzte gemessene Puls;PULS_BEKOMMEN
+Wie war der zuletzt gemessene Puls bei Herrn Andrews;PULS_BEKOMMEN
+Sag mir den zuletzt gemessenen Pulswert;PULS_BEKOMMEN
+Letzter Pulswert für Frau Berter;PULS_BEKOMMEN
+Was ist der letzte eingetragene Pulswert für den Patienten;PULS_BEKOMMEN
+Was ist der letzte eingetragene Pulswert für die Klientin;PULS_BEKOMMEN
+Was ist der letzte Pulswert für die Patientin;PULS_BEKOMMEN
+Was ist der letzte Pulswert für den Klienten;PULS_BEKOMMEN
+Wie hoch war das Gewicht bei der letzten Messung;GEWICHT_BEKOMMEN
+Wie hoch war das letzte Gewicht von Frau Weber;GEWICHT_BEKOMMEN
+Wie hoch war das letzte Gewicht des Patienten;GEWICHT_BEKOMMEN
+Wie schwer war Frau Dezlic beim letzten mal;GEWICHT_BEKOMMEN
+Wie schwer war der Klient beim letzten mal;GEWICHT_BEKOMMEN
+Wie schwer war Herr Bezemek beim letzten mal;GEWICHT_BEKOMMEN
+Wie schwer war die Klientin beim letzten mal;GEWICHT_BEKOMMEN
+Wie schwer war der Patient beim letzten mal;GEWICHT_BEKOMMEN
+Wie schwer war die Patientin beim letzten mal;GEWICHT_BEKOMMEN
+Welchen Blutdruck hatte Herr Becker heute Morgen;BLUTDRUCK_BEKOMMEN
+Wie hoch war der Blutdruck von Frau Terrera letztes mal;BLUTDRUCK_BEKOMMEN
+Wie hoch war der Blutdruck von Herrn Zystal;BLUTDRUCK_BEKOMMEN
+Wie lange dauert der kommende Einsatz noch;NÄCHSTER_EINSATZ_UHRZEIT_BEKOMMEN
+Wie lange dauert wohl der Einsatz bei Frau Juric heute;EINSATZ_VON_KLIENT_BEKOMMEN
+Wie viele Einsätze habe ich noch;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Wie viele Termine habe ich heute noch;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Habe ich noch Einsätze;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Bin ich fertig für heute;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Bin ich für heute fertig;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Sind alle Patienten betreut;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Hab ich alle Klientinnen versorgt;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+War ich bei allen Patientinnen;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Hab ich alle Patienten versorgt;ANZAHL_EINSAETZE_HEUTE_UEBRIG_BEKOMMEN
+Wie hoch war der Blutdruck von Frau Uyen gestern;BLUTDRUCK_BEKOMMEN
+Wie hoch war der gemessene Blutdruck von Frau Uzgül gestern ;BLUTDRUCK_BEKOMMEN
+Wie hoch war der letzt gemessene Blutdruck von Frau Cemnica;BLUTDRUCK_BEKOMMEN
+Wie hoch war der Blutdruck von Herrn Teslaron gestern;BLUTDRUCK_BEKOMMEN
+Wie hoch war der gemessene Blutdruck von Herrn Bartholomeon gestern ;BLUTDRUCK_BEKOMMEN
+Wie hoch war der letzt gemessene Blutdruck von Herrn Currentny;BLUTDRUCK_BEKOMMEN
+Wie hoch war der zuletzt gemessene Blutdruck von Frau Erikkson;BLUTDRUCK_BEKOMMEN
+Wie war der Blutzuckerwert von Frau Demmertia gestern Abend;BLUTZUCKER_BEKOMMEN
+Wie war der Blutzuckerwert von Herrn Lerroy gestern;BLUTZUCKER_BEKOMMEN
+Welche Temperatur wurde das letzte Mal für die Patientin gemessen;KÖRPERTEMPERATUR_BEKOMMEN
+Welche Temperatur wurde das letzte Mal für die Klientin gemessen;KÖRPERTEMPERATUR_BEKOMMEN
+Welche Temperatur wurde das letzte Mal für den Patienten gemessen;KÖRPERTEMPERATUR_BEKOMMEN
+Welche Körpertemperatur wurde das letzte Mal für die Patientin gemessen;KÖRPERTEMPERATUR_BEKOMMEN
+Welche Körpertemperatur wurde das letzte Mal für den Klienten gemessen;KÖRPERTEMPERATUR_BEKOMMEN

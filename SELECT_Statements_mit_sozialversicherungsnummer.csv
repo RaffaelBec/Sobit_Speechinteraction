@@ -1,0 +1,863 @@
+tokens;intent
+Wie ist der Name des Klienten;NAME_BEKOMMEN
+Wie ist der Name der Klientin;NAME_BEKOMMEN
+Was ist der Name des aktuellen Klienten;NAME_BEKOMMEN
+Was ist der Name der aktuellen Klientin;NAME_BEKOMMEN
+Wie lautet der Name des Klienten;NAME_BEKOMMEN
+Wie lautet der Name der Klientin;NAME_BEKOMMEN
+Wie alt ist der Klient;ALTER_BEKOMMEN
+Wie alt ist der Patient;ALTER_BEKOMMEN
+Wie alt ist die Klientin;ALTER_BEKOMMEN
+Wie alt ist die Patientin;ALTER_BEKOMMEN
+Wie alt ist der Patient heute;ALTER_BEKOMMEN
+Kannst du mir den Namen des Klienten sagen;NAME_BEKOMMEN
+Kannst du mir den Namen der Klientin nennen;NAME_BEKOMMEN
+Wie heißt der Klient;NAME_BEKOMMEN
+Wie heißt die Klientin;NAME_BEKOMMEN
+Ich brauche den Namen des aktuellen Klienten;NAME_BEKOMMEN
+Nenne mir den Namen der aktuellen Klientin;NAME_BEKOMMEN
+Wie heißt der aktuelle Patient;NAME_BEKOMMEN
+Wie heißt die aktuelle Patientin;NAME_BEKOMMEN
+Was ist der vollständige Name des Klienten;NAME_BEKOMMEN
+Was ist der vollständige Name der Klientin;NAME_BEKOMMEN
+Wie lautet der vollständige Name des Patienten;NAME_BEKOMMEN
+Wie lautet der vollständige Name der Patientin;NAME_BEKOMMEN
+Ich möchte wissen wie der Klient heißt;NAME_BEKOMMEN
+Ich möchte wissen wie die Klientin heißt;NAME_BEKOMMEN
+Wie viele Jahre ist der Klient alt;ALTER_BEKOMMEN
+Wie viele Jahre alt ist der Patient;ALTER_BEKOMMEN
+Welches Alter hat der Klient;ALTER_BEKOMMEN
+Welches Alter hat die Klientin;ALTER_BEKOMMEN
+Ich brauche das Alter des Patienten;ALTER_BEKOMMEN
+Ich möchte wissen wie alt der Klient ist;ALTER_BEKOMMEN
+Ich möchte wissen wie alt die Klientin ist;ALTER_BEKOMMEN
+Sag mir bitte das Alter des Klienten;ALTER_BEKOMMEN
+Sag mir bitte das Alter der Patientin;ALTER_BEKOMMEN
+Wie alt ist der aktuelle Klient;ALTER_BEKOMMEN
+Wie alt ist die aktuelle Patientin;ALTER_BEKOMMEN
+Welches Alter hat der aktuelle Patient;ALTER_BEKOMMEN
+Wie viele Jahre hat die Klientin;ALTER_BEKOMMEN
+Wer ist der Klient;NAME_BEKOMMEN
+Wer ist die Klientin;NAME_BEKOMMEN
+Wie nennt sich der Klient;NAME_BEKOMMEN
+Wie nennt sich die Klientin;NAME_BEKOMMEN
+Ich wüsste gern wie der Klient heißt;NAME_BEKOMMEN
+Ich wüsste gern wie die Klientin heißt;NAME_BEKOMMEN
+Hast du den Namen des Patienten;NAME_BEKOMMEN
+Hast du den Namen der Patientin;NAME_BEKOMMEN
+Könntest du mir den Klientennamen sagen;NAME_BEKOMMEN
+Könntest du mir den Namen der Klientin verraten;NAME_BEKOMMEN
+Wie wird der Patient genannt;NAME_BEKOMMEN
+Wie wird die Patientin genannt;NAME_BEKOMMEN
+Unter welchem Namen ist der Klient bekannt;NAME_BEKOMMEN
+Unter welchem Namen ist die Klientin bekannt;NAME_BEKOMMEN
+Ich interessiere mich für den Namen des Patienten;NAME_BEKOMMEN
+Wie hoch ist das Alter des Klienten;ALTER_BEKOMMEN
+Wie hoch ist das Alter der Klientin;ALTER_BEKOMMEN
+Ich hätte gern das Alter des Patienten gewusst;ALTER_BEKOMMEN
+Ich hätte gern das Alter der Patientin gewusst;ALTER_BEKOMMEN
+Kannst du mir sagen wie alt der Patient ist;ALTER_BEKOMMEN
+Kannst du mir sagen wie alt die Klientin ist;ALTER_BEKOMMEN
+Was weißt du über das Alter des Klienten;ALTER_BEKOMMEN
+Was weißt du über das Alter der Patientin;ALTER_BEKOMMEN
+Ich frage mich wie alt der Klient wohl ist;ALTER_BEKOMMEN
+Ich frage mich wie alt die Patientin wohl ist;ALTER_BEKOMMEN
+Gib mir bitte das Alter des aktuellen Klienten;ALTER_BEKOMMEN
+Wie viele Jahre zählt der Patient;ALTER_BEKOMMEN
+Wie viele Jahre zählt die Klientin;ALTER_BEKOMMEN
+Ich möchte das genaue Alter des Patienten wissen;ALTER_BEKOMMEN
+Ich möchte das genaue Alter der Klientin wissen;ALTER_BEKOMMEN
+Weißt du wie der Klient heißt;NAME_BEKOMMEN
+Weißt du wie die Klientin heißt;NAME_BEKOMMEN
+Ich suche den Namen des Patienten;NAME_BEKOMMEN
+Ich suche den Namen der Patientin;NAME_BEKOMMEN
+Der Name des Klienten interessiert mich;NAME_BEKOMMEN
+Der Name der Klientin interessiert mich;NAME_BEKOMMEN
+Mit welchem Namen ist der Patient registriert;NAME_BEKOMMEN
+Mit welchem Namen ist die Patientin eingetragen;NAME_BEKOMMEN
+Wie lautet bitte der vollständige Name des Klienten;NAME_BEKOMMEN
+Wie lautet bitte der vollständige Name der Klientin;NAME_BEKOMMEN
+Kannst du mir sagen wer der Patient ist;NAME_BEKOMMEN
+Kannst du mir sagen wer die Patientin ist;NAME_BEKOMMEN
+Wer genau ist der aktuelle Klient;NAME_BEKOMMEN
+Wer genau ist die aktuelle Klientin;NAME_BEKOMMEN
+Ich brauche den vollen Namen des Patienten;NAME_BEKOMMEN
+Wie alt genau ist der Klient;ALTER_BEKOMMEN
+Wie alt genau ist die Klientin;ALTER_BEKOMMEN
+Hast du eine Info über das Alter des Patienten;ALTER_BEKOMMEN
+Hast du eine Info über das Alter der Klientin;ALTER_BEKOMMEN
+Weißt du wie viele Jahre der Patient alt ist;ALTER_BEKOMMEN
+Weißt du wie viele Jahre die Klientin alt ist;ALTER_BEKOMMEN
+Ich will wissen in welchem Alter sich der Klient befindet;ALTER_BEKOMMEN
+Ich will wissen in welchem Alter sich die Patientin befindet;ALTER_BEKOMMEN
+Wie alt ist er;ALTER_BEKOMMEN
+Wie alt ist sie;ALTER_BEKOMMEN
+Welches Alter hat er gerade;ALTER_BEKOMMEN
+Welches Alter hat sie gerade;ALTER_BEKOMMEN
+Kannst du das Alter des Klienten überprüfen;ALTER_BEKOMMEN
+Kannst du das Alter der Klientin überprüfen;ALTER_BEKOMMEN
+Wie viele Jahre bringt der Patient mit;ALTER_BEKOMMEN
+Wie lautet die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse der Klientin;ADDRESSE_BEKOMMEN
+Was ist die Anschrift des Patienten;ADDRESSE_BEKOMMEN
+Was ist die Anschrift der Patientin;ADDRESSE_BEKOMMEN
+Kannst du mir die Adresse vom Klienten sagen;ADDRESSE_BEKOMMEN
+Kannst du mir die Adresse von der Klientin nennen;ADDRESSE_BEKOMMEN
+Ich brauche die Wohnadresse des Patienten;ADDRESSE_BEKOMMEN
+Ich brauche die Wohnadresse der Patientin;ADDRESSE_BEKOMMEN
+Wo wohnt der Klient;ADDRESSE_BEKOMMEN
+Wo wohnt die Klientin;ADDRESSE_BEKOMMEN
+Unter welcher Adresse ist der Patient gemeldet;ADDRESSE_BEKOMMEN
+Unter welcher Adresse ist die Klientin registriert;ADDRESSE_BEKOMMEN
+Ich möchte wissen wo der Klient wohnt;ADDRESSE_BEKOMMEN
+Ich möchte wissen wo die Klientin wohnt;ADDRESSE_BEKOMMEN
+Gib mir bitte die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Gib mir bitte die Adresse der Patientin;ADDRESSE_BEKOMMEN
+An welcher Adresse ist der Klient erreichbar;ADDRESSE_BEKOMMEN
+An welcher Adresse ist die Patientin erreichbar;ADDRESSE_BEKOMMEN
+Wo finde ich den Patienten;ADDRESSE_BEKOMMEN
+Wo finde ich die Klientin;ADDRESSE_BEKOMMEN
+Ich suche die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Ich suche die Adresse der Klientin;ADDRESSE_BEKOMMEN
+Wo ist der Wohnort des Patienten;ADDRESSE_BEKOMMEN
+Wo ist der Wohnort der Klientin;ADDRESSE_BEKOMMEN
+Könntest du mir sagen wo der Klient wohnt;ADDRESSE_BEKOMMEN
+Könntest du mir sagen wo die Klientin wohnt;ADDRESSE_BEKOMMEN
+Wie ist die Postanschrift des Patienten;ADDRESSE_BEKOMMEN
+Wie ist die Postanschrift der Patientin;ADDRESSE_BEKOMMEN
+Ich hätte gern die Meldeadresse vom Klienten;ADDRESSE_BEKOMMEN
+Ich hätte gern die Meldeadresse der Klientin;ADDRESSE_BEKOMMEN
+Welche Adresse hat der Klient angegeben;ADDRESSE_BEKOMMEN
+Welche Adresse hat die Klientin hinterlegt;ADDRESSE_BEKOMMEN
+Wo lebt der Patient aktuell;ADDRESSE_BEKOMMEN
+Wo lebt die Patientin derzeit;ADDRESSE_BEKOMMEN
+Gibt es eine Adresse zum Klienten;ADDRESSE_BEKOMMEN
+Gibt es eine Adresse zur Patientin;ADDRESSE_BEKOMMEN
+Wie lautet der Wohnsitz des Patienten;ADDRESSE_BEKOMMEN
+Wie lautet der Wohnsitz der Klientin;ADDRESSE_BEKOMMEN
+Ich wüsste gern die Adresse vom Patienten;ADDRESSE_BEKOMMEN
+Ich wüsste gern die Adresse von der Patientin;ADDRESSE_BEKOMMEN
+Kannst du mir sagen wo der Patient wohnt;ADDRESSE_BEKOMMEN
+Kannst du mir sagen wo die Patientin wohnt;ADDRESSE_BEKOMMEN
+Wo ist der Klient zu Hause;ADDRESSE_BEKOMMEN
+Wo ist die Klientin zu Hause;ADDRESSE_BEKOMMEN
+An welche Adresse wurde der Klient gemeldet;ADDRESSE_BEKOMMEN
+An welche Adresse wurde die Klientin gemeldet;ADDRESSE_BEKOMMEN
+Wie ist die Adresse vom Wohnort des Patienten;ADDRESSE_BEKOMMEN
+Wie ist die Adresse vom Wohnort der Klientin;ADDRESSE_BEKOMMEN
+Welche Adresse steht im System für den Klienten;ADDRESSE_BEKOMMEN
+Welche Adresse steht im System für die Klientin;ADDRESSE_BEKOMMEN
+Wie lautet das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Wie lautet das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Was ist das Geburtsdatum vom Patienten;GEBURTSDATUM_BEKOMMEN
+Was ist das Geburtsdatum von der Patientin;GEBURTSDATUM_BEKOMMEN
+Wann wurde der Klient geboren;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Klientin geboren;GEBURTSDATUM_BEKOMMEN
+Ich möchte wissen wann der Patient geboren wurde;GEBURTSDATUM_BEKOMMEN
+Ich möchte wissen wann die Patientin geboren wurde;GEBURTSDATUM_BEKOMMEN
+Kannst du mir das Geburtsdatum des Klienten sagen;GEBURTSDATUM_BEKOMMEN
+Kannst du mir das Geburtsdatum der Klientin nennen;GEBURTSDATUM_BEKOMMEN
+Ich brauche das Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Ich brauche das Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Gib mir bitte das Geburtsdatum vom Klienten;GEBURTSDATUM_BEKOMMEN
+Gib mir bitte das Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Welches Datum ist das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Welches Datum ist das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Was steht als Geburtsdatum beim Patienten;GEBURTSDATUM_BEKOMMEN
+Was steht als Geburtsdatum bei der Patientin;GEBURTSDATUM_BEKOMMEN
+Ich suche das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Ich suche das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Wann genau wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Wann genau wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde der Klient geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde die Klientin geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag des Patienten;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag der Patientin;GEBURTSDATUM_BEKOMMEN
+Weißt du wann der Klient Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Weißt du wann die Klientin Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Wann hat der Patient Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wann hat die Klientin Geburtstag;GEBURTSDATUM_BEKOMMEN
+Ich hätte gern den Geburtstag vom Klienten;GEBURTSDATUM_BEKOMMEN
+Ich hätte gern den Geburtstag der Klientin;GEBURTSDATUM_BEKOMMEN
+Kannst du den Geburtstag des Patienten nachsehen;GEBURTSDATUM_BEKOMMEN
+Kannst du den Geburtstag der Patientin überprüfen;GEBURTSDATUM_BEKOMMEN
+Was steht im System als Geburtsdatum für den Klienten;GEBURTSDATUM_BEKOMMEN
+Was steht im System als Geburtsdatum für die Klientin;GEBURTSDATUM_BEKOMMEN
+Wann ist das genaue Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Wann ist das genaue Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Gibt es ein Geburtsdatum für den Klienten;GEBURTSDATUM_BEKOMMEN
+Gibt es ein Geburtsdatum für die Klientin;GEBURTSDATUM_BEKOMMEN
+Ich wüsste gern wann die Klientin geboren ist;GEBURTSDATUM_BEKOMMEN
+Wie alt ist der Klient und wann hat er Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wie alt ist die Patientin und wann wurde sie geboren;GEBURTSDATUM_BEKOMMEN
+Was ist das exakte Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Was ist das exakte Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+An welchem Datum wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Datum wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Sozialversicherungsnummer vom Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Sozialversicherungsnummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir die Sozialversicherungsnummer des Klienten sagen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir die Sozialversicherungsnummer der Klientin nennen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich brauche die Sozialversicherungsnummer vom Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich brauche die Sozialversicherungsnummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie ist die Sozialversicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie ist die Sozialversicherungsnummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was steht als Sozialversicherungsnummer beim Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was steht als Sozialversicherungsnummer bei der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich suche die Sozialversicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich suche die Sozialversicherungsnummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wo finde ich die Sozialversicherungsnummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wo finde ich die Sozialversicherungsnummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich möchte wissen wie die Sozialversicherungsnummer des Klienten lautet;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich möchte wissen wie die Sozialversicherungsnummer der Klientin lautet;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir bitte die Sozialversicherungsnummer vom Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir bitte die Sozialversicherungsnummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Hat der Klient eine Sozialversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Hat die Klientin eine Sozialversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer ist für den Patienten hinterlegt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer ist für die Patientin im System;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Versicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Versicherungsnummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was hat der Patient für eine Sozialversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was hat die Patientin für eine Sozialversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich hätte gern die Sozialversicherungsnummer vom Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich hätte gern die Sozialversicherungsnummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir sagen welche Sozialversicherungsnummer der Patient hat;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir sagen welche Sozialversicherungsnummer die Klientin hat;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Die Sozialversicherungsnummer des Klienten fehlt mir noch;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Die Sozialversicherungsnummer der Patientin fehlt mir noch;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ist eine Sozialversicherungsnummer beim Klienten vorhanden;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ist eine Sozialversicherungsnummer bei der Klientin hinterlegt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Nummer bei der Sozialversicherung für den Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Versicherungsnummer der Patientin bei der SV;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Nummer hat der Patient bei der Sozialversicherung;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Nummer hat die Klientin bei der Krankenkasse;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich möchte die Sozialversicherungsnummer vom Patienten überprüfen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich möchte die SV-Nummer der Patientin prüfen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialnummer ist beim Klienten gespeichert;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialnummer ist bei der Patientin eingetragen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Bitte nenne mir die SV-Nummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Bitte nenne mir die SV-Nummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich wüsste gern die Sozialversicherungsnummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich wüsste gern die Versicherungsnummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kann ich bitte die Sozialversicherungsnummer vom Klienten bekommen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kann ich bitte die SV-Nummer der Patientin erhalten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+ Wie alt ist der Klient;ALTER_BEKOMMEN
+ Kannst du mir das Alter des Klienten sagen;ALTER_BEKOMMEN
+ Wie alt wurde der Patient gestern;ALTER_BEKOMMEN
+ Was ist das Geburtsdatum des Klienten;ALTER_BEKOMMEN
+ Wie alt ist die Patientin heute;ALTER_BEKOMMEN
+ Weißt du wie alt der Klient ist;ALTER_BEKOMMEN
+ Wie alt ist der Klient in Jahren;ALTER_BEKOMMEN
+ Welche Altersgruppe hat der Klient;ALTER_BEKOMMEN
+ Wie alt war der Klient als er das letzte Mal hier war;ALTER_BEKOMMEN
+Wie alt war die Patientin im letzten Jahr;ALTER_BEKOMMEN
+Wie alt ist der Patient in Monaten;ALTER_BEKOMMEN
+Können Sie mir das Alter des Klienten nennen;ALTER_BEKOMMEN
+Was ist das genaue Alter der Patientin;ALTER_BEKOMMEN
+Wie alt ist die Patientin gemäß den Unterlagen;ALTER_BEKOMMEN
+Kannst du mir den genauen Geburtstag des Klienten sagen;ALTER_BEKOMMEN
+ Ist der Klient unter 18 Jahre alt;ALTER_BEKOMMEN
+ Welches Alter hat der Klient in diesem Jahr;ALTER_BEKOMMEN
+ Wie alt war der Klient als er die Behandlung begann;ALTER_BEKOMMEN
+ Wie alt ist der Patient in Tagen;ALTER_BEKOMMEN
+ Wie viele Jahre hat der Klient schon auf dem Buckel;ALTER_BEKOMMEN
+Wann wurde der Klient geboren;GEBURTSDATUM_BEKOMMEN
+Was ist das Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Könntest du mir den Geburtstag des Klienten nennen;GEBURTSDATUM_BEKOMMEN
+Wann hat der Klient das Licht der Welt erblickt;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Patientin genau geboren;GEBURTSDATUM_BEKOMMEN
+Kannst du mir das Geburtsdatum des Klienten nennen;GEBURTSDATUM_BEKOMMEN
+Welches Datum hat die Patientin zum Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wann war der Geburtstag des Klienten;GEBURTSDATUM_BEKOMMEN
+Kannst du mir das Geburtsdatum des Patienten bestätigen;GEBURTSDATUM_BEKOMMEN
+Was war der genaue Tag der Geburt des Klienten;GEBURTSDATUM_BEKOMMEN
+Weißt du wann der Klient geboren wurde;GEBURTSDATUM_BEKOMMEN
+Welches Jahr wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN
+Könntest du mir das Geburtsdatum der Patientin verraten;GEBURTSDATUM_BEKOMMEN
+Was ist das exakte Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Welches Datum wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN
+Wann feiert der Klient seinen Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wie lautet das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Was war das Geburtsdatum des Klienten im Jahr 1985;GEBURTSDATUM_BEKOMMEN
+Was ist der Geburtsmonat des Klienten;GEBURTSDATUM_BEKOMMEN
+Wie lautet der Name des Klienten;NAME_BEKOMMEN
+Kannst du mir den Namen der Patientin nennen;NAME_BEKOMMEN
+Was ist der vollständige Name des Patienten;NAME_BEKOMMEN
+Wie heißt der Klient mit vollem Namen;NAME_BEKOMMEN
+Wie lautet der Name des Patienten auf den Formularen;NAME_BEKOMMEN
+Was ist der Vorname der Patientin;NAME_BEKOMMEN
+Wie heißt der Klient;NAME_BEKOMMEN
+Was ist der Nachname des Klienten;NAME_BEKOMMEN
+Wie nennt sich die Patientin;NAME_BEKOMMEN
+Könntest du mir den Namen des Klienten nennen;NAME_BEKOMMEN
+Was ist der Name des Patienten in den Unterlagen;NAME_BEKOMMEN
+Was ist der Vorname der Patientin;NAME_BEKOMMEN
+Was ist der vollständige Name des Klienten in den Akten;NAME_BEKOMMEN
+Wie lautet der Name des Klienten in der Datenbank;NAME_BEKOMMEN
+Kannst du mir den Namen des Patienten sagen;NAME_BEKOMMEN
+Wie nennt sich der Klient offiziell;NAME_BEKOMMEN
+Was ist der Nachname des Patienten;NAME_BEKOMMEN
+Wie heißt die Patientin im System;NAME_BEKOMMEN
+Wie lautet der Name der Patientin auf dem Ausweis;NAME_BEKOMMEN
+Kannst du mir den Namen der Patientin bestätigen;NAME_BEKOMMEN
+Kannst du den Geburtstag des Patienten nachsehen;GEBURTSDATUM_BEKOMMEN
+Kannst du den Geburtstag der Klientin nachsehen;GEBURTSDATUM_BEKOMMEN
+Ich will wissen wann der Patient geboren wurde;GEBURTSDATUM_BEKOMMEN
+Ich will wissen wann die Klientin geboren wurde;GEBURTSDATUM_BEKOMMEN
+Was weißt du über das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Was weißt du über das Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Könntest du mir den Geburtstag des Klienten sagen;GEBURTSDATUM_BEKOMMEN
+Könntest du mir den Geburtstag der Klientin nennen;GEBURTSDATUM_BEKOMMEN
+Ich suche den Geburtstag des Patienten;GEBURTSDATUM_BEKOMMEN
+Ich suche den Geburtstag der Patientin;GEBURTSDATUM_BEKOMMEN
+Wie lautet der Geburtstag des Klienten;GEBURTSDATUM_BEKOMMEN
+Wie lautet der Geburtstag der Klientin;GEBURTSDATUM_BEKOMMEN
+Wann wurde der Patient genau geboren;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Patientin genau geboren;GEBURTSDATUM_BEKOMMEN
+Ich interessiere mich für das Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Ich interessiere mich für das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Zeig mir das Geburtsdatum vom Patienten;GEBURTSDATUM_BEKOMMEN
+Zeig mir das Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Weißt du wann genau der Patient Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Weißt du wann genau die Klientin Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Ich hätte gern das genaue Geburtsdatum des Klienten;GEBURTSDATUM_BEKOMMEN
+Ich hätte gern das genaue Geburtsdatum der Klientin;GEBURTSDATUM_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die SV Nummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir die Sozialversicherungsnummer nennen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich brauche die SV Nummer vom Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie ist die Sozialversicherungsnummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was steht als SV Nummer bei der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich suche die Sozialversicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wo finde ich die SV Nummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich möchte wissen wie die Sozialversicherungsnummer lautet;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir bitte die SV Nummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Hat der Klient eine Sozialversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche SV Nummer ist im System für den Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was hat die Patientin für eine SV Nummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich hätte gern die Sozialversicherungsnummer der Klientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir sagen welche SV Nummer der Patient hat;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Die SV Nummer der Patientin fehlt mir;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ist eine Sozialversicherungsnummer bei der Klientin hinterlegt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Nummer hat der Klient bei der Sozialversicherung;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich möchte die SV Nummer des Patienten prüfen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialnummer ist beim Patienten gespeichert;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich wüsste gern die Versicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie heißt der Patient;NAME_BEKOMMEN
+Können Sie mir den Namen nennen;NAME_BEKOMMEN
+Ich brauche den vollen Namen;NAME_BEKOMMEN
+Namen des Patienten bitte;NAME_BEKOMMEN
+Sag mir den Namen;NAME_BEKOMMEN
+Name;NAME_BEKOMMEN
+Wer ist die Person;NAME_BEKOMMEN
+Wen behandeln wir;NAME_BEKOMMEN
+Wessen Daten sehe ich;NAME_BEKOMMEN
+Wie lautet sein Name;NAME_BEKOMMEN
+Der Name fehlt noch;NAME_BEKOMMEN
+Ich suche den Nachnamen;NAME_BEKOMMEN
+Gib mir den Vornamen;NAME_BEKOMMEN
+Wie wird er geschrieben;NAME_BEKOMMEN
+Wer genau ist das;NAME_BEKOMMEN
+Könntest du mir den Namen geben;NAME_BEKOMMEN
+Wie heißt die Person;NAME_BEKOMMEN
+Name vom Patienten;NAME_BEKOMMEN
+Ich möchte den Namen wissen;NAME_BEKOMMEN
+Was ist sein voller Name;NAME_BEKOMMEN
+Wie alt ist der Patient;ALTER_BEKOMMEN
+Alter;ALTER_BEKOMMEN
+Gib mir das Alter;ALTER_BEKOMMEN
+Ich brauche sein Alter;ALTER_BEKOMMEN
+Können Sie mir das Alter sagen;ALTER_BEKOMMEN
+Er ist wie alt;ALTER_BEKOMMEN
+Was ist das Alter;ALTER_BEKOMMEN
+Wie viele Jahre alt ist er;ALTER_BEKOMMEN
+Ist er schon volljährig;ALTER_BEKOMMEN
+Ist er über achtzehn;ALTER_BEKOMMEN
+Alter vom Patienten;ALTER_BEKOMMEN
+Ich brauche das genaue Alter;ALTER_BEKOMMEN
+Wie alt ist sie;ALTER_BEKOMMEN
+Wie jung ist er;ALTER_BEKOMMEN
+Kannst du mir sagen wie alt er ist;ALTER_BEKOMMEN
+Ich frage mich wie alt sie ist;ALTER_BEKOMMEN
+Sag mir bitte das Alter;ALTER_BEKOMMEN
+Welches Alter hat er;ALTER_BEKOMMEN
+Wie viele Jahre zählt er;ALTER_BEKOMMEN
+Wie alt genau;ALTER_BEKOMMEN
+Wo wohnt der Patient;ADDRESSE_BEKOMMEN
+Adresse;ADDRESSE_BEKOMMEN
+Gib mir die Anschrift;ADDRESSE_BEKOMMEN
+Ich brauche die Adresse;ADDRESSE_BEKOMMEN
+Können Sie mir die Adresse geben;ADDRESSE_BEKOMMEN
+Wo ist sein Wohnort;ADDRESSE_BEKOMMEN
+Wohnort vom Patienten;ADDRESSE_BEKOMMEN
+Anschrift;ADDRESSE_BEKOMMEN
+Postanschrift bitte;ADDRESSE_BEKOMMEN
+Wo lebt der Patient;ADDRESSE_BEKOMMEN
+Ich suche die Adresse;ADDRESSE_BEKOMMEN
+Welche Adresse steht drin;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse;ADDRESSE_BEKOMMEN
+Hat er eine neue Adresse;ADDRESSE_BEKOMMEN
+Adresse des Patienten;ADDRESSE_BEKOMMEN
+Ich muss wissen wo er wohnt;ADDRESSE_BEKOMMEN
+Bitte nenne mir seine Adresse;ADDRESSE_BEKOMMEN
+Wohnort;ADDRESSE_BEKOMMEN
+Wo ist der Wohnsitz;ADDRESSE_BEKOMMEN
+Adresse vom Hauptwohnsitz;ADDRESSE_BEKOMMEN
+Wann ist der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Ich brauche das Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Wann wurde er geboren;GEBURTSDATUM_BEKOMMEN
+Was ist sein Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Geburtsdatum vom Patienten;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde er geboren;GEBURTSDATUM_BEKOMMEN
+Ich möchte wissen wann er geboren wurde;GEBURTSDATUM_BEKOMMEN
+Sein Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wann ist sie zur Welt gekommen;GEBURTSDATUM_BEKOMMEN
+Wann genau ist er geboren;GEBURTSDATUM_BEKOMMEN
+Ich brauche sein Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Wie lautet das Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Tag der Geburt;GEBURTSDATUM_BEKOMMEN
+Wann war die Geburt;GEBURTSDATUM_BEKOMMEN
+Gib mir bitte das Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Person geboren;GEBURTSDATUM_BEKOMMEN
+Geboren am;GEBURTSDATUM_BEKOMMEN
+Ich suche das Geburtsdatum;GEBURTSDATUM_BEKOMMEN
+Wann feiert er Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wie lautet die Krankenversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir die Versicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich brauche die KV-Nummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Versicherungsnummer vom Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Krankenversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Könnten Sie mir die Nummer der Krankenversicherung geben;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Versicherungsnummer hat er;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich suche die Krankenversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir die Nummer der Krankenversicherung;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir die KV-Nummer nennen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Versichert bei welcher Krankenkasse;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Hat der Patient eine Krankenversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was steht in der Krankenversicherungsnummer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Ich brauche die Versicherungsdaten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Krankenversicherungsnummer vom Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wann wurde er versichert;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Die Versicherungsnummer bitte;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Nummer der Versicherung;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie heißt der Patient;NAME_BEKOMMEN
+Wie lautet der Name des Patienten;NAME_BEKOMMEN
+Kannst du mir den Namen des Patienten sagen;NAME_BEKOMMEN
+Wie heißt die Patientin;NAME_BEKOMMEN
+Wie lautet ihr voller Name;NAME_BEKOMMEN
+Welchen Namen hat der Klient;NAME_BEKOMMEN
+Wie heißt Herr Müller;NAME_BEKOMMEN
+Wie heißt Frau Schmidt;NAME_BEKOMMEN
+Nenne mir bitte den Namen des Klienten;NAME_BEKOMMEN
+Wer ist der Patient mit dem Nachnamen Wagner;NAME_BEKOMMEN
+Wie heißt der Patient mit Vornamen;NAME_BEKOMMEN
+Wie lautet der Nachname der Patientin;NAME_BEKOMMEN
+Sag mir den vollständigen Namen von Frau Becker;NAME_BEKOMMEN
+Wie heißt der Klient genau;NAME_BEKOMMEN
+Welchen vollständigen Namen trägt Herr Meier;NAME_BEKOMMEN
+Wer ist Frau Fischer;NAME_BEKOMMEN
+Wie heißt Herr Braun;NAME_BEKOMMEN
+Wie lautet der Name der neuen Patientin;NAME_BEKOMMEN
+Welchen Namen hat der Patient im Ausweis stehen;NAME_BEKOMMEN
+Wer ist der Klient namens Beck;NAME_BEKOMMEN
+Wie heißt der Mann den du behandelst;NAME_BEKOMMEN
+Sag mir bitte den Namen der Frau die heute kommt;NAME_BEKOMMEN
+Wie heißt der Patient den du gerade siehst;NAME_BEKOMMEN
+Kennst du den Namen des nächsten Patienten;NAME_BEKOMMEN
+Wie spricht man den Namen der Patientin aus;NAME_BEKOMMEN
+Wie heißt der Klient mit Vornamen;NAME_BEKOMMEN
+Wie lautet der korrekte Name des Patienten;NAME_BEKOMMEN
+Wer ist Frau Maier;NAME_BEKOMMEN
+Wie heißt der Herr der eben anrief;NAME_BEKOMMEN
+Gib mir bitte den Namen des Klienten durch;NAME_BEKOMMEN
+Wie lautet der Name der Dame im Wartezimmer;NAME_BEKOMMEN
+Kennst du den Namen von Herrn Köhler;NAME_BEKOMMEN
+Wer ist Frau Weber;NAME_BEKOMMEN
+Wie heißt der Patient auf Zimmer drei;NAME_BEKOMMEN
+Sag mir den Namen der Person die untersucht wird;NAME_BEKOMMEN
+Wer ist Herr Hahn;NAME_BEKOMMEN
+Wie heißt die ältere Patientin;NAME_BEKOMMEN
+Wie lautet der Name des jungen Patienten;NAME_BEKOMMEN
+Wie heißt der Klient den wir besuchen;NAME_BEKOMMEN
+Wer ist der nächste Patient namentlich;NAME_BEKOMMEN
+Wie lautet ihr Mädchenname;NAME_BEKOMMEN
+Kennst du den Doppelnamen der Patientin;NAME_BEKOMMEN
+Wie heißt der Patient genau mit Vorund Nachnamen;NAME_BEKOMMEN
+Welchen Namen verwendet Frau Keller;NAME_BEKOMMEN
+Wie heißt der Patient laut Ausweisfoto;NAME_BEKOMMEN
+Wie lautet der offizielle Name des Klienten;NAME_BEKOMMEN
+Wer ist Herr Vogt;NAME_BEKOMMEN
+Wie nennt sich die Patientin;NAME_BEKOMMEN
+Wie heißt die Person die behandelt werden soll;NAME_BEKOMMEN
+Wie lautet sein vollständiger Name;NAME_BEKOMMEN
+
+Wie alt ist der Patient;ALTER_BEKOMMEN
+Wie alt ist die Patientin;ALTER_BEKOMMEN
+Kannst du mir das Alter des Patienten nennen;ALTER_BEKOMMEN
+Welches Alter hat der Klient;ALTER_BEKOMMEN
+Weißt du wie alt Herr Müller ist;ALTER_BEKOMMEN
+Wie alt ist Frau Schmidt;ALTER_BEKOMMEN
+Wie alt ist der Mann den du behandelst;ALTER_BEKOMMEN
+Wie alt ist die Dame im Wartezimmer;ALTER_BEKOMMEN
+Welches Alter hat der Patient auf Zimmer drei;ALTER_BEKOMMEN
+Wie alt ist der nächste Patient;ALTER_BEKOMMEN
+Wie viele Jahre zählt die Patientin;ALTER_BEKOMMEN
+Wie alt ist Herr Becker inzwischen;ALTER_BEKOMMEN
+Was für ein Alter hat Frau Fischer;ALTER_BEKOMMEN
+Hast du das Alter des Klienten parat;ALTER_BEKOMMEN
+Wie alt ist der junge Patient;ALTER_BEKOMMEN
+Wie alt ist die ältere Patientin;ALTER_BEKOMMEN
+Kennst du das genaue Alter von Herrn Wagner;ALTER_BEKOMMEN
+Wie alt ist Frau Meier;ALTER_BEKOMMEN
+Wie alt ist der Patient den wir besuchen;ALTER_BEKOMMEN
+Wie alt ist der Klient den du heute siehst;ALTER_BEKOMMEN
+Wie viele Jahre hat Herr Braun;ALTER_BEKOMMEN
+Wie alt ist die Patientin die eben ankam;ALTER_BEKOMMEN
+Welches Alter hat der Patient aktuell;ALTER_BEKOMMEN
+Wie alt ist die Person die operiert wird;ALTER_BEKOMMEN
+Wie alt ist Herr Köhler;ALTER_BEKOMMEN
+Wie alt ist Frau Weber;ALTER_BEKOMMEN
+In welchem Alter befindet sich der Patient;ALTER_BEKOMMEN
+Wie alt ist der Mann auf der Liste;ALTER_BEKOMMEN
+Wie alt ist die Frau die wir aufnehmen;ALTER_BEKOMMEN
+Weißt du das Geburtsjahr des Patienten;ALTER_BEKOMMEN
+Wie alt ist die Patientin ungefähr;ALTER_BEKOMMEN
+Welches Alter hat der Klient derzeit;ALTER_BEKOMMEN
+Wie alt ist Herr Vogt;ALTER_BEKOMMEN
+Wie alt ist die Dame die gleich dran ist;ALTER_BEKOMMEN
+Wie alt ist der Patient den du eben gesehen hast;ALTER_BEKOMMEN
+Wie alt ist Frau Keller;ALTER_BEKOMMEN
+Wie alt ist der Herr vor der Tür;ALTER_BEKOMMEN
+Welches Alter hat die neue Patientin;ALTER_BEKOMMEN
+Wie alt ist der Klient tatsächlich;ALTER_BEKOMMEN
+Wie viele Jahre alt ist Herr Hahn;ALTER_BEKOMMEN
+Wie alt ist die Patientin die wir pflegen;ALTER_BEKOMMEN
+Kennst du sein Alter;ALTER_BEKOMMEN
+Wie alt ist die Person mit Namen Maier;ALTER_BEKOMMEN
+Wie alt ist der Patient der heute Morgen kam;ALTER_BEKOMMEN
+Welches Alter hat Frau Ernst;ALTER_BEKOMMEN
+Wie alt ist der Klient im Rollstuhl;ALTER_BEKOMMEN
+Wie alt ist die Patientin in Zimmer fünf;ALTER_BEKOMMEN
+Wie alt ist Herr Ludwig;ALTER_BEKOMMEN
+In welchem Alter ist die Patientin heute;ALTER_BEKOMMEN
+Wie alt ist der Patient der morgen entlassen wird;ALTER_BEKOMMEN
+
+Wie lautet die Adresse des Patienten;ADDRESSE_BEKOMMEN
+Wo wohnt die Patientin;ADDRESSE_BEKOMMEN
+Kannst du mir die Anschrift von Herrn Müller geben;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse von Frau Schmidt;ADDRESSE_BEKOMMEN
+Unter welcher Adresse finde ich den Klienten;ADDRESSE_BEKOMMEN
+Wo ist der Wohnort des Patienten;ADDRESSE_BEKOMMEN
+Kennst du die Straße in der die Patientin wohnt;ADDRESSE_BEKOMMEN
+Wie lautet die Hausnummer von Herrn Becker;ADDRESSE_BEKOMMEN
+In welchem Ort lebt der Patient;ADDRESSE_BEKOMMEN
+Wie ist die Postleitzahl der Patientin;ADDRESSE_BEKOMMEN
+Wo befindet sich die Wohnung des Klienten;ADDRESSE_BEKOMMEN
+Gib mir bitte die Adresse von Frau Fischer;ADDRESSE_BEKOMMEN
+Wo wohnt Herr Wagner;ADDRESSE_BEKOMMEN
+Wie lautet der Wohnsitz des Patienten;ADDRESSE_BEKOMMEN
+Welche Adresse hat Frau Meier;ADDRESSE_BEKOMMEN
+Wo hat der Patient seinen Hauptwohnsitz;ADDRESSE_BEKOMMEN
+Wie heißt die Straße in der Herr Braun lebt;ADDRESSE_BEKOMMEN
+Wo genau wohnt die Patientin;ADDRESSE_BEKOMMEN
+Sag mir die Adresse des Klienten;ADDRESSE_BEKOMMEN
+Wo ist der Wohnort von Frau Weber;ADDRESSE_BEKOMMEN
+Unter welcher Anschrift erreiche ich Herrn Köhler;ADDRESSE_BEKOMMEN
+Wo lebt der Patient namens Vogt;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse der neuen Patientin;ADDRESSE_BEKOMMEN
+Wo wohnt der Mann den du behandelst;ADDRESSE_BEKOMMEN
+Welche Adresse hat die Dame im Rollstuhl;ADDRESSE_BEKOMMEN
+Wo ist Herr Hahn zu Hause;ADDRESSE_BEKOMMEN
+In welcher Stadt lebt die Patientin;ADDRESSE_BEKOMMEN
+Gib mir die Anschrift des nächsten Patienten;ADDRESSE_BEKOMMEN
+Wo kann ich Frau Keller antreffen;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse des Klienten namens Beck;ADDRESSE_BEKOMMEN
+An welcher Adresse wohnt der Patient der heute kam;ADDRESSE_BEKOMMEN
+Wo lebt die Patientin die wir morgen besuchen;ADDRESSE_BEKOMMEN
+Kennst du die genaue Adresse von Herrn Ludwig;ADDRESSE_BEKOMMEN
+Wo befindet sich der Wohnsitz von Frau Ernst;ADDRESSE_BEKOMMEN
+Wie lautet die Heimatadresse des Patienten;ADDRESSE_BEKOMMEN
+Wo wohnt der Patient zurzeit;ADDRESSE_BEKOMMEN
+Unter welcher Adresse ist die Patientin gemeldet;ADDRESSE_BEKOMMEN
+Wohin muss der Brief für Herrn Meier;ADDRESSE_BEKOMMEN
+Wo findet man die Wohnung der Patientin;ADDRESSE_BEKOMMEN
+Wie lautet die Anschrift des Klienten in Berlin;ADDRESSE_BEKOMMEN
+Wo genau lebt der Patient mit Nachnamen Wagner;ADDRESSE_BEKOMMEN
+An welchem Ort wohnt Frau Hahn;ADDRESSE_BEKOMMEN
+Wie lautet die Adresse des älteren Patienten;ADDRESSE_BEKOMMEN
+Wo wohnt der junge Klient;ADDRESSE_BEKOMMEN
+Sag mir bitte die Straße von Frau Fischer;ADDRESSE_BEKOMMEN
+Wo ist die Wohnadresse von Herrn Becker;ADDRESSE_BEKOMMEN
+Welche Adresse benutze ich für die Patientin;ADDRESSE_BEKOMMEN
+Wo wohnt der Patient in München;ADDRESSE_BEKOMMEN
+Wie lautet die genaue Anschrift von Frau Maier;ADDRESSE_BEKOMMEN
+Wo wohnt der Klient der angerufen hat;ADDRESSE_BEKOMMEN
+
+Wann wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Welches Geburtsdatum hat die Patientin;GEBURTSDATUM_BEKOMMEN
+Kannst du mir den Geburtstag von Herrn Müller nennen;GEBURTSDATUM_BEKOMMEN
+Wann hat Frau Schmidt Geburtstag;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde der Klient geboren;GEBURTSDATUM_BEKOMMEN
+Weißt du das Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Wann ist Herr Becker geboren;GEBURTSDATUM_BEKOMMEN
+Wann feiert die Patientin ihren Geburtstag;GEBURTSDATUM_BEKOMMEN
+An welchem Datum kam Herr Wagner zur Welt;GEBURTSDATUM_BEKOMMEN
+Wann ist Frau Meier geboren;GEBURTSDATUM_BEKOMMEN
+Kennst du das Geburtsdatum von Herrn Braun;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Patientin geboren;GEBURTSDATUM_BEKOMMEN
+Welches Datum steht bei Herrn Köhler als Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wann ist Herr Vogt zur Welt gekommen;GEBURTSDATUM_BEKOMMEN
+Wann wurde die Patientin namens Fischer geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Tag hatte Herr Hahn Geburtstag;GEBURTSDATUM_BEKOMMEN
+Welches Geburtsjahr hat die Patientin;GEBURTSDATUM_BEKOMMEN
+Wann kam der Patient auf die Welt;GEBURTSDATUM_BEKOMMEN
+Wann wurde Frau Weber geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag des Klienten;GEBURTSDATUM_BEKOMMEN
+Wann genau wurde Herr Ludwig geboren;GEBURTSDATUM_BEKOMMEN
+Welcher Tag ist der Geburtstag der Patientin;GEBURTSDATUM_BEKOMMEN
+Kennst du das genaue Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Wann wurde der junge Patient geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist Frau Keller geboren;GEBURTSDATUM_BEKOMMEN
+Am welchen Datum feiert Herr Becker seinen Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wann kam die Patientin zur Welt;GEBURTSDATUM_BEKOMMEN
+Welches Datum ist der Geburtstag von Herrn Hahn;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde Frau Ernst geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag des nächsten Patienten;GEBURTSDATUM_BEKOMMEN
+Wann wurde Herr Meier geboren;GEBURTSDATUM_BEKOMMEN
+Kennst du den Geburtstag von Frau Maier;GEBURTSDATUM_BEKOMMEN
+Welches Geburtsdatum hat der Klient namens Beck;GEBURTSDATUM_BEKOMMEN
+Wann ist die Patientin genau geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Datum wurde Herr Wagner geboren;GEBURTSDATUM_BEKOMMEN
+Wann feiert die Patientin ihren nächsten Geburtstag;GEBURTSDATUM_BEKOMMEN
+Welches Geburtsjahr hat Herr Braun;GEBURTSDATUM_BEKOMMEN
+Wann kam Frau Fischer auf die Welt;GEBURTSDATUM_BEKOMMEN
+Wann wurde der Patient mit Nachnamen Vogt geboren;GEBURTSDATUM_BEKOMMEN
+An welchem Tag wurde die Patientin im Rollstuhl geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist Herr Köhler geboren;GEBURTSDATUM_BEKOMMEN
+Wann hat die Patientin Geburtstag;GEBURTSDATUM_BEKOMMEN
+Auf welches Datum fällt der Geburtstag von Herrn Ludwig;GEBURTSDATUM_BEKOMMEN
+Wann wurde der Klient den wir besuchen geboren;GEBURTSDATUM_BEKOMMEN
+Wann ist der Geburtstag der älteren Patientin;GEBURTSDATUM_BEKOMMEN
+Kennst du das Geburtsdatum von Frau Weber;GEBURTSDATUM_BEKOMMEN
+Wann wurde Herr Becker genau geboren;GEBURTSDATUM_BEKOMMEN
+Wann kam die Patientin zur Welt;GEBURTSDATUM_BEKOMMEN
+Welcher Tag ist der Geburtstag von Herrn Meier;GEBURTSDATUM_BEKOMMEN
+Wann wurde die nächste Patientin geboren;GEBURTSDATUM_BEKOMMEN
+
+Wie lautet die Sozialversicherungsnummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kannst du mir die Sozialversicherungsnummer der Patientin sagen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat Herr Müller;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer von Frau Schmidt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir bitte die Sozialversicherungsnummer des Klienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die SV-Nummer des Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer von Herrn Becker;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche SV-Nummer hat die Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die SV-Nummer von Herrn Wagner;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer von Frau Fischer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Hast du die SV-Nummer des Klienten parat;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer besitzt Herr Braun;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die SV-Nummer der Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Bitte nenne mir die Sozialversicherungsnummer von Herrn Köhler;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die Sozialversicherungsnummer von Frau Weber;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die SV-Nummer des Patienten namens Vogt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat der nächste Patient;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie heißt die SV-Nummer von Frau Meier;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat Herr Ludwig;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir die SV-Nummer der Patientin die eben kam;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer des jungen Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die SV-Nummer von Frau Keller;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat Herr Hahn;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die SV-Nummer der Dame im Wartezimmer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Sozialversicherungsnummer des Patienten auf Zimmer drei;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Bitte die SV-Nummer von Herrn Ernst;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat die ältere Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die SV-Nummer von Frau Maier;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die Sozialversicherungsnummer von Herrn Beck;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche SV-Nummer besitzt die Patientin namens Fischer;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer von Herrn Vogt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir die SV-Nummer des Klienten den wir besuchen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat Frau Hahn;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die SV-Nummer des Patienten den du behandelst;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die Sozialversicherungsnummer von Herrn Becker;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche SV-Nummer hat der Patient der heute kam;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer von Frau Ludwig;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Gib mir bitte die SV-Nummer des Klienten namens Braun;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat die Patientin in Zimmer fünf;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer des neuen Patienten;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die Sozialversicherungsnummer von Frau Vogt;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer besitzt Herr Meier;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer des Klienten im Rollstuhl;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Was ist die Sozialversicherungsnummer von Frau Keller;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat der ältere Herr;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer der jungen Patientin;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Kennst du die Sozialversicherungsnummer von Herrn Hahn;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Welche Sozialversicherungsnummer hat die Patientin namens Ernst;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Wie lautet die Sozialversicherungsnummer von Herrn Köhler;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+Bitte nenne mir die Sozialversicherungsnummer der Patientin die wir entlassen;SOZIALVERSICHERUNGSNUMMER_BEKOMMEN
+
+Wie lautet die Telefonnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Kannst du mir die Telefonnummer des Patienten anzeigen;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Telefonnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Zeig mir bitte die Telefonnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Welche Nummer hat der Patient;TELEFONNUMMER_BEKOMMEN
+Gib mir bitte die Telefonnummer vom Patienten;TELEFONNUMMER_BEKOMMEN
+Ich suche die Handynummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Zeig mir die Telefonnummer eines Angehörigen;TELEFONNUMMER_BEKOMMEN
+Kannst du mir die Nummer der Angehörigen nennen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer vom nächsten Angehörigen anzeigen bitte;TELEFONNUMMER_BEKOMMEN
+Wie erreiche ich den Patienten telefonisch;TELEFONNUMMER_BEKOMMEN
+Ich benötige die Telefonnummer vom Patienten;TELEFONNUMMER_BEKOMMEN
+Wer ist telefonisch für den Patienten erreichbar;TELEFONNUMMER_BEKOMMEN
+Gib mir die Kontaktdaten des Patienten;TELEFONNUMMER_BEKOMMEN
+Telefonkontakt zum Patienten anzeigen;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Mobilnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Ich möchte die Telefonnummer eines Familienmitglieds wissen;TELEFONNUMMER_BEKOMMEN
+Bitte gib mir die Handynummer eines Angehörigen;TELEFONNUMMER_BEKOMMEN
+Nummer der Bezugsperson bitte anzeigen;TELEFONNUMMER_BEKOMMEN
+Kontakttelefonnummer vom Patienten abrufen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer vom nächsten Angehörigen anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Wer ist als Notfallkontakt hinterlegt;TELEFONNUMMER_BEKOMMEN
+Telefonnummer vom Notfallkontakt anzeigen;TELEFONNUMMER_BEKOMMEN
+Wie kann ich die Angehörigen telefonisch erreichen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der Familie anzeigen bitte;TELEFONNUMMER_BEKOMMEN
+Zeig mir die Telefonnummer eines Kontaktes des Patienten;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Telefonnummer der Bezugsperson;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Telefonnummer vom Notfallkontakt;TELEFONNUMMER_BEKOMMEN
+Kontakttelefonnummer eines Angehörigen anzeigen;TELEFONNUMMER_BEKOMMEN
+Welche Nummer ist für die Familie eingetragen;TELEFONNUMMER_BEKOMMEN
+Bitte gib mir die Telefonnummer der Familie des Patienten;TELEFONNUMMER_BEKOMMEN
+Mobilnummer des Patienten anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Rufnummer eines Angehörigen bitte anzeigen;TELEFONNUMMER_BEKOMMEN
+Wie erreiche ich den Patienten per Handy;TELEFONNUMMER_BEKOMMEN
+Handynummer eines Angehörigen abrufen bitte;TELEFONNUMMER_BEKOMMEN
+Telefonnummer für Rückruf beim Angehörigen anzeigen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer zur Kontaktaufnahme mit Familie anzeigen;TELEFONNUMMER_BEKOMMEN
+Gib mir bitte die Rufnummer des nächsten Angehörigen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der nächsten Angehörigen anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der Notfallkontakte abrufen;TELEFONNUMMER_BEKOMMEN
+Rufnummer der Angehörigen des Patienten bitte;TELEFONNUMMER_BEKOMMEN
+Wie kann ich die Angehörigen erreichen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer für Rückfragen beim Angehörigen anzeigen;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Kontaktnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Telefonnummer für einen Rückruf;TELEFONNUMMER_BEKOMMEN
+Notfallnummer des Patienten abrufen;TELEFONNUMMER_BEKOMMEN
+Notfallkontakt des Patienten anzeigen;TELEFONNUMMER_BEKOMMEN
+Gib mir bitte den Telefonkontakt zur Familie;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der Hinterbliebenen anzeigen;TELEFONNUMMER_BEKOMMEN
+Mobilnummer des Angehörigen anzeigen;TELEFONNUMMER_BEKOMMEN
+Zeig mir die Telefonnummer der Kontaktperson;TELEFONNUMMER_BEKOMMEN
+Zeige die Telefonnummer der Angehörigen an;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der Eltern abrufen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der Geschwister anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Wie kontaktiere ich die Familie des Patienten;TELEFONNUMMER_BEKOMMEN
+Telefonnummer für Notfälle bitte anzeigen;TELEFONNUMMER_BEKOMMEN
+Kontakttelefonnummer der Angehörigen abrufen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der eingetragenen Kontaktperson abrufen;TELEFONNUMMER_BEKOMMEN
+Gib mir die Handynummer des eingetragenen Kontaktes;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Notfallnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Bitte die Telefonnummer des nächsten Angehörigen zeigen;TELEFONNUMMER_BEKOMMEN
+Rufnummer des eingetragenen Notfallkontaktes anzeigen;TELEFONNUMMER_BEKOMMEN
+Zeig mir den Telefonkontakt der Angehörigen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer eines eingetragenen Angehörigen anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer des zuständigen Angehörigen abrufen;TELEFONNUMMER_BEKOMMEN
+Zeig mir bitte die Notfallnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der Angehörigen für Rückfragen abrufen;TELEFONNUMMER_BEKOMMEN
+Mobilnummer eines Angehörigen anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer einer Kontaktperson bitte;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Telefonnummer der Hinterbliebenen;TELEFONNUMMER_BEKOMMEN
+Nummer für Kontaktaufnahme mit Angehörigen anzeigen;TELEFONNUMMER_BEKOMMEN
+Rufnummer für telefonische Rückfragen bitte anzeigen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer zur Kontaktaufnahme mit Familie abrufen;TELEFONNUMMER_BEKOMMEN
+Rufnummer des nächsten Angehörigen bitte angeben;TELEFONNUMMER_BEKOMMEN
+Telefonnummer vom Kontaktpersoneneintrag abrufen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer eines Angehörigen für Rückruf;TELEFONNUMMER_BEKOMMEN
+Kontakttelefonnummer vom Familienmitglied abrufen;TELEFONNUMMER_BEKOMMEN
+Gib mir die Telefonnummer der Patientenfamilie;TELEFONNUMMER_BEKOMMEN
+Telefonnummer eines eingetragenen Notfallkontaktes anzeigen;TELEFONNUMMER_BEKOMMEN
+Rufnummer vom Angehörigenkontakt anzeigen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer der nächsten Kontaktperson abrufen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer eines eingetragenen Familienmitgliedes abrufen;TELEFONNUMMER_BEKOMMEN
+Wie erreiche ich die Angehörigen telefonisch;TELEFONNUMMER_BEKOMMEN
+Telefonnummer für Angehörigenkontakt anzeigen lassen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer eines Angehörigen bitte mitteilen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer für familiären Kontakt abrufen;TELEFONNUMMER_BEKOMMEN
+Zeig mir die Telefonnummer für einen Notfallkontakt;TELEFONNUMMER_BEKOMMEN
+Telefonnummer Patient;TELEFONNUMMER_BEKOMMEN
+Wie erreiche ich den Patienten telefonisch;TELEFONNUMMER_BEKOMMEN
+Kannst du mir die Telefonnummer des Patienten nennen;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Handynummer von Frau Müller;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Telefonnummer von Herrn Schneider;TELEFONNUMMER_BEKOMMEN
+Gib mir bitte die Kontakttelefonnummer vom Patienten;TELEFONNUMMER_BEKOMMEN
+Welche Nummer hat der Sohn des Patienten;TELEFONNUMMER_BEKOMMEN
+Wie kann ich die Tochter des Patienten telefonisch erreichen;TELEFONNUMMER_BEKOMMEN
+Zeig mir die Telefonnummer der Angehörigen an;TELEFONNUMMER_BEKOMMEN
+Nenne mir die Telefonnummer der Kontaktperson;TELEFONNUMMER_BEKOMMEN
+Ich brauche eine Telefonnummer für Rückfragen;TELEFONNUMMER_BEKOMMEN
+Telefonnummer des nächsten Angehörigen anzeigen;TELEFONNUMMER_BEKOMMEN
+Wie kontaktiere ich den Patienten telefonisch;TELEFONNUMMER_BEKOMMEN
+Telefonnummer für den Patienten abrufen;TELEFONNUMMER_BEKOMMEN
+Gib mir bitte die private Telefonnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Welche Handynummer hat der Ehemann der Patientin;TELEFONNUMMER_BEKOMMEN
+Kannst du mir die Telefonnummer der Mutter anzeigen;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Festnetznummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Ich suche die Telefonnummer von Frau Meier;TELEFONNUMMER_BEKOMMEN
+Wie kann ich den Vater des Patienten telefonisch erreichen;TELEFONNUMMER_BEKOMMEN
+Bitte gib mir die Telefonnummer der Kontaktperson;TELEFONNUMMER_BEKOMMEN
+
+Wann wurde der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Was ist das Geburtsdatum des Patienten;GEBURTSDATUM_BEKOMMEN
+Nenne mir das Geburtsdatum von Frau Schmitt;GEBURTSDATUM_BEKOMMEN
+Ich brauche das Geburtsdatum von Herrn Wagner;GEBURTSDATUM_BEKOMMEN
+Wann ist die Patientin zur Welt gekommen;GEBURTSDATUM_BEKOMMEN
+Kannst du mir sagen wann der Patient Geburtstag hat;GEBURTSDATUM_BEKOMMEN
+Wann genau ist der Patient geboren;GEBURTSDATUM_BEKOMMEN
+Geburtsdatum des Patienten anzeigen;GEBURTSDATUM_BEKOMMEN
+Wie lautet das Geburtsdatum des Angehörigen;GEBURTSDATUM_BEKOMMEN
+Zeig mir bitte das Geburtsdatum von Frau Becker an;GEBURTSDATUM_BEKOMMEN
+Wann hat der Patient Geburtstag;GEBURTSDATUM_BEKOMMEN
+Wie alt ist der Patient genau;GEBURTSDATUM_BEKOMMEN
+Ich benötige das genaue Geburtsdatum der Patientin;GEBURTSDATUM_BEKOMMEN
+Kannst du das Geburtsdatum der Kontaktperson nennen;GEBURTSDATUM_BEKOMMEN
+Was ist das genaue Geburtsdatum von Herrn Schuster;GEBURTSDATUM_BEKOMMEN
+
+
+Kannst du mir die Telefonnummer von Herrn Müller sagen;TELEFONNUMMER_BEKOMMEN
+Weißt du die Nummer von der Patientin;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Handynummer von Frau Schmitt;TELEFONNUMMER_BEKOMMEN
+Was ist die Telefonnummer von Max Mustermann;TELEFONNUMMER_BEKOMMEN
+Könntest du bitte die Telefonnummer der Tochter raussuchen;TELEFONNUMMER_BEKOMMEN
+Hast du die Nummer von der Pflegekraft;TELEFONNUMMER_BEKOMMEN
+Gib mir bitte die Telefonnummer vom Hausarzt;TELEFONNUMMER_BEKOMMEN
+Ich finde die Rufnummer von der Krankenschwester nicht;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Kontakttelefonnummer von Herrn Weber;TELEFONNUMMER_BEKOMMEN
+Rufnummer von Maria weißt du die;TELEFONNUMMER_BEKOMMEN
+Kannst du mir bitte das Handy von Jonas geben;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Nummer von der Tochter von Herrn Müller;TELEFONNUMMER_BEKOMMEN
+Was ist die Telefonnummer von der Schwester;TELEFONNUMMER_BEKOMMEN
+Hast du die Nummer von der Familienpflegekraft;TELEFONNUMMER_BEKOMMEN
+Die Handynummer von Frau Meier bitte;TELEFONNUMMER_BEKOMMEN
+Schnell die Telefonnummer von der Mutter!;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Nummer von der Schwester von Max;TELEFONNUMMER_BEKOMMEN
+Kannst du mir die Kontakt-Nr von der Ärztin geben;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Telefonnummer von Frau Hofmann;TELEFONNUMMER_BEKOMMEN
+Was ist die Telefonnummer von der Pflegerin;TELEFONNUMMER_BEKOMMEN
+Die Telefonnummer von der Mutter von Anna;TELEFONNUMMER_BEKOMMEN
+Kannst du die Nummer von der Klinikkontaktperson heraussuchen;TELEFONNUMMER_BEKOMMEN
+Gibt es die Rufnummer von Herrn Fischer;TELEFONNUMMER_BEKOMMEN
+Weißt du wie die Nummer von der Betreuungsperson ist;TELEFONNUMMER_BEKOMMEN
+Kannst du mir bitte die Kontakt-Nr von der Pflegekraft geben;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Nummer von Frau von der Leyen;TELEFONNUMMER_BEKOMMEN
+Die Handynummer von der Mutter von Michael weißt du die;TELEFONNUMMER_BEKOMMEN
+Die Telefonnummer von meinem Onkel bitte;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Nummer von der Tante von Lisa;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Telefonnummer von den Eltern von Anna;TELEFONNUMMER_BEKOMMEN
+Ich brauche dringend die Rufnummer von der Schwester;TELEFONNUMMER_BEKOMMEN
+Gib mir die Telefonnummer von der Pflegehelferin;TELEFONNUMMER_BEKOMMEN
+Kannst du mir die Telefonnummer von meinem Bruder geben;TELEFONNUMMER_BEKOMMEN
+Was ist die Handynummer von der Familie Bauer;TELEFONNUMMER_BEKOMMEN
+Weißt du wie die Nummer von der Pflegeperson ist;TELEFONNUMMER_BEKOMMEN

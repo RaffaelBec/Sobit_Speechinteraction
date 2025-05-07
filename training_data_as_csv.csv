@@ -1,0 +1,83 @@
+﻿tokens;intent
+Wie alt ist der Klient;ALTER_BEKOMMEN
+Wie alt ist der Patient;ALTER_BEKOMMEN
+Kannst du mir das Alter des Kunden nennen;ALTER_BEKOMMEN
+Was ist das Geburtsdatum von Herr Meier;ALTER_BEKOMMEN
+Wann wurde Frau Schmidt geboren;ALTER_BEKOMMEN
+Wie lange dauert der aktuelle Einsatz;EINSATZ_DAUER
+Wie lange bleibe ich heute bei meinem Einsatz;EINSATZ_DAUER
+Wann beginnt mein nächster Einsatz;NÄCHSTER_EINSATZ_ZEIT
+Wann fängt mein nächster Termin an;NÄCHSTER_EINSATZ_ZEIT
+Zu welcher Uhrzeit startet mein nächster Einsatz;NÄCHSTER_EINSATZ_ZEIT
+Wer hat das letzte Mal die Klientin Ute Maier betreut;LETZTER_BETREUER
+Welcher Mitarbeiter war zuletzt bei Frau Maier;LETZTER_BETREUER
+Wer war der letzte Pfleger von Herrn Becker;LETZTER_BETREUER
+Wie viele Einsätze habe ich heute;EINSÄTZE_HEUTE_ZÄHLEN
+Wie viele Termine stehen für heute an;EINSÄTZE_HEUTE_ZÄHLEN
+Welche Klienten habe ich heute besucht;HEUTIGE_KLIENTEN_BEKOMMEN
+Welche Patienten stehen heute auf meiner Liste;HEUTIGE_KLIENTEN_BEKOMMEN
+Welche Vitalparameter wurden zuletzt für Herr Münster gemessen;LETZTE_VITALWERTE
+Was waren die letzten erfassten Gesundheitswerte von Herrn Müller;LETZTE_VITALWERTE
+Wie hoch war das letzte Gewicht des Patienten;LETZTES_GEWEICHT
+Wie viel Kilogramm hatte Frau Berger beim letzten Wiegen;LETZTES_GEWEICHT
+Welche Vitalparameterwerte müssen heute für Frau Jenner erfasst werden;FEHLENDE_VITALWERTE
+Welche Gesundheitsdaten fehlen noch für den heutigen Tag;FEHLENDE_VITALWERTE
+Welche Notizen wurden zur Patientin erfasst;PATIENT_NOTIZEN
+Gibt es Bemerkungen oder Notizen zu Herrn Lehmann;PATIENT_NOTIZEN
+Mit welchem Auto fahre ich heute zum Einsatz;ZUWEISUNG_AUTO
+Welches Fahrzeug ist mir heute zugewiesen;ZUWEISUNG_AUTO
+Wie viele Kilometer bin ich heute gefahren;GEFAHRENE_KM_HEUTE
+Wie hoch war der letzte gemessene Puls;LETZTER_PULS
+Wie hoch war der Blutdruck von Frau Terrera letztes Mal;LETZTER_BLUTDRUCK
+Wie lange habe ich Mittagspause;PAUSENZEIT
+Sind alle heutigen Aufgaben erledigt;AUFGABEN_ABGESCHLOSSEN
+Sind alle Vitalparameterwerte für heute erfasst;VITALWERTE_ERFASST
+Wann startet morgen mein erster Einsatz;ERSTER_EINSATZ_MORGEN
+Welche Krankheiten hatte Frau Felber;KRANKHEITSGESCHICHTE_BEKOMMEN
+Wann hat Herr Kosmos zuletzt eine Betreuung gehabt;LETZTE_BETREUUNG_KLIENT
+Wie viele Einsätze habe ich morgen;EINSÄTZE_MORGEN_ZÄHLEN
+Wie weit ist es zum nächsten Einsatz;NÄCHSTE_EINSATZ_DISTANZ
+Habe ich heute alle Fahrten im Fahrtenbuch eingetragen;FAHRTENBUCH_ABGESCHLOSSEN
+Wann wurde das letzte Mal die Körpertemperatur des Patienten gemessen;LETZTE_KÖRPERTEMPERATUR
+Wie heißt der Klient;NAME_BEKOMMEN
+Kannst du mir den Namen des Patienten sagen;NAME_BEKOMMEN
+Wie lautet der vollständige Name von Herrn Becker;NAME_BEKOMMEN
+Wer ist der zuständige Pfleger für diesen Patienten;ZUWEISUNG_BETREUER
+Welcher Mitarbeiter ist für Herrn Wagner zuständig;ZUWEISUNG_BETREUER
+Welcher Betreuer wurde Herrn Meier zugewiesen;ZUWEISUNG_BETREUER
+Wie alt ist Frau Müller;ALTER_BEKOMMEN
+Wann wurde Herr Schneider geboren;ALTER_BEKOMMEN
+Wie lautet das Geburtsjahr des Patienten;ALTER_BEKOMMEN
+Wann endet mein aktueller Einsatz;EINSATZ_DAUER
+Wie lange bleibt mein Einsatz noch;EINSATZ_DAUER
+Wann startet meine nächste Schicht;NÄCHSTER_EINSATZ_ZEIT
+Wann habe ich meinen nächsten Patienten;NÄCHSTER_EINSATZ_ZEIT
+Welcher Kollege hat den letzten Patienten betreut;LETZTER_BETREUER
+Welche Patienten habe ich heute schon besucht;HEUTIGE_KLIENTEN_BEKOMMEN
+Kannst du mir die Liste der heutigen Klienten geben;HEUTIGE_KLIENTEN_BEKOMMEN
+Was waren die letzten Gesundheitswerte von Frau Meier;LETZTE_VITALWERTE
+Welche Werte wurden zuletzt für Herrn Fischer erfasst;LETZTE_VITALWERTE
+Wie lautet der Puls von gestern;LETZTER_PULS
+Wie hoch war der letzte Herzschlag von Frau Weber;LETZTER_PULS
+Mit welchem Auto fahre ich zur Arbeit;ZUWEISUNG_AUTO
+Welches Fahrzeug habe ich heute zugewiesen bekommen;ZUWEISUNG_AUTO
+Wie weit ist mein nächster Einsatz entfernt;NÄCHSTE_EINSATZ_DISTANZ
+Wie lange dauert die Fahrt zu meinem nächsten Klienten;NÄCHSTE_EINSATZ_DISTANZ
+Wie lautet die Telefonnummer;TELEFONNUMMER_BEKOMMEN
+Gib mir die Nummer;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Telefonnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Hast du die Telefonnummer;TELEFONNUMMER_BEKOMMEN
+Was ist die Telefonnummer;TELEFONNUMMER_BEKOMMEN
+Können Sie mir die Telefonnummer nennen;TELEFONNUMMER_BEKOMMEN
+Welche Nummer hat er;TELEFONNUMMER_BEKOMMEN
+Telefonnummer des Patienten;TELEFONNUMMER_BEKOMMEN
+Gib mir die Handynummer;TELEFONNUMMER_BEKOMMEN
+Was ist die Mobilnummer;TELEFONNUMMER_BEKOMMEN
+Kannst du mir seine Telefonnummer geben;TELEFONNUMMER_BEKOMMEN
+Wo finde ich die Telefonnummer;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Handynummer;TELEFONNUMMER_BEKOMMEN
+Hat der Patient eine Telefonnummer;TELEFONNUMMER_BEKOMMEN
+Ich brauche die Kontaktnummer;TELEFONNUMMER_BEKOMMEN
+Seine Telefonnummer bitte;TELEFONNUMMER_BEKOMMEN
+Gib mir die Telefonnummer von ihm;TELEFONNUMMER_BEKOMMEN
+Wie lautet die Telefonnummer der Person;TELEFONNUMMER_BEKOMMEN

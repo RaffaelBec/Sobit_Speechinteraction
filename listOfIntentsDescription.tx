@@ -1,0 +1,12 @@
+JETZTIGER_KLIENT_BEKOMMEN -> nur name bekommen
+VERWANDTE_BEKOMMEN -> telefonnummer und name bekommen
+EMERGENCY_CONTACT_BEKOMMEN -> telefonnummer und name bekommen
+BESUCHTE_KLIENTEN_HEUTE_BEKOMMEN -> namen bekommen und eventuell anzahl
+EINSATZ_VON_KLIENT_BEKOMMEN 
+-> muss man in der training data noch aufteilen auf Targettime und ActualTime aus der Datenbank
+
+welchen intent für hat Maxim abgenommen / hat Maxim zugenommen
+
+BLUTDRUCK_BEKOMMEN aufteilen auf BLUTDRUCK_BEKOMMEN und BLUTDRUCK_VON_KLIENT_BEKOMMEN ?
+
+PULS_BEKOMMEN -> entspricht auch herzfrequenz bekommen
